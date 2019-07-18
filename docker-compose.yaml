@@ -1,0 +1,12 @@
+version: '3'
+services:
+  backend:
+    build: .
+    depends_on:
+      - nosql
+    links:
+      - nosql
+  nosql:
+    image: oracle/nosql
+    expose:
+      - 5000

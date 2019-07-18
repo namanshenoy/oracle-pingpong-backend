@@ -1,0 +1,330 @@
+2019-07-12 19:25:15.482 UTC INFO [rg1-rn1] Started ServiceDispatcher. HostPort=mbartnit-t480:5006
+2019-07-12 19:25:15.484 UTC INFO [rg1-rn1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-12 19:25:15.485 UTC INFO [rg1-rn1] DTVLSN at start:0
+2019-07-12 19:25:15.487 UTC INFO [rg1-rn1] node:NullNode(-1) state change from DETACHED to UNKNOWN
+2019-07-12 19:25:15.488 UTC INFO [rg1-rn1] Current group size: 0
+2019-07-12 19:25:15.488 UTC INFO [rg1-rn1] New node rg1-rn1(-1) unknown to rep group
+2019-07-12 19:25:15.489 UTC INFO [rg1-rn1] Master changed to rg1-rn1
+2019-07-12 19:25:15.489 UTC INFO [rg1-rn1] Nascent group. rg1-rn1 is master by virtue of being the first node.
+2019-07-12 19:25:15.489 UTC INFO [rg1-rn1] node:rg1-rn1(1) state change from UNKNOWN to MASTER
+2019-07-12 19:25:15.496 UTC INFO [rg1-rn1] Successfully added node:rg1-rn1(1) HostPort = mbartnit-t480: 5006 [ELECTABLE]
+2019-07-12 19:25:15.498 UTC INFO [rg1-rn1] Node rg1-rn1 started
+2019-07-12 19:25:15.498 UTC INFO [rg1-rn1] node:NullNode(-1) state change from MASTER to UNKNOWN
+2019-07-12 19:25:15.498 UTC INFO [rg1-rn1] node:rg1-rn1(1) state change from UNKNOWN to MASTER
+2019-07-12 19:25:15.499 UTC INFO [rg1-rn1] Feeder manager accepting requests.
+2019-07-12 19:25:15.499 UTC INFO [rg1-rn1] Joining group as master
+2019-07-13 01:17:32.548 UTC INFO [rg1-rn1] ServiceDispatcher IP changed, from 10.0.75.1 to 10.43.26.47
+2019-07-13 01:17:32.549 UTC INFO [rg1-rn1] Rebind ServiceDispatcher socket: ServerSocket[addr=/10.43.26.47,localport=5006]
+2019-07-13 01:17:33.416 UTC WARNING [rg1-rn1] FSync time of 10797669 ms exceeds limit (5000 ms)
+2019-07-13 01:18:02.566 UTC INFO [rg1-rn1] ServiceDispatcher IP changed, from 10.43.26.47 to 10.0.75.1
+2019-07-13 01:18:02.566 UTC INFO [rg1-rn1] Rebind ServiceDispatcher socket: ServerSocket[addr=/10.0.75.1,localport=5006]
+2019-07-15 13:56:53.718 UTC INFO [rg1-rn1] ServiceDispatcher IP changed, from 10.0.75.1 to 127.0.0.1
+2019-07-15 13:56:53.719 UTC INFO [rg1-rn1] Rebind ServiceDispatcher socket: ServerSocket[addr=/127.0.0.1,localport=5006]
+2019-07-15 13:57:23.731 UTC INFO [rg1-rn1] ServiceDispatcher IP changed, from 127.0.0.1 to 10.0.75.1
+2019-07-15 13:57:23.731 UTC INFO [rg1-rn1] Rebind ServiceDispatcher socket: ServerSocket[addr=/10.0.75.1,localport=5006]
+2019-07-15 13:59:57.555 UTC INFO [rg1-rn1] ServiceDispatcher IP changed, from 10.0.75.1 to 127.0.0.1
+2019-07-15 13:59:57.555 UTC INFO [rg1-rn1] Rebind ServiceDispatcher socket: ServerSocket[addr=/127.0.0.1,localport=5006]
+2019-07-15 14:00:27.569 UTC INFO [rg1-rn1] ServiceDispatcher IP changed, from 127.0.0.1 to 10.0.75.1
+2019-07-15 14:00:27.569 UTC INFO [rg1-rn1] Rebind ServiceDispatcher socket: ServerSocket[addr=/10.0.75.1,localport=5006]
+2019-07-15 14:50:01.506 UTC INFO [rg1-rn1] Started ServiceDispatcher. HostPort=mbartnit-t480:5006
+2019-07-15 14:50:01.506 UTC INFO [rg1-rn1] Started ServiceDispatcher. HostPort=mbartnit-t480:5006
+2019-07-15 14:50:01.506 UTC INFO [rg1-rn1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-15 14:50:01.506 UTC INFO [rg1-rn1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-15 14:50:01.537 UTC INFO [rg1-rn1] DTVLSN at start:346
+2019-07-15 14:50:01.537 UTC INFO [rg1-rn1] DTVLSN at start:346
+2019-07-15 14:50:01.538 UTC INFO [rg1-rn1] node:NullNode(-1) state change from DETACHED to UNKNOWN
+2019-07-15 14:50:01.555 UTC INFO [rg1-rn1] Current group size: 1
+2019-07-15 14:50:01.555 UTC INFO [rg1-rn1] Current group size: 1
+2019-07-15 14:50:01.556 UTC INFO [rg1-rn1] Existing node rg1-rn1 querying for a current master.
+2019-07-15 14:50:01.556 UTC INFO [rg1-rn1] Existing node rg1-rn1 querying for a current master.
+2019-07-15 14:50:01.572 UTC INFO [rg1-rn1] Node rg1-rn1 started
+2019-07-15 14:50:01.572 UTC INFO [rg1-rn1] Node rg1-rn1 started
+2019-07-15 14:50:01.572 UTC INFO [rg1-rn1] Election initiated; election #1
+2019-07-15 14:50:01.574 UTC INFO [rg1-rn1] Started election thread Mon Jul 15 09:50:01 CDT 2019
+2019-07-15 14:50:03.584 UTC INFO [rg1-rn1] Winning proposal: Proposal(0000016bf61cafb6:1bdc7e7285b50baede743c5afd4fb748:00000001) Value: Value:mbartnit-t480$$$5006$$$rg1-rn1$$$1
+2019-07-15 14:50:03.584 UTC INFO [rg1-rn1] Winning proposal: Proposal(0000016bf61cafb6:1bdc7e7285b50baede743c5afd4fb748:00000001) Value: Value:mbartnit-t480$$$5006$$$rg1-rn1$$$1
+2019-07-15 14:50:03.587 UTC INFO [rg1-rn1] Master changed to rg1-rn1
+2019-07-15 14:50:03.587 UTC INFO [rg1-rn1] Master changed to rg1-rn1
+2019-07-15 14:50:03.588 UTC INFO [rg1-rn1] Election finished. Elapsed time: 2016ms
+2019-07-15 14:50:03.588 UTC INFO [rg1-rn1] Election thread exited. Group master: rg1-rn1(1)
+2019-07-15 14:50:03.589 UTC INFO [rg1-rn1] node:rg1-rn1(1) state change from UNKNOWN to MASTER
+2019-07-15 14:50:03.589 UTC INFO [rg1-rn1] Feeder manager accepting requests.
+2019-07-15 14:50:03.589 UTC INFO [rg1-rn1] Feeder manager accepting requests.
+2019-07-15 14:50:03.593 UTC INFO [rg1-rn1] Joining group as master
+2019-07-15 14:50:03.593 UTC INFO [rg1-rn1] Joining group as master
+2019-07-15 17:59:04.850 UTC INFO [rg1-rn1] Started ServiceDispatcher. HostPort=mbartnit-t480:5006
+2019-07-15 17:59:04.850 UTC INFO [rg1-rn1] Started ServiceDispatcher. HostPort=mbartnit-t480:5006
+2019-07-15 17:59:04.851 UTC INFO [rg1-rn1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-15 17:59:04.851 UTC INFO [rg1-rn1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-15 17:59:04.879 UTC INFO [rg1-rn1] DTVLSN at start:352
+2019-07-15 17:59:04.879 UTC INFO [rg1-rn1] node:NullNode(-1) state change from DETACHED to UNKNOWN
+2019-07-15 17:59:04.891 UTC INFO [rg1-rn1] Current group size: 1
+2019-07-15 17:59:04.891 UTC INFO [rg1-rn1] Existing node rg1-rn1 querying for a current master.
+2019-07-15 17:59:04.902 UTC INFO [rg1-rn1] Node rg1-rn1 started
+2019-07-15 17:59:04.902 UTC INFO [rg1-rn1] Election initiated; election #1
+2019-07-15 17:59:04.904 UTC INFO [rg1-rn1] Started election thread Mon Jul 15 12:59:04 CDT 2019
+2019-07-15 17:59:06.915 UTC INFO [rg1-rn1] Winning proposal: Proposal(0000016bf6c9c59a:38b054c625f178e50176f4fd743ea1f0:00000001) Value: Value:mbartnit-t480$$$5006$$$rg1-rn1$$$1
+2019-07-15 17:59:06.915 UTC INFO [rg1-rn1] Winning proposal: Proposal(0000016bf6c9c59a:38b054c625f178e50176f4fd743ea1f0:00000001) Value: Value:mbartnit-t480$$$5006$$$rg1-rn1$$$1
+2019-07-15 17:59:06.919 UTC INFO [rg1-rn1] Master changed to rg1-rn1
+2019-07-15 17:59:06.919 UTC INFO [rg1-rn1] Master changed to rg1-rn1
+2019-07-15 17:59:06.919 UTC INFO [rg1-rn1] Election finished. Elapsed time: 2017ms
+2019-07-15 17:59:06.920 UTC INFO [rg1-rn1] Election thread exited. Group master: rg1-rn1(1)
+2019-07-15 17:59:06.920 UTC INFO [rg1-rn1] node:rg1-rn1(1) state change from UNKNOWN to MASTER
+2019-07-15 17:59:06.920 UTC INFO [rg1-rn1] Feeder manager accepting requests.
+2019-07-15 17:59:06.920 UTC INFO [rg1-rn1] Feeder manager accepting requests.
+2019-07-15 17:59:06.926 UTC INFO [rg1-rn1] Joining group as master
+2019-07-15 19:02:12.556 UTC INFO [rg1-rn1] Started ServiceDispatcher. HostPort=mbartnit-t480:5006
+2019-07-15 19:02:12.556 UTC INFO [rg1-rn1] Started ServiceDispatcher. HostPort=mbartnit-t480:5006
+2019-07-15 19:02:12.557 UTC INFO [rg1-rn1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-15 19:02:12.557 UTC INFO [rg1-rn1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-15 19:02:12.586 UTC INFO [rg1-rn1] DTVLSN at start:355
+2019-07-15 19:02:12.586 UTC INFO [rg1-rn1] DTVLSN at start:355
+2019-07-15 19:02:12.587 UTC INFO [rg1-rn1] node:NullNode(-1) state change from DETACHED to UNKNOWN
+2019-07-15 19:02:12.598 UTC INFO [rg1-rn1] Current group size: 1
+2019-07-15 19:02:12.598 UTC INFO [rg1-rn1] Current group size: 1
+2019-07-15 19:02:12.598 UTC INFO [rg1-rn1] Existing node rg1-rn1 querying for a current master.
+2019-07-15 19:02:12.598 UTC INFO [rg1-rn1] Existing node rg1-rn1 querying for a current master.
+2019-07-15 19:02:12.609 UTC INFO [rg1-rn1] Node rg1-rn1 started
+2019-07-15 19:02:12.609 UTC INFO [rg1-rn1] Node rg1-rn1 started
+2019-07-15 19:02:12.610 UTC INFO [rg1-rn1] Election initiated; election #1
+2019-07-15 19:02:12.610 UTC INFO [rg1-rn1] Election initiated; election #1
+2019-07-15 19:02:12.612 UTC INFO [rg1-rn1] Started election thread Mon Jul 15 14:02:12 CDT 2019
+2019-07-15 19:02:12.612 UTC INFO [rg1-rn1] Started election thread Mon Jul 15 14:02:12 CDT 2019
+2019-07-15 19:02:14.624 UTC INFO [rg1-rn1] Winning proposal: Proposal(0000016bf7039156:a0a786f44a3d219691816132e5d029e7:00000001) Value: Value:mbartnit-t480$$$5006$$$rg1-rn1$$$1
+2019-07-15 19:02:14.624 UTC INFO [rg1-rn1] Winning proposal: Proposal(0000016bf7039156:a0a786f44a3d219691816132e5d029e7:00000001) Value: Value:mbartnit-t480$$$5006$$$rg1-rn1$$$1
+2019-07-15 19:02:14.626 UTC INFO [rg1-rn1] Master changed to rg1-rn1
+2019-07-15 19:02:14.626 UTC INFO [rg1-rn1] Master changed to rg1-rn1
+2019-07-15 19:02:14.627 UTC INFO [rg1-rn1] Election finished. Elapsed time: 2017ms
+2019-07-15 19:02:14.627 UTC INFO [rg1-rn1] Election finished. Elapsed time: 2017ms
+2019-07-15 19:02:14.627 UTC INFO [rg1-rn1] Election thread exited. Group master: rg1-rn1(1)
+2019-07-15 19:02:14.627 UTC INFO [rg1-rn1] Election thread exited. Group master: rg1-rn1(1)
+2019-07-15 19:02:14.627 UTC INFO [rg1-rn1] node:rg1-rn1(1) state change from UNKNOWN to MASTER
+2019-07-15 19:02:14.627 UTC INFO [rg1-rn1] Feeder manager accepting requests.
+2019-07-15 19:02:14.627 UTC INFO [rg1-rn1] Feeder manager accepting requests.
+2019-07-15 19:02:14.632 UTC INFO [rg1-rn1] Joining group as master
+2019-07-15 19:02:14.632 UTC INFO [rg1-rn1] Joining group as master
+2019-07-15 20:27:20.734 UTC INFO [rg1-rn1] Started ServiceDispatcher. HostPort=mbartnit-t480:5006
+2019-07-15 20:27:20.734 UTC INFO [rg1-rn1] Started ServiceDispatcher. HostPort=mbartnit-t480:5006
+2019-07-15 20:27:20.734 UTC INFO [rg1-rn1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-15 20:27:20.734 UTC INFO [rg1-rn1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-15 20:27:20.762 UTC INFO [rg1-rn1] DTVLSN at start:358
+2019-07-15 20:27:20.762 UTC INFO [rg1-rn1] DTVLSN at start:358
+2019-07-15 20:27:20.763 UTC INFO [rg1-rn1] node:NullNode(-1) state change from DETACHED to UNKNOWN
+2019-07-15 20:27:20.774 UTC INFO [rg1-rn1] Current group size: 1
+2019-07-15 20:27:20.774 UTC INFO [rg1-rn1] Current group size: 1
+2019-07-15 20:27:20.775 UTC INFO [rg1-rn1] Existing node rg1-rn1 querying for a current master.
+2019-07-15 20:27:20.775 UTC INFO [rg1-rn1] Existing node rg1-rn1 querying for a current master.
+2019-07-15 20:27:20.787 UTC INFO [rg1-rn1] Node rg1-rn1 started
+2019-07-15 20:27:20.787 UTC INFO [rg1-rn1] Node rg1-rn1 started
+2019-07-15 20:27:20.787 UTC INFO [rg1-rn1] Election initiated; election #1
+2019-07-15 20:27:20.787 UTC INFO [rg1-rn1] Election initiated; election #1
+2019-07-15 20:27:20.790 UTC INFO [rg1-rn1] Started election thread Mon Jul 15 15:27:20 CDT 2019
+2019-07-15 20:27:20.790 UTC INFO [rg1-rn1] Started election thread Mon Jul 15 15:27:20 CDT 2019
+2019-07-15 20:27:22.813 UTC INFO [rg1-rn1] Winning proposal: Proposal(0000016bf7518327:4f9a3df37fd2cb1af0f0826de124b954:00000002) Value: Value:mbartnit-t480$$$5006$$$rg1-rn1$$$1
+2019-07-15 20:27:22.813 UTC INFO [rg1-rn1] Winning proposal: Proposal(0000016bf7518327:4f9a3df37fd2cb1af0f0826de124b954:00000002) Value: Value:mbartnit-t480$$$5006$$$rg1-rn1$$$1
+2019-07-15 20:27:22.818 UTC INFO [rg1-rn1] Master changed to rg1-rn1
+2019-07-15 20:27:22.818 UTC INFO [rg1-rn1] Master changed to rg1-rn1
+2019-07-15 20:27:22.818 UTC INFO [rg1-rn1] Election finished. Elapsed time: 2031ms
+2019-07-15 20:27:22.818 UTC INFO [rg1-rn1] Election finished. Elapsed time: 2031ms
+2019-07-15 20:27:22.819 UTC INFO [rg1-rn1] Election thread exited. Group master: rg1-rn1(1)
+2019-07-15 20:27:22.819 UTC INFO [rg1-rn1] Election thread exited. Group master: rg1-rn1(1)
+2019-07-15 20:27:22.819 UTC INFO [rg1-rn1] node:rg1-rn1(1) state change from UNKNOWN to MASTER
+2019-07-15 20:27:22.820 UTC INFO [rg1-rn1] Feeder manager accepting requests.
+2019-07-15 20:27:22.820 UTC INFO [rg1-rn1] Feeder manager accepting requests.
+2019-07-15 20:27:22.825 UTC INFO [rg1-rn1] Joining group as master
+2019-07-15 20:27:22.825 UTC INFO [rg1-rn1] Joining group as master
+2019-07-15 20:45:15.322 UTC INFO [rg1-rn1] Started ServiceDispatcher. HostPort=mbartnit-t480:5006
+2019-07-15 20:45:15.322 UTC INFO [rg1-rn1] Started ServiceDispatcher. HostPort=mbartnit-t480:5006
+2019-07-15 20:45:15.322 UTC INFO [rg1-rn1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-15 20:45:15.322 UTC INFO [rg1-rn1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-15 20:45:15.355 UTC INFO [rg1-rn1] DTVLSN at start:376
+2019-07-15 20:45:15.355 UTC INFO [rg1-rn1] DTVLSN at start:376
+2019-07-15 20:45:15.356 UTC INFO [rg1-rn1] node:NullNode(-1) state change from DETACHED to UNKNOWN
+2019-07-15 20:45:15.369 UTC INFO [rg1-rn1] Current group size: 1
+2019-07-15 20:45:15.369 UTC INFO [rg1-rn1] Current group size: 1
+2019-07-15 20:45:15.369 UTC INFO [rg1-rn1] Existing node rg1-rn1 querying for a current master.
+2019-07-15 20:45:15.369 UTC INFO [rg1-rn1] Existing node rg1-rn1 querying for a current master.
+2019-07-15 20:45:15.384 UTC INFO [rg1-rn1] Node rg1-rn1 started
+2019-07-15 20:45:15.384 UTC INFO [rg1-rn1] Node rg1-rn1 started
+2019-07-15 20:45:15.385 UTC INFO [rg1-rn1] Election initiated; election #1
+2019-07-15 20:45:15.385 UTC INFO [rg1-rn1] Election initiated; election #1
+2019-07-15 20:45:15.387 UTC INFO [rg1-rn1] Started election thread Mon Jul 15 15:45:15 CDT 2019
+2019-07-15 20:45:15.387 UTC INFO [rg1-rn1] Started election thread Mon Jul 15 15:45:15 CDT 2019
+2019-07-15 20:45:17.403 UTC INFO [rg1-rn1] Winning proposal: Proposal(0000016bf761e8cd:2f33b0b952efb03df076b6a123a4aba8:00000002) Value: Value:mbartnit-t480$$$5006$$$rg1-rn1$$$1
+2019-07-15 20:45:17.403 UTC INFO [rg1-rn1] Winning proposal: Proposal(0000016bf761e8cd:2f33b0b952efb03df076b6a123a4aba8:00000002) Value: Value:mbartnit-t480$$$5006$$$rg1-rn1$$$1
+2019-07-15 20:45:17.406 UTC INFO [rg1-rn1] Master changed to rg1-rn1
+2019-07-15 20:45:17.406 UTC INFO [rg1-rn1] Master changed to rg1-rn1
+2019-07-15 20:45:17.407 UTC INFO [rg1-rn1] Election finished. Elapsed time: 2022ms
+2019-07-15 20:45:17.407 UTC INFO [rg1-rn1] Election finished. Elapsed time: 2022ms
+2019-07-15 20:45:17.407 UTC INFO [rg1-rn1] Election thread exited. Group master: rg1-rn1(1)
+2019-07-15 20:45:17.407 UTC INFO [rg1-rn1] Election thread exited. Group master: rg1-rn1(1)
+2019-07-15 20:45:17.408 UTC INFO [rg1-rn1] node:rg1-rn1(1) state change from UNKNOWN to MASTER
+2019-07-15 20:45:17.408 UTC INFO [rg1-rn1] Feeder manager accepting requests.
+2019-07-15 20:45:17.408 UTC INFO [rg1-rn1] Feeder manager accepting requests.
+2019-07-15 20:45:17.415 UTC INFO [rg1-rn1] Joining group as master
+2019-07-15 20:45:17.415 UTC INFO [rg1-rn1] Joining group as master
+2019-07-15 21:16:58.846 UTC INFO [rg1-rn1] Started ServiceDispatcher. HostPort=mbartnit-t480:5006
+2019-07-15 21:16:58.846 UTC INFO [rg1-rn1] Started ServiceDispatcher. HostPort=mbartnit-t480:5006
+2019-07-15 21:16:58.846 UTC INFO [rg1-rn1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-15 21:16:58.846 UTC INFO [rg1-rn1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-15 21:16:58.874 UTC INFO [rg1-rn1] DTVLSN at start:397
+2019-07-15 21:16:58.874 UTC INFO [rg1-rn1] DTVLSN at start:397
+2019-07-15 21:16:58.875 UTC INFO [rg1-rn1] node:NullNode(-1) state change from DETACHED to UNKNOWN
+2019-07-15 21:16:58.886 UTC INFO [rg1-rn1] Current group size: 1
+2019-07-15 21:16:58.886 UTC INFO [rg1-rn1] Current group size: 1
+2019-07-15 21:16:58.887 UTC INFO [rg1-rn1] Existing node rg1-rn1 querying for a current master.
+2019-07-15 21:16:58.887 UTC INFO [rg1-rn1] Existing node rg1-rn1 querying for a current master.
+2019-07-15 21:16:58.899 UTC INFO [rg1-rn1] Node rg1-rn1 started
+2019-07-15 21:16:58.899 UTC INFO [rg1-rn1] Node rg1-rn1 started
+2019-07-15 21:16:58.900 UTC INFO [rg1-rn1] Election initiated; election #1
+2019-07-15 21:16:58.900 UTC INFO [rg1-rn1] Election initiated; election #1
+2019-07-15 21:16:58.902 UTC INFO [rg1-rn1] Started election thread Mon Jul 15 16:16:58 CDT 2019
+2019-07-15 21:16:58.902 UTC INFO [rg1-rn1] Started election thread Mon Jul 15 16:16:58 CDT 2019
+2019-07-15 21:17:00.913 UTC INFO [rg1-rn1] Winning proposal: Proposal(0000016bf77ef468:366bffc6c1b49e7c77970bb16735a363:00000001) Value: Value:mbartnit-t480$$$5006$$$rg1-rn1$$$1
+2019-07-15 21:17:00.913 UTC INFO [rg1-rn1] Winning proposal: Proposal(0000016bf77ef468:366bffc6c1b49e7c77970bb16735a363:00000001) Value: Value:mbartnit-t480$$$5006$$$rg1-rn1$$$1
+2019-07-15 21:17:00.916 UTC INFO [rg1-rn1] Master changed to rg1-rn1
+2019-07-15 21:17:00.916 UTC INFO [rg1-rn1] Master changed to rg1-rn1
+2019-07-15 21:17:00.917 UTC INFO [rg1-rn1] Election finished. Elapsed time: 2017ms
+2019-07-15 21:17:00.917 UTC INFO [rg1-rn1] Election finished. Elapsed time: 2017ms
+2019-07-15 21:17:00.917 UTC INFO [rg1-rn1] Election thread exited. Group master: rg1-rn1(1)
+2019-07-15 21:17:00.917 UTC INFO [rg1-rn1] Election thread exited. Group master: rg1-rn1(1)
+2019-07-15 21:17:00.917 UTC INFO [rg1-rn1] node:rg1-rn1(1) state change from UNKNOWN to MASTER
+2019-07-15 21:17:00.918 UTC INFO [rg1-rn1] Feeder manager accepting requests.
+2019-07-15 21:17:00.918 UTC INFO [rg1-rn1] Feeder manager accepting requests.
+2019-07-15 21:17:00.923 UTC INFO [rg1-rn1] Joining group as master
+2019-07-15 21:17:00.923 UTC INFO [rg1-rn1] Joining group as master
+2019-07-15 23:54:01.688 UTC INFO [rg1-rn1] ServiceDispatcher IP changed, from 10.0.75.1 to 10.43.26.47
+2019-07-15 23:54:01.688 UTC INFO [rg1-rn1] ServiceDispatcher IP changed, from 10.0.75.1 to 10.43.26.47
+2019-07-15 23:54:01.689 UTC INFO [rg1-rn1] Rebind ServiceDispatcher socket: ServerSocket[addr=/10.43.26.47,localport=5006]
+2019-07-15 23:54:01.689 UTC INFO [rg1-rn1] Rebind ServiceDispatcher socket: ServerSocket[addr=/10.43.26.47,localport=5006]
+2019-07-16 11:54:14.326 UTC INFO [rg1-rn1] ServiceDispatcher IP changed, from 10.43.26.47 to 127.0.0.1
+2019-07-16 11:54:14.326 UTC INFO [rg1-rn1] ServiceDispatcher IP changed, from 10.43.26.47 to 127.0.0.1
+2019-07-16 11:54:14.326 UTC INFO [rg1-rn1] Rebind ServiceDispatcher socket: ServerSocket[addr=/127.0.0.1,localport=5006]
+2019-07-16 11:54:14.326 UTC INFO [rg1-rn1] Rebind ServiceDispatcher socket: ServerSocket[addr=/127.0.0.1,localport=5006]
+2019-07-16 13:58:02.297 UTC INFO [rg1-rn1] ServiceDispatcher IP changed, from 127.0.0.1 to 169.254.250.196
+2019-07-16 13:58:02.297 UTC INFO [rg1-rn1] ServiceDispatcher IP changed, from 127.0.0.1 to 169.254.250.196
+2019-07-16 13:58:02.297 UTC INFO [rg1-rn1] Rebind ServiceDispatcher socket: ServerSocket[addr=/169.254.250.196,localport=5006]
+2019-07-16 13:58:02.297 UTC INFO [rg1-rn1] Rebind ServiceDispatcher socket: ServerSocket[addr=/169.254.250.196,localport=5006]
+2019-07-16 13:58:32.317 UTC INFO [rg1-rn1] ServiceDispatcher IP changed, from 169.254.250.196 to 10.0.75.1
+2019-07-16 13:58:32.317 UTC INFO [rg1-rn1] ServiceDispatcher IP changed, from 169.254.250.196 to 10.0.75.1
+2019-07-16 13:58:32.317 UTC INFO [rg1-rn1] Rebind ServiceDispatcher socket: ServerSocket[addr=/10.0.75.1,localport=5006]
+2019-07-16 13:58:32.317 UTC INFO [rg1-rn1] Rebind ServiceDispatcher socket: ServerSocket[addr=/10.0.75.1,localport=5006]
+2019-07-16 14:26:01.502 UTC INFO [rg1-rn1] Started ServiceDispatcher. HostPort=mbartnit-t480:5006
+2019-07-16 14:26:01.502 UTC INFO [rg1-rn1] Started ServiceDispatcher. HostPort=mbartnit-t480:5006
+2019-07-16 14:26:01.502 UTC INFO [rg1-rn1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-16 14:26:01.502 UTC INFO [rg1-rn1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-16 14:26:01.531 UTC INFO [rg1-rn1] DTVLSN at start:1,056
+2019-07-16 14:26:01.531 UTC INFO [rg1-rn1] DTVLSN at start:1,056
+2019-07-16 14:26:01.532 UTC INFO [rg1-rn1] node:NullNode(-1) state change from DETACHED to UNKNOWN
+2019-07-16 14:26:01.544 UTC INFO [rg1-rn1] Current group size: 1
+2019-07-16 14:26:01.544 UTC INFO [rg1-rn1] Current group size: 1
+2019-07-16 14:26:01.544 UTC INFO [rg1-rn1] Existing node rg1-rn1 querying for a current master.
+2019-07-16 14:26:01.544 UTC INFO [rg1-rn1] Existing node rg1-rn1 querying for a current master.
+2019-07-16 14:26:01.554 UTC INFO [rg1-rn1] Node rg1-rn1 started
+2019-07-16 14:26:01.554 UTC INFO [rg1-rn1] Node rg1-rn1 started
+2019-07-16 14:26:01.555 UTC INFO [rg1-rn1] Election initiated; election #1
+2019-07-16 14:26:01.555 UTC INFO [rg1-rn1] Election initiated; election #1
+2019-07-16 14:26:01.557 UTC INFO [rg1-rn1] Started election thread Tue Jul 16 09:26:01 CDT 2019
+2019-07-16 14:26:01.557 UTC INFO [rg1-rn1] Started election thread Tue Jul 16 09:26:01 CDT 2019
+2019-07-16 14:26:03.569 UTC INFO [rg1-rn1] Winning proposal: Proposal(0000016bfb2d12a6:b5e2cbe2acb0b68dae44a39455ae35ad:00000002) Value: Value:mbartnit-t480$$$5006$$$rg1-rn1$$$1
+2019-07-16 14:26:03.569 UTC INFO [rg1-rn1] Winning proposal: Proposal(0000016bfb2d12a6:b5e2cbe2acb0b68dae44a39455ae35ad:00000002) Value: Value:mbartnit-t480$$$5006$$$rg1-rn1$$$1
+2019-07-16 14:26:03.573 UTC INFO [rg1-rn1] Master changed to rg1-rn1
+2019-07-16 14:26:03.573 UTC INFO [rg1-rn1] Master changed to rg1-rn1
+2019-07-16 14:26:03.573 UTC INFO [rg1-rn1] Election finished. Elapsed time: 2018ms
+2019-07-16 14:26:03.573 UTC INFO [rg1-rn1] Election finished. Elapsed time: 2018ms
+2019-07-16 14:26:03.573 UTC INFO [rg1-rn1] Election thread exited. Group master: rg1-rn1(1)
+2019-07-16 14:26:03.573 UTC INFO [rg1-rn1] Election thread exited. Group master: rg1-rn1(1)
+2019-07-16 14:26:03.574 UTC INFO [rg1-rn1] node:rg1-rn1(1) state change from UNKNOWN to MASTER
+2019-07-16 14:26:03.574 UTC INFO [rg1-rn1] Feeder manager accepting requests.
+2019-07-16 14:26:03.574 UTC INFO [rg1-rn1] Feeder manager accepting requests.
+2019-07-16 14:26:03.579 UTC INFO [rg1-rn1] Joining group as master
+2019-07-16 14:26:03.579 UTC INFO [rg1-rn1] Joining group as master
+2019-07-16 15:40:27.538 UTC INFO [rg1-rn1] Started ServiceDispatcher. HostPort=mbartnit-t480:5006
+2019-07-16 15:40:27.538 UTC INFO [rg1-rn1] Started ServiceDispatcher. HostPort=mbartnit-t480:5006
+2019-07-16 15:40:27.539 UTC INFO [rg1-rn1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-16 15:40:27.539 UTC INFO [rg1-rn1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-16 15:40:27.568 UTC INFO [rg1-rn1] DTVLSN at start:1,244
+2019-07-16 15:40:27.568 UTC INFO [rg1-rn1] DTVLSN at start:1,244
+2019-07-16 15:40:27.569 UTC INFO [rg1-rn1] node:NullNode(-1) state change from DETACHED to UNKNOWN
+2019-07-16 15:40:27.581 UTC INFO [rg1-rn1] Current group size: 1
+2019-07-16 15:40:27.581 UTC INFO [rg1-rn1] Current group size: 1
+2019-07-16 15:40:27.581 UTC INFO [rg1-rn1] Existing node rg1-rn1 querying for a current master.
+2019-07-16 15:40:27.581 UTC INFO [rg1-rn1] Existing node rg1-rn1 querying for a current master.
+2019-07-16 15:40:27.593 UTC INFO [rg1-rn1] Node rg1-rn1 started
+2019-07-16 15:40:27.593 UTC INFO [rg1-rn1] Node rg1-rn1 started
+2019-07-16 15:40:27.593 UTC INFO [rg1-rn1] Election initiated; election #1
+2019-07-16 15:40:27.593 UTC INFO [rg1-rn1] Election initiated; election #1
+2019-07-16 15:40:27.595 UTC INFO [rg1-rn1] Started election thread Tue Jul 16 10:40:27 CDT 2019
+2019-07-16 15:40:27.595 UTC INFO [rg1-rn1] Started election thread Tue Jul 16 10:40:27 CDT 2019
+2019-07-16 15:40:29.609 UTC INFO [rg1-rn1] Winning proposal: Proposal(0000016bfb71381c:9d606f5971755d4e23c2abad1aa921d1:00000002) Value: Value:mbartnit-t480$$$5006$$$rg1-rn1$$$1
+2019-07-16 15:40:29.609 UTC INFO [rg1-rn1] Winning proposal: Proposal(0000016bfb71381c:9d606f5971755d4e23c2abad1aa921d1:00000002) Value: Value:mbartnit-t480$$$5006$$$rg1-rn1$$$1
+2019-07-16 15:40:29.613 UTC INFO [rg1-rn1] Master changed to rg1-rn1
+2019-07-16 15:40:29.614 UTC INFO [rg1-rn1] Election finished. Elapsed time: 2021ms
+2019-07-16 15:40:29.614 UTC INFO [rg1-rn1] Election finished. Elapsed time: 2021ms
+2019-07-16 15:40:29.614 UTC INFO [rg1-rn1] Election thread exited. Group master: rg1-rn1(1)
+2019-07-16 15:40:29.614 UTC INFO [rg1-rn1] Election thread exited. Group master: rg1-rn1(1)
+2019-07-16 15:40:29.615 UTC INFO [rg1-rn1] node:rg1-rn1(1) state change from UNKNOWN to MASTER
+2019-07-16 15:40:29.615 UTC INFO [rg1-rn1] Feeder manager accepting requests.
+2019-07-16 15:40:29.615 UTC INFO [rg1-rn1] Feeder manager accepting requests.
+2019-07-16 15:40:29.620 UTC INFO [rg1-rn1] Joining group as master
+2019-07-16 15:40:29.620 UTC INFO [rg1-rn1] Joining group as master
+2019-07-16 18:47:21.099 UTC INFO [rg1-rn1] Started ServiceDispatcher. HostPort=mbartnit-t480:5006
+2019-07-16 18:47:21.099 UTC INFO [rg1-rn1] Started ServiceDispatcher. HostPort=mbartnit-t480:5006
+2019-07-16 18:47:21.100 UTC INFO [rg1-rn1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-16 18:47:21.100 UTC INFO [rg1-rn1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-16 18:47:21.128 UTC INFO [rg1-rn1] DTVLSN at start:2,078
+2019-07-16 18:47:21.128 UTC INFO [rg1-rn1] DTVLSN at start:2,078
+2019-07-16 18:47:21.129 UTC INFO [rg1-rn1] node:NullNode(-1) state change from DETACHED to UNKNOWN
+2019-07-16 18:47:21.143 UTC INFO [rg1-rn1] Current group size: 1
+2019-07-16 18:47:21.143 UTC INFO [rg1-rn1] Current group size: 1
+2019-07-16 18:47:21.144 UTC INFO [rg1-rn1] Existing node rg1-rn1 querying for a current master.
+2019-07-16 18:47:21.144 UTC INFO [rg1-rn1] Existing node rg1-rn1 querying for a current master.
+2019-07-16 18:47:21.155 UTC INFO [rg1-rn1] Node rg1-rn1 started
+2019-07-16 18:47:21.155 UTC INFO [rg1-rn1] Node rg1-rn1 started
+2019-07-16 18:47:21.156 UTC INFO [rg1-rn1] Election initiated; election #1
+2019-07-16 18:47:21.156 UTC INFO [rg1-rn1] Election initiated; election #1
+2019-07-16 18:47:21.158 UTC INFO [rg1-rn1] Started election thread Tue Jul 16 13:47:21 CDT 2019
+2019-07-16 18:47:21.158 UTC INFO [rg1-rn1] Started election thread Tue Jul 16 13:47:21 CDT 2019
+2019-07-16 18:47:23.170 UTC INFO [rg1-rn1] Winning proposal: Proposal(0000016bfc1c5318:a3ba79c2cbb07d5ce569995f1ce90672:00000002) Value: Value:mbartnit-t480$$$5006$$$rg1-rn1$$$1
+2019-07-16 18:47:23.170 UTC INFO [rg1-rn1] Winning proposal: Proposal(0000016bfc1c5318:a3ba79c2cbb07d5ce569995f1ce90672:00000002) Value: Value:mbartnit-t480$$$5006$$$rg1-rn1$$$1
+2019-07-16 18:47:23.173 UTC INFO [rg1-rn1] Master changed to rg1-rn1
+2019-07-16 18:47:23.173 UTC INFO [rg1-rn1] Master changed to rg1-rn1
+2019-07-16 18:47:23.174 UTC INFO [rg1-rn1] Election finished. Elapsed time: 2018ms
+2019-07-16 18:47:23.174 UTC INFO [rg1-rn1] Election finished. Elapsed time: 2018ms
+2019-07-16 18:47:23.174 UTC INFO [rg1-rn1] Election thread exited. Group master: rg1-rn1(1)
+2019-07-16 18:47:23.174 UTC INFO [rg1-rn1] Election thread exited. Group master: rg1-rn1(1)
+2019-07-16 18:47:23.175 UTC INFO [rg1-rn1] node:rg1-rn1(1) state change from UNKNOWN to MASTER
+2019-07-16 18:47:23.175 UTC INFO [rg1-rn1] Feeder manager accepting requests.
+2019-07-16 18:47:23.175 UTC INFO [rg1-rn1] Feeder manager accepting requests.
+2019-07-16 18:47:23.179 UTC INFO [rg1-rn1] Joining group as master
+2019-07-16 18:47:23.179 UTC INFO [rg1-rn1] Joining group as master
+2019-07-16 20:05:30.123 UTC INFO [rg1-rn1] Started ServiceDispatcher. HostPort=mbartnit-t480:5006
+2019-07-16 20:05:30.123 UTC INFO [rg1-rn1] Started ServiceDispatcher. HostPort=mbartnit-t480:5006
+2019-07-16 20:05:30.124 UTC INFO [rg1-rn1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-16 20:05:30.124 UTC INFO [rg1-rn1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-16 20:05:30.151 UTC INFO [rg1-rn1] DTVLSN at start:2,081
+2019-07-16 20:05:30.151 UTC INFO [rg1-rn1] DTVLSN at start:2,081
+2019-07-16 20:05:30.152 UTC INFO [rg1-rn1] node:NullNode(-1) state change from DETACHED to UNKNOWN
+2019-07-16 20:05:30.163 UTC INFO [rg1-rn1] Current group size: 1
+2019-07-16 20:05:30.163 UTC INFO [rg1-rn1] Current group size: 1
+2019-07-16 20:05:30.163 UTC INFO [rg1-rn1] Existing node rg1-rn1 querying for a current master.
+2019-07-16 20:05:30.163 UTC INFO [rg1-rn1] Existing node rg1-rn1 querying for a current master.
+2019-07-16 20:05:30.173 UTC INFO [rg1-rn1] Node rg1-rn1 started
+2019-07-16 20:05:30.173 UTC INFO [rg1-rn1] Node rg1-rn1 started
+2019-07-16 20:05:30.173 UTC INFO [rg1-rn1] Election initiated; election #1
+2019-07-16 20:05:30.173 UTC INFO [rg1-rn1] Election initiated; election #1
+2019-07-16 20:05:30.176 UTC INFO [rg1-rn1] Started election thread Tue Jul 16 15:05:30 CDT 2019
+2019-07-16 20:05:30.176 UTC INFO [rg1-rn1] Started election thread Tue Jul 16 15:05:30 CDT 2019
+2019-07-16 20:05:32.185 UTC INFO [rg1-rn1] Winning proposal: Proposal(0000016bfc63df92:d60e07ff66653f04c88b0c1ecdacb5c9:00000002) Value: Value:mbartnit-t480$$$5006$$$rg1-rn1$$$1
+2019-07-16 20:05:32.185 UTC INFO [rg1-rn1] Winning proposal: Proposal(0000016bfc63df92:d60e07ff66653f04c88b0c1ecdacb5c9:00000002) Value: Value:mbartnit-t480$$$5006$$$rg1-rn1$$$1
+2019-07-16 20:05:32.187 UTC INFO [rg1-rn1] Master changed to rg1-rn1
+2019-07-16 20:05:32.187 UTC INFO [rg1-rn1] Master changed to rg1-rn1
+2019-07-16 20:05:32.187 UTC INFO [rg1-rn1] Election finished. Elapsed time: 2014ms
+2019-07-16 20:05:32.187 UTC INFO [rg1-rn1] Election finished. Elapsed time: 2014ms
+2019-07-16 20:05:32.187 UTC INFO [rg1-rn1] Election thread exited. Group master: rg1-rn1(1)
+2019-07-16 20:05:32.187 UTC INFO [rg1-rn1] Election thread exited. Group master: rg1-rn1(1)
+2019-07-16 20:05:32.188 UTC INFO [rg1-rn1] node:rg1-rn1(1) state change from UNKNOWN to MASTER
+2019-07-16 20:05:32.188 UTC INFO [rg1-rn1] Feeder manager accepting requests.
+2019-07-16 20:05:32.188 UTC INFO [rg1-rn1] Feeder manager accepting requests.
+2019-07-16 20:05:32.194 UTC INFO [rg1-rn1] Joining group as master
+2019-07-16 20:05:32.194 UTC INFO [rg1-rn1] Joining group as master

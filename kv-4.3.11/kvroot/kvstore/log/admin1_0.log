@@ -1,0 +1,1365 @@
+2019-07-12 19:25:13.717 UTC INFO [admin1] Initializing PRIMARY Admin for store: kvstore
+2019-07-12 19:25:13.718 UTC INFO [admin1] Created new admin environment dir: .\kvroot\kvstore\sn1\admin1\env
+2019-07-12 19:25:13.718 UTC INFO [admin1] JVM Runtime maxMemory (bytes): 7598505984
+2019-07-12 19:25:13.718 UTC INFO [admin1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=32, je.rep.envUnknownStateTimeout=10 s, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=10 s, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.bindInaddrAny=true, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.checkpointer.bytesInterval=500000000, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2019-07-12 19:25:13.730 UTC INFO [admin1] DataChannelFactory: basic
+2019-07-12 19:25:13.733 UTC INFO [admin1] AdminStateTracker thread start: admin1
+2019-07-12 19:25:13.968 UTC INFO [admin1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2019-07-12 19:25:13.984 UTC INFO [admin1] JE recovery: POPULATE_EXPIRATION_PROFILE
+2019-07-12 19:25:13.991 UTC INFO [admin1] JE recovery: REMOVE_TEMP_DBS
+2019-07-12 19:25:13.999 UTC INFO [admin1] JE recovery: CKPT
+2019-07-12 19:25:14.017 UTC INFO [admin1] JE recovery: RECOVERY_FINISHED
+2019-07-12 19:25:14.040 UTC INFO [admin1] JE: Started ServiceDispatcher. HostPort=mbartnit-t480:5005
+2019-07-12 19:25:14.041 UTC INFO [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-12 19:25:14.067 UTC INFO [admin1] JE: DTVLSN at start:0
+2019-07-12 19:25:14.067 UTC INFO [admin1] JE: node:NullNode(-1) state change from DETACHED to UNKNOWN
+2019-07-12 19:25:14.078 UTC INFO [admin1] JE: Current group size: 0
+2019-07-12 19:25:14.078 UTC INFO [admin1] JE: New node 1(-1) unknown to rep group
+2019-07-12 19:25:14.078 UTC INFO [admin1] JE: Master changed to 1
+2019-07-12 19:25:14.079 UTC INFO [admin1] JE: Nascent group. 1 is master by virtue of being the first node.
+2019-07-12 19:25:14.079 UTC INFO [admin1] JE: node:1(1) state change from UNKNOWN to MASTER
+2019-07-12 19:25:14.093 UTC INFO [admin1] JE: Successfully added node:1(1) HostPort = mbartnit-t480: 5005 [ELECTABLE]
+2019-07-12 19:25:14.097 UTC INFO [admin1] JE recovery: BECOME_CONSISTENT
+2019-07-12 19:25:14.098 UTC INFO [admin1] JE: Node 1 started
+2019-07-12 19:25:14.098 UTC INFO [admin1] JE: node:NullNode(-1) state change from MASTER to UNKNOWN
+2019-07-12 19:25:14.098 UTC INFO [admin1] JE: node:1(1) state change from UNKNOWN to MASTER
+2019-07-12 19:25:14.099 UTC INFO [admin1] JE: Feeder manager accepting requests.
+2019-07-12 19:25:14.099 UTC INFO [admin1] JE: Joining group as master
+2019-07-12 19:25:14.101 UTC INFO [admin1] State change event: Fri Jul 12 14:25:14 CDT 2019, State: MASTER, Type: PRIMARY, Master: 1
+2019-07-12 19:25:14.102 UTC INFO [admin1] AdminStateTracker queue added:MASTER
+2019-07-12 19:25:14.104 UTC INFO [admin1] Initializing Admin Schema to schema version 5/NoSQL DB 12cR1.4.3.11 2017-02-17 06:52:09 UTC  Build id: 0e3ebe7568a0
+2019-07-12 19:25:14.111 UTC INFO [admin1] Initialize stores at schema version 5, readOnly=false
+2019-07-12 19:25:14.114 UTC INFO [admin1] Open: AdminCriticalEventsDatabase
+2019-07-12 19:25:14.115 UTC INFO [admin1] Open: AdminParametersDatabase
+2019-07-12 19:25:14.116 UTC INFO [admin1] Open: AdminMemoDatabase
+2019-07-12 19:25:14.118 UTC INFO [admin1] Open: AdminPlanDatabase
+2019-07-12 19:25:14.120 UTC INFO [admin1] Open: AdminSecurityDatabase
+2019-07-12 19:25:14.121 UTC INFO [admin1] Open: AdminTableDatabase
+2019-07-12 19:25:14.123 UTC INFO [admin1] Open: AdminTopologyHistoryDatabase
+2019-07-12 19:25:14.124 UTC INFO [admin1] Open: AdminTopologyCandidateDatabase
+2019-07-12 19:25:14.124 UTC INFO [admin1] Shutting down monitor collector
+2019-07-12 19:25:14.127 UTC INFO [admin1] Initializing Admin database
+2019-07-12 19:25:14.147 UTC INFO [admin1] Admin database initialized
+2019-07-12 19:25:14.153 UTC INFO [admin1] Replicated environment handle established. Cache size: 4559103590, State: MASTER
+2019-07-12 19:25:14.154 UTC INFO [admin1] Configured Admin for store: kvstore
+2019-07-12 19:25:14.187 UTC INFO [admin1] Plan 1[Deploy KVLite] approved
+2019-07-12 19:25:14.192 UTC INFO [admin1] Plan 1[Deploy KVLite]: started, 1 tasks
+2019-07-12 19:25:14.199 UTC INFO [admin1] Plan 1[Deploy KVLite]: task 1 [DeployDatacenter zone=KVLite] started
+2019-07-12 19:25:14.204 UTC INFO [admin1] Plan 1[Deploy KVLite]: task 1 [DeployDatacenter zone=KVLite] ended, state=SUCCEEDED
+2019-07-12 19:25:14.207 UTC INFO [admin1] Plan 1[Deploy KVLite]: ended, state=SUCCEEDED
+2019-07-12 19:25:14.207 UTC INFO [admin1] Waiting for Plan 1[Deploy KVLite] ended, state=SUCCEEDED
+2019-07-12 19:25:14.228 UTC INFO [admin1] Plan 2[Deploy Storage Node] approved
+2019-07-12 19:25:14.229 UTC INFO [admin1] Plan 2[Deploy Storage Node]: started, 1 tasks
+2019-07-12 19:25:14.231 UTC INFO [admin1] Plan 2[Deploy Storage Node]: task 1 [DeploySN sn1(mbartnit-t480:5000)] started
+2019-07-12 19:25:14.539 UTC INFO [admin1] Monitor collector: adding sn1 to monitoring
+2019-07-12 19:25:14.542 UTC INFO [admin1] Plan 2[Deploy Storage Node]: task 1 [DeploySN sn1(mbartnit-t480:5000)] ended, state=SUCCEEDED
+2019-07-12 19:25:14.545 UTC INFO [admin1] Plan 2[Deploy Storage Node]: ended, state=SUCCEEDED
+2019-07-12 19:25:14.545 UTC INFO [admin1] Waiting for Plan 2[Deploy Storage Node] ended, state=SUCCEEDED
+2019-07-12 19:25:14.546 UTC INFO [admin1] [sn1] Service status: RUNNING 2019-07-12 19:25:14 UTC
+2019-07-12 19:25:14.569 UTC INFO [admin1] Plan 3[Deploy Admin Service] approved
+2019-07-12 19:25:14.570 UTC INFO [admin1] Plan 3[Deploy Admin Service]: started, 2 tasks
+2019-07-12 19:25:14.576 UTC INFO [admin1] Plan 3[Deploy Admin Service]: task 1 [DeployAdmin AdminId[admin1] on SNId[sn1]] started
+2019-07-12 19:25:14.821 UTC INFO [admin1] newParameters called for Monitor
+2019-07-12 19:25:14.838 UTC INFO [admin1] Plan 3[Deploy Admin Service]: task 1 [DeployAdmin AdminId[admin1] on SNId[sn1]] ended, state=SUCCEEDED
+2019-07-12 19:25:14.840 UTC INFO [admin1] Plan 3[Deploy Admin Service]: task 2 [WaitForAdminState waits for Admin admin1 to reach RUNNING state] started
+2019-07-12 19:25:14.854 UTC INFO [admin1] Plan 3[Deploy Admin Service]: task 2 [WaitForAdminState waits for Admin admin1 to reach RUNNING state] ended, state=SUCCEEDED
+2019-07-12 19:25:14.858 UTC INFO [admin1] Plan 3[Deploy Admin Service]: ended, state=SUCCEEDED
+2019-07-12 19:25:14.859 UTC INFO [admin1] Waiting for Plan 3[Deploy Admin Service] ended, state=SUCCEEDED
+2019-07-12 19:25:14.863 UTC INFO [admin1] Created Storage Node Pool: KVLitePool
+2019-07-12 19:25:14.868 UTC INFO [admin1] Added Storage Node sn1 to pool: KVLitePool
+2019-07-12 19:25:14.883 UTC INFO [admin1] KVLite has nothing to rebalance
+2019-07-12 19:25:15.012 UTC INFO [admin1] Plan 4[Deploy KVStore] approved
+2019-07-12 19:25:15.014 UTC INFO [admin1] Plan 4[Deploy KVStore] deploying topology candidate KVLite.
+2019-07-12 19:25:15.016 UTC INFO [admin1] Current topology: store=kvstore  numPartitions=0 sequence=2
+  zn: id=zn1 name=KVLite repFactor=1 type=PRIMARY allowArbiters=false
+
+  sn=[sn1] zn:[id=zn1 name=KVLite] mbartnit-t480:5000
+
+
+2019-07-12 19:25:15.016 UTC INFO [admin1] Preview of changes to be executed by Plan 4[Deploy KVStore]:
+Topology transformation from current deployed topology to KVLite:
+Create 1 shard 
+Create 1 RN 
+Create 10 partitions 
+
+shard rg1
+  1 new RN : rg1-rn1 
+  10 new partitions 
+
+2019-07-12 19:25:15.017 UTC INFO [admin1] Target topology candidate: KVLite
+store=kvstore  numPartitions=10 sequence=14
+  zn: id=zn1 name=KVLite repFactor=1 type=PRIMARY allowArbiters=false
+
+  sn=[sn1] zn:[id=zn1 name=KVLite] mbartnit-t480:5000
+    [rg1-rn1]
+
+  shard=[rg1] num partitions=10
+    [rg1-rn1] sn=sn1
+
+2019-07-12 19:25:15.017 UTC INFO [admin1] Plan 4[Deploy KVStore]: started, 13 tasks
+2019-07-12 19:25:15.019 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 1 [UpdateDatacenterV2 zone=zn1] started
+2019-07-12 19:25:15.022 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 1 [UpdateDatacenterV2 zone=zn1] ended, state=SUCCEEDED
+2019-07-12 19:25:15.022 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 2 [DeployShard on [sn1] zn:[id=zn1 name=KVLite] mbartnit-t480:5000 ] started
+2019-07-12 19:25:15.028 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 2 [DeployShard rg1 on [sn1] zn:[id=zn1 name=KVLite] mbartnit-t480:5000 ] ended, state=SUCCEEDED
+2019-07-12 19:25:15.029 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 3 [DeployNewRN on sn1(mbartnit-t480:5000)] started
+2019-07-12 19:25:15.033 UTC INFO [admin1] Creating rg1-rn1 on sn1 haPort=mbartnit-t480:5,006 helpers=mbartnit-t480:5006 storage directory path=null directory size=0 heapMB=unspecified cachePercent=70 cacheSize=unspecified -XX:ParallelGCThreads=8
+2019-07-12 19:25:16.304 UTC INFO [admin1] Monitor collector: adding rg1-rn1 to monitoring
+2019-07-12 19:25:16.308 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 3 [DeployNewRN rg1-rn1 on sn1(mbartnit-t480:5000)] ended, state=SUCCEEDED
+2019-07-12 19:25:16.308 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 4 [UpdateNthRNHelperHost] started
+2019-07-12 19:25:16.312 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 4 [UpdateNthRNHelperHost] ended, state=SUCCEEDED
+2019-07-12 19:25:16.312 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 5 [NewNthRNParameters] started
+2019-07-12 19:25:16.314 UTC INFO [admin1] [rg1-rn1] Service status: RUNNING 2019-07-12 19:25:15 UTC
+2019-07-12 19:25:16.326 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 5 [NewNthRNParameters] ended, state=SUCCEEDED
+2019-07-12 19:25:16.327 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 6 [BroadcastTopo] started
+2019-07-12 19:25:16.327 UTC INFO [admin1] Broadcasting topology seq# 4, changes for BroadcastTopo
+2019-07-12 19:25:16.332 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 6 [BroadcastTopo] ended, state=SUCCEEDED
+2019-07-12 19:25:16.332 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 7 [BroadcastMetadata] started
+2019-07-12 19:25:16.334 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 7 [BroadcastMetadata] ended, state=SUCCEEDED
+2019-07-12 19:25:16.334 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 8 [AddPartitions totalPartitions = 10] started
+2019-07-12 19:25:16.347 UTC INFO [admin1] Broadcasting topology seq# 14, changes for Initializing new partitions
+2019-07-12 19:25:16.364 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 8 [AddPartitions totalPartitions = 10] ended, state=SUCCEEDED
+2019-07-12 19:25:16.364 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 9 [CreateSystemTableTask create table SYS$IndexStatsLease] started
+2019-07-12 19:25:16.534 UTC INFO [admin1] Broadcasting TableMetadata[1, 1, 1] for CreateSystemTableTask create table SYS$IndexStatsLease
+2019-07-12 19:25:16.549 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 1, for CreateSystemTableTask create table SYS$IndexStatsLease, attempts=1
+2019-07-12 19:25:16.552 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 9 [CreateSystemTableTask create table SYS$IndexStatsLease] ended, state=SUCCEEDED
+2019-07-12 19:25:16.553 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 10 [CreateSystemTableTask create table SYS$PartitionStatsLease] started
+2019-07-12 19:25:16.563 UTC INFO [admin1] Broadcasting TableMetadata[2, 2, 2] for CreateSystemTableTask create table SYS$PartitionStatsLease
+2019-07-12 19:25:16.582 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 2, for CreateSystemTableTask create table SYS$PartitionStatsLease, attempts=1
+2019-07-12 19:25:16.586 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 10 [CreateSystemTableTask create table SYS$PartitionStatsLease] ended, state=SUCCEEDED
+2019-07-12 19:25:16.588 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 11 [CreateSystemTableTask create table SYS$TableStatsPartition] started
+2019-07-12 19:25:16.598 UTC INFO [admin1] Broadcasting TableMetadata[3, 3, 3] for CreateSystemTableTask create table SYS$TableStatsPartition
+2019-07-12 19:25:16.608 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 3, for CreateSystemTableTask create table SYS$TableStatsPartition, attempts=1
+2019-07-12 19:25:16.611 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 11 [CreateSystemTableTask create table SYS$TableStatsPartition] ended, state=SUCCEEDED
+2019-07-12 19:25:16.611 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 12 [CreateSystemTableTask create table SYS$TableStatsIndex] started
+2019-07-12 19:25:16.621 UTC INFO [admin1] Broadcasting TableMetadata[4, 4, 4] for CreateSystemTableTask create table SYS$TableStatsIndex
+2019-07-12 19:25:16.630 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 4, for CreateSystemTableTask create table SYS$TableStatsIndex, attempts=1
+2019-07-12 19:25:16.634 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 12 [CreateSystemTableTask create table SYS$TableStatsIndex] ended, state=SUCCEEDED
+2019-07-12 19:25:16.634 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 13 [BroadcastTopo] started
+2019-07-12 19:25:16.635 UTC INFO [admin1] Broadcasting topology seq# 14, changes for BroadcastTopo
+2019-07-12 19:25:16.639 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 13 [BroadcastTopo] ended, state=SUCCEEDED
+2019-07-12 19:25:16.641 UTC INFO [admin1] Plan 4[Deploy KVStore]: ended, state=SUCCEEDED
+2019-07-12 19:25:16.642 UTC INFO [admin1] Waiting for Plan 4[Deploy KVStore] ended, state=SUCCEEDED
+2019-07-13 01:17:33.414 UTC INFO [admin1] JE: ServiceDispatcher IP changed, from 10.0.75.1 to 10.43.26.47
+2019-07-13 01:17:34.453 UTC INFO [admin1] JE: ServiceDispatcher HostPort=mbartnit-t480:5005 bind failed despite waiting for 0ms
+2019-07-13 01:17:34.460 UTC SEVERE [admin1] JE: Server socket exception: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.bindSocket(ServiceDispatcher.java:232)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.rebindSocket(ServiceDispatcher.java:848)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.run(ServiceDispatcher.java:757)
+
+2019-07-13 01:17:34.463 UTC SEVERE [admin1] JE: 1(1):.\kvroot\kvstore\sn1\admin1\env:ServiceDispatcher-mbartnit-t480:5005 exited unexpectedly with exception com.sleepycat.je.EnvironmentFailureException: (JE 7.3.6) java.net.BindException: Address already in use: bind UNEXPECTED_EXCEPTION: Unexpected internal Exception, may have side effects.com.sleepycat.je.EnvironmentFailureException: (JE 7.3.6) java.net.BindException: Address already in use: bind UNEXPECTED_EXCEPTION: Unexpected internal Exception, may have side effects.
+	at com.sleepycat.je.EnvironmentFailureException.unexpectedException(EnvironmentFailureException.java:338)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.run(ServiceDispatcher.java:771)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.bindSocket(ServiceDispatcher.java:232)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.rebindSocket(ServiceDispatcher.java:848)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.run(ServiceDispatcher.java:757)
+
+2019-07-13 01:17:34.464 UTC SEVERE [admin1] Admin shutting down for fault in thread EventRecorder
+com.sleepycat.je.EnvironmentFailureException: (JE 7.3.6) Environment must be closed, caused by: com.sleepycat.je.EnvironmentFailureException: Environment invalid because of previous exception: (JE 7.3.6) 1(1):.\kvroot\kvstore\sn1\admin1\env com.sleepycat.je.EnvironmentFailureException: (JE 7.3.6) java.net.BindException: Address already in use: bind UNEXPECTED_EXCEPTION: Unexpected internal Exception, may have side effects. UNCAUGHT_EXCEPTION: Uncaught Exception in internal thread, unable to continue. Environment is invalid and must be closed.
+	at com.sleepycat.je.EnvironmentFailureException.wrapSelf(EnvironmentFailureException.java:228)
+	at com.sleepycat.je.dbi.EnvironmentImpl.checkIfInvalid(EnvironmentImpl.java:1766)
+	at com.sleepycat.je.dbi.EnvironmentImpl.checkOpen(EnvironmentImpl.java:1775)
+	at com.sleepycat.je.Environment.checkOpen(Environment.java:2473)
+	at com.sleepycat.je.Environment.beginTransactionInternal(Environment.java:1393)
+	at com.sleepycat.je.Environment.beginTransaction(Environment.java:1367)
+	at oracle.kv.impl.admin.Admin$RunTransaction.run(Admin.java:2993)
+	at oracle.kv.impl.admin.Admin.storeEvents(Admin.java:1986)
+	at oracle.kv.impl.admin.criticalevent.EventRecorder.storeLogEvents(EventRecorder.java:280)
+	at oracle.kv.impl.admin.criticalevent.EventRecorder.eventRecorderWorker(EventRecorder.java:241)
+	at oracle.kv.impl.admin.criticalevent.EventRecorder.access$000(EventRecorder.java:43)
+	at oracle.kv.impl.admin.criticalevent.EventRecorder$1.run(EventRecorder.java:97)
+Caused by: com.sleepycat.je.EnvironmentFailureException: Environment invalid because of previous exception: (JE 7.3.6) 1(1):.\kvroot\kvstore\sn1\admin1\env com.sleepycat.je.EnvironmentFailureException: (JE 7.3.6) java.net.BindException: Address already in use: bind UNEXPECTED_EXCEPTION: Unexpected internal Exception, may have side effects. UNCAUGHT_EXCEPTION: Uncaught Exception in internal thread, unable to continue. Environment is invalid and must be closed.
+	at com.sleepycat.je.utilint.StoppableThread.handleUncaughtException(StoppableThread.java:205)
+	at com.sleepycat.je.utilint.StoppableThread$UncaughtHandler.uncaughtException(StoppableThread.java:236)
+	at java.lang.Thread.dispatchUncaughtException(Unknown Source)
+Caused by: com.sleepycat.je.EnvironmentFailureException: (JE 7.3.6) java.net.BindException: Address already in use: bind UNEXPECTED_EXCEPTION: Unexpected internal Exception, may have side effects.
+	at com.sleepycat.je.EnvironmentFailureException.unexpectedException(EnvironmentFailureException.java:338)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.run(ServiceDispatcher.java:771)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.bindSocket(ServiceDispatcher.java:232)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.rebindSocket(ServiceDispatcher.java:848)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.run(ServiceDispatcher.java:757)
+2019-07-13 01:17:34.464 UTC INFO [admin1] JE: Releasing commit block latch
+2019-07-13 01:17:35.016 UTC INFO [admin1] JE: Feeder manager forced shutdown.
+2019-07-13 01:17:35.017 UTC INFO [admin1] JE: Feeder manager exited. CurrentTxnEnd VLSN: 162
+2019-07-13 01:17:35.017 UTC INFO [admin1] JE: node:NullNode(-1) state change from MASTER to UNKNOWN
+2019-07-13 01:17:35.018 UTC INFO [admin1] State change event: Fri Jul 12 20:17:35 CDT 2019, State: UNKNOWN, Type: PRIMARY, Master: none
+2019-07-13 01:17:35.018 UTC INFO [admin1] AdminStateTracker queue added:UNKNOWN
+2019-07-13 01:17:35.018 UTC INFO [admin1] RuntimeException while entering replica mode, (JE 7.3.6) Environment must be closed, caused by: com.sleepycat.je.EnvironmentFailureException: Environment invalid because of previous exception: (JE 7.3.6) 1(1):.\kvroot\kvstore\sn1\admin1\env com.sleepycat.je.EnvironmentFailureException: (JE 7.3.6) java.net.BindException: Address already in use: bind UNEXPECTED_EXCEPTION: Unexpected internal Exception, may have side effects. UNCAUGHT_EXCEPTION: Uncaught Exception in internal thread, unable to continue. Environment is invalid and must be closed.
+2019-07-13 01:17:35.018 UTC INFO [admin1] JE: RepNode main thread shutting down.
+2019-07-13 01:17:35.020 UTC INFO [admin1] JE: RepNode shutdown exception:
+Environment invalid because of previous exception: (JE 7.3.6) 1(1):.\kvroot\kvstore\sn1\admin1\env com.sleepycat.je.EnvironmentFailureException: (JE 7.3.6) java.net.BindException: Address already in use: bind UNEXPECTED_EXCEPTION: Unexpected internal Exception, may have side effects. UNCAUGHT_EXCEPTION: Uncaught Exception in internal thread, unable to continue. Environment is invalid and must be closed.1(1)[UNKNOWN] 
+No feeders.
+GlobalCBVLSN=-1
+Group info [kvstoreAdmin] 6dfe56ad-8b44-41d2-ab05-7a5a48681afe
+ Format version: 3
+ Change version: 1
+ Max persist rep node ID: 1
+ Min JE version: 6.0.1
+ Node:1 mbartnit-t480:5005 (is member) changeVersion:1 LocalCBVLSN:-1 at:Fri Jul 12 14:25:14 CDT 2019 jeVersion:7.3.6
+vlsnRange=first=1 last=162 sync=162 txnEnd=162
+lastReplayedTxn=null lastReplayedVLSN=-1 numActiveReplayTxns=0
+
+2019-07-13 01:17:35.020 UTC INFO [admin1] JE: Shutting down node 1(1) DTVLSN:162
+2019-07-13 01:17:35.020 UTC INFO [admin1] JE: Elections shutdown initiated
+2019-07-13 01:17:35.021 UTC INFO [admin1] JE: Acceptor Thread 1 soft shutdown initiated.
+2019-07-13 01:17:35.021 UTC INFO [admin1] JE: Learner Thread 1 soft shutdown initiated.
+2019-07-13 01:17:35.022 UTC INFO [admin1] JE: Elections shutdown completed
+2019-07-13 01:17:35.022 UTC INFO [admin1] JE: RepNode main thread: UNKNOWN 1(1) exited.
+2019-07-13 01:17:35.022 UTC INFO [admin1] JE: Feeder Manager node: 1 soft shutdown initiated.
+2019-07-13 01:17:35.023 UTC INFO [admin1] JE: ServiceDispatcher shutdown starting. HostPort=mbartnit-t480:5005 Registered services: []
+2019-07-13 01:17:35.023 UTC INFO [admin1] JE: ServiceDispatcher-mbartnit-t480:5005 soft shutdown initiated.
+2019-07-13 01:17:35.024 UTC INFO [admin1] JE: ServiceDispatcher shutdown completed. HostPort=mbartnit-t480:5005
+2019-07-13 01:17:35.024 UTC INFO [admin1] JE: 1(1) shutdown completed.
+2019-07-13 01:17:35.024 UTC INFO [admin1] JE: node:NullNode(-1) state change from UNKNOWN to DETACHED
+2019-07-13 01:17:35.025 UTC INFO [admin1] State change event: Fri Jul 12 20:17:35 CDT 2019, State: DETACHED, Type: PRIMARY, Master: none
+2019-07-13 01:17:35.025 UTC INFO [admin1] AdminStateTracker queue added:DETACHED
+2019-07-13 01:17:35.025 UTC INFO [admin1] AdminStateTracker thread exited: admin1
+2019-07-13 01:17:35.025 UTC SEVERE [admin1] Admin shutting down for fault in thread AdminStateTracker
+com.sleepycat.je.EnvironmentFailureException: Environment invalid because of previous exception: (JE 7.3.6) 1(1):.\kvroot\kvstore\sn1\admin1\env com.sleepycat.je.EnvironmentFailureException: (JE 7.3.6) java.net.BindException: Address already in use: bind UNEXPECTED_EXCEPTION: Unexpected internal Exception, may have side effects. UNCAUGHT_EXCEPTION: Uncaught Exception in internal thread, unable to continue. Environment is invalid and must be closed. Originally thrown by HA thread: UNKNOWN 1(1)
+	at com.sleepycat.je.utilint.StoppableThread.handleUncaughtException(StoppableThread.java:205)
+	at com.sleepycat.je.utilint.StoppableThread$UncaughtHandler.uncaughtException(StoppableThread.java:236)
+	at java.lang.Thread.dispatchUncaughtException(Unknown Source)
+Caused by: com.sleepycat.je.EnvironmentFailureException: (JE 7.3.6) java.net.BindException: Address already in use: bind UNEXPECTED_EXCEPTION: Unexpected internal Exception, may have side effects.
+	at com.sleepycat.je.EnvironmentFailureException.unexpectedException(EnvironmentFailureException.java:338)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.run(ServiceDispatcher.java:771)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.bindSocket(ServiceDispatcher.java:232)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.rebindSocket(ServiceDispatcher.java:848)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.run(ServiceDispatcher.java:757)
+2019-07-15 14:05:13.454 UTC INFO [admin1] [admin1] sn1: Service status: UNREACHABLE 2019-07-15 14:05:13 UTC
+2019-07-15 14:50:00.836 UTC INFO [admin1] JVM java.net.InetAddress properties: cache.ttl=-1 cache.negative.ttl=-1
+2019-07-15 14:50:00.843 UTC INFO [admin1] Starting AdminService
+2019-07-15 14:50:00.954 UTC INFO [admin1] Initializing PRIMARY Admin for store: kvstore
+2019-07-15 14:50:00.955 UTC INFO [admin1] JVM Runtime maxMemory (bytes): 7598505984
+2019-07-15 14:50:00.956 UTC INFO [admin1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=32, je.rep.envUnknownStateTimeout=10 s, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=10 s, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.bindInaddrAny=true, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.checkpointer.bytesInterval=500000000, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2019-07-15 14:50:00.971 UTC INFO [admin1] DataChannelFactory: basic
+2019-07-15 14:50:00.974 UTC INFO [admin1] AdminStateTracker thread start: admin1
+2019-07-15 14:50:01.286 UTC INFO [admin1] JE recovery: FIND_END_OF_LOG
+2019-07-15 14:50:01.335 UTC INFO [admin1] JE recovery: FIND_LAST_CKPT
+2019-07-15 14:50:01.339 UTC INFO [admin1] JE recovery: READ_DBMAP_INFO
+2019-07-15 14:50:01.356 UTC INFO [admin1] JE recovery: REDO_DBMAP_INFO
+2019-07-15 14:50:01.358 UTC INFO [admin1] JE recovery: UNDO_DBMAP_RECORDS
+2019-07-15 14:50:01.361 UTC INFO [admin1] JE recovery: REDO_DBMAP_RECORDS
+2019-07-15 14:50:01.367 UTC INFO [admin1] JE recovery: READ_DATA_INFO
+2019-07-15 14:50:01.377 UTC INFO [admin1] JE recovery: REDO_DATA_INFO
+2019-07-15 14:50:01.382 UTC INFO [admin1] JE recovery: UNDO_DATA_RECORDS
+2019-07-15 14:50:01.385 UTC INFO [admin1] JE recovery: REDO_DATA_RECORDS
+2019-07-15 14:50:01.400 UTC INFO [admin1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2019-07-15 14:50:01.407 UTC INFO [admin1] JE recovery: POPULATE_EXPIRATION_PROFILE
+2019-07-15 14:50:01.435 UTC INFO [admin1] JE recovery: REMOVE_TEMP_DBS
+2019-07-15 14:50:01.449 UTC INFO [admin1] JE recovery: CKPT
+2019-07-15 14:50:01.470 UTC INFO [admin1] JE recovery: RECOVERY_FINISHED
+2019-07-15 14:50:01.506 UTC INFO [admin1] JE: Started ServiceDispatcher. HostPort=mbartnit-t480:5005
+2019-07-15 14:50:01.506 UTC INFO [admin1] JE: Started ServiceDispatcher. HostPort=mbartnit-t480:5005
+2019-07-15 14:50:01.506 UTC INFO [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-15 14:50:01.507 UTC INFO [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-15 14:50:01.538 UTC INFO [admin1] JE: DTVLSN at start:159
+2019-07-15 14:50:01.538 UTC INFO [admin1] JE: DTVLSN at start:159
+2019-07-15 14:50:01.538 UTC INFO [admin1] JE: node:NullNode(-1) state change from DETACHED to UNKNOWN
+2019-07-15 14:50:01.555 UTC INFO [admin1] JE: Current group size: 1
+2019-07-15 14:50:01.556 UTC INFO [admin1] JE: Current group size: 1
+2019-07-15 14:50:01.556 UTC INFO [admin1] JE: Existing node 1 querying for a current master.
+2019-07-15 14:50:01.556 UTC INFO [admin1] JE: Existing node 1 querying for a current master.
+2019-07-15 14:50:01.572 UTC INFO [admin1] JE recovery: BECOME_CONSISTENT
+2019-07-15 14:50:01.572 UTC INFO [admin1] JE: Node 1 started
+2019-07-15 14:50:01.572 UTC INFO [admin1] JE: Node 1 started
+2019-07-15 14:50:01.572 UTC INFO [admin1] JE: Election initiated; election #1
+2019-07-15 14:50:01.574 UTC INFO [admin1] JE: Started election thread Mon Jul 15 09:50:01 CDT 2019
+2019-07-15 14:50:03.584 UTC INFO [admin1] JE: Winning proposal: Proposal(0000016bf61cafb6:1bdc7e7285b50baede743c5afd4fb748:00000002) Value: Value:mbartnit-t480$$$5005$$$1$$$1
+2019-07-15 14:50:03.584 UTC INFO [admin1] JE: Winning proposal: Proposal(0000016bf61cafb6:1bdc7e7285b50baede743c5afd4fb748:00000002) Value: Value:mbartnit-t480$$$5005$$$1$$$1
+2019-07-15 14:50:03.587 UTC INFO [admin1] JE: Master changed to 1
+2019-07-15 14:50:03.588 UTC INFO [admin1] JE: Master changed to 1
+2019-07-15 14:50:03.588 UTC INFO [admin1] JE: Election finished. Elapsed time: 2016ms
+2019-07-15 14:50:03.588 UTC INFO [admin1] JE: Election thread exited. Group master: 1(1)
+2019-07-15 14:50:03.589 UTC INFO [admin1] JE: node:1(1) state change from UNKNOWN to MASTER
+2019-07-15 14:50:03.589 UTC INFO [admin1] JE: Feeder manager accepting requests.
+2019-07-15 14:50:03.589 UTC INFO [admin1] JE: Feeder manager accepting requests.
+2019-07-15 14:50:03.594 UTC INFO [admin1] JE: Joining group as master
+2019-07-15 14:50:03.594 UTC INFO [admin1] JE: Joining group as master
+2019-07-15 14:50:03.598 UTC INFO [admin1] State change event: Mon Jul 15 09:50:03 CDT 2019, State: MASTER, Type: PRIMARY, Master: 1
+2019-07-15 14:50:03.598 UTC INFO [admin1] AdminStateTracker queue added:MASTER
+2019-07-15 14:50:03.603 UTC INFO [admin1] Initialize stores at schema version 5, readOnly=false
+2019-07-15 14:50:03.635 UTC INFO [admin1] Open: AdminCriticalEventsDatabase
+2019-07-15 14:50:03.636 UTC INFO [admin1] Open: AdminParametersDatabase
+2019-07-15 14:50:03.637 UTC INFO [admin1] Open: AdminMemoDatabase
+2019-07-15 14:50:03.640 UTC INFO [admin1] Open: AdminPlanDatabase
+2019-07-15 14:50:03.642 UTC INFO [admin1] Open: AdminSecurityDatabase
+2019-07-15 14:50:03.644 UTC INFO [admin1] Open: AdminTableDatabase
+2019-07-15 14:50:03.647 UTC INFO [admin1] Open: AdminTopologyHistoryDatabase
+2019-07-15 14:50:03.648 UTC INFO [admin1] Open: AdminTopologyCandidateDatabase
+2019-07-15 14:50:03.649 UTC INFO [admin1] Shutting down monitor collector
+2019-07-15 14:50:03.683 UTC INFO [admin1] Using existing Admin database
+2019-07-15 14:50:03.690 UTC INFO [admin1] Monitor collector: adding sn1 to monitoring
+2019-07-15 14:50:03.693 UTC INFO [admin1] Monitor collector: adding rg1-rn1 to monitoring
+2019-07-15 14:50:03.712 UTC INFO [admin1] [sn1] Service status: RUNNING 2019-07-15 14:50:00 UTC
+2019-07-15 14:50:03.721 UTC INFO [admin1] [rg1-rn1] Service status: STARTING 2019-07-15 14:50:03 UTC
+2019-07-15 14:50:03.787 UTC INFO [admin1] Replicated environment handle established. Cache size: 4559103590, State: MASTER
+2019-07-15 14:50:03.788 UTC INFO [admin1] Starting commandService on rmi://mbartnit-t480:5000/commandService
+2019-07-15 14:50:03.831 UTC INFO [admin1] Successfully created a secure proxy for commandService
+2019-07-15 14:50:03.871 UTC INFO [admin1] Starting admin:CLIENT_ADMIN on rmi://mbartnit-t480:5000/admin:CLIENT_ADMIN
+2019-07-15 14:50:03.875 UTC INFO [admin1] Successfully created a secure proxy for admin:CLIENT_ADMIN
+2019-07-15 14:50:03.881 UTC INFO [admin1] Started AdminService
+2019-07-15 14:50:23.725 UTC INFO [admin1] [rg1-rn1] Service status: RUNNING 2019-07-15 14:50:03 UTC
+2019-07-15 17:46:32.608 UTC INFO [admin1] Plan 5[CreateTable:players] approved
+2019-07-15 17:46:32.614 UTC INFO [admin1] Plan 5[CreateTable:players]: started, 1 tasks
+2019-07-15 17:46:32.617 UTC INFO [admin1] Plan 5[CreateTable:players]: task 1 [AddTable:players] started
+2019-07-15 17:46:32.625 UTC INFO [admin1] About to broadcast TableMetadata[5, 5, 5]
+2019-07-15 17:46:32.626 UTC INFO [admin1] Broadcasting TableMetadata[5, 5, 5] for AddTable:players
+2019-07-15 17:46:32.644 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 5, for AddTable:players, attempts=1
+2019-07-15 17:46:32.646 UTC INFO [admin1] Plan 5[CreateTable:players]: task 1 [AddTable:players] ended, state=SUCCEEDED
+2019-07-15 17:46:32.649 UTC INFO [admin1] Plan 5[CreateTable:players]: ended, state=SUCCEEDED
+2019-07-15 17:59:04.327 UTC INFO [admin1] JVM java.net.InetAddress properties: cache.ttl=-1 cache.negative.ttl=-1
+2019-07-15 17:59:04.332 UTC INFO [admin1] Starting AdminService
+2019-07-15 17:59:04.407 UTC INFO [admin1] Initializing PRIMARY Admin for store: kvstore
+2019-07-15 17:59:04.408 UTC INFO [admin1] JVM Runtime maxMemory (bytes): 7598505984
+2019-07-15 17:59:04.409 UTC INFO [admin1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=32, je.rep.envUnknownStateTimeout=10 s, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=10 s, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.bindInaddrAny=true, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.checkpointer.bytesInterval=500000000, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2019-07-15 17:59:04.427 UTC INFO [admin1] DataChannelFactory: basic
+2019-07-15 17:59:04.428 UTC INFO [admin1] AdminStateTracker thread start: admin1
+2019-07-15 17:59:04.665 UTC INFO [admin1] JE recovery: FIND_END_OF_LOG
+2019-07-15 17:59:04.704 UTC INFO [admin1] JE recovery: FIND_LAST_CKPT
+2019-07-15 17:59:04.709 UTC INFO [admin1] JE recovery: READ_DBMAP_INFO
+2019-07-15 17:59:04.724 UTC INFO [admin1] JE recovery: REDO_DBMAP_INFO
+2019-07-15 17:59:04.726 UTC INFO [admin1] JE recovery: UNDO_DBMAP_RECORDS
+2019-07-15 17:59:04.729 UTC INFO [admin1] JE recovery: REDO_DBMAP_RECORDS
+2019-07-15 17:59:04.733 UTC INFO [admin1] JE recovery: READ_DATA_INFO
+2019-07-15 17:59:04.743 UTC INFO [admin1] JE recovery: REDO_DATA_INFO
+2019-07-15 17:59:04.747 UTC INFO [admin1] JE recovery: UNDO_DATA_RECORDS
+2019-07-15 17:59:04.748 UTC INFO [admin1] JE recovery: REDO_DATA_RECORDS
+2019-07-15 17:59:04.767 UTC INFO [admin1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2019-07-15 17:59:04.773 UTC INFO [admin1] JE recovery: POPULATE_EXPIRATION_PROFILE
+2019-07-15 17:59:04.786 UTC INFO [admin1] JE recovery: REMOVE_TEMP_DBS
+2019-07-15 17:59:04.807 UTC INFO [admin1] JE recovery: CKPT
+2019-07-15 17:59:04.821 UTC INFO [admin1] JE recovery: RECOVERY_FINISHED
+2019-07-15 17:59:04.851 UTC INFO [admin1] JE: Started ServiceDispatcher. HostPort=mbartnit-t480:5005
+2019-07-15 17:59:04.851 UTC INFO [admin1] JE: Started ServiceDispatcher. HostPort=mbartnit-t480:5005
+2019-07-15 17:59:04.851 UTC INFO [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-15 17:59:04.851 UTC INFO [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-15 17:59:04.879 UTC INFO [admin1] JE: DTVLSN at start:193
+2019-07-15 17:59:04.880 UTC INFO [admin1] JE: node:NullNode(-1) state change from DETACHED to UNKNOWN
+2019-07-15 17:59:04.891 UTC INFO [admin1] JE: Current group size: 1
+2019-07-15 17:59:04.891 UTC INFO [admin1] JE: Existing node 1 querying for a current master.
+2019-07-15 17:59:04.902 UTC INFO [admin1] JE recovery: BECOME_CONSISTENT
+2019-07-15 17:59:04.902 UTC INFO [admin1] JE: Node 1 started
+2019-07-15 17:59:04.902 UTC INFO [admin1] JE: Election initiated; election #1
+2019-07-15 17:59:04.904 UTC INFO [admin1] JE: Started election thread Mon Jul 15 12:59:04 CDT 2019
+2019-07-15 17:59:06.915 UTC INFO [admin1] JE: Winning proposal: Proposal(0000016bf6c9c59a:38b054c625f178e50176f4fd743ea1f0:00000002) Value: Value:mbartnit-t480$$$5005$$$1$$$1
+2019-07-15 17:59:06.915 UTC INFO [admin1] JE: Winning proposal: Proposal(0000016bf6c9c59a:38b054c625f178e50176f4fd743ea1f0:00000002) Value: Value:mbartnit-t480$$$5005$$$1$$$1
+2019-07-15 17:59:06.919 UTC INFO [admin1] JE: Master changed to 1
+2019-07-15 17:59:06.919 UTC INFO [admin1] JE: Master changed to 1
+2019-07-15 17:59:06.920 UTC INFO [admin1] JE: Election finished. Elapsed time: 2018ms
+2019-07-15 17:59:06.920 UTC INFO [admin1] JE: Election thread exited. Group master: 1(1)
+2019-07-15 17:59:06.920 UTC INFO [admin1] JE: node:1(1) state change from UNKNOWN to MASTER
+2019-07-15 17:59:06.921 UTC INFO [admin1] JE: Feeder manager accepting requests.
+2019-07-15 17:59:06.921 UTC INFO [admin1] JE: Feeder manager accepting requests.
+2019-07-15 17:59:06.926 UTC INFO [admin1] JE: Joining group as master
+2019-07-15 17:59:06.929 UTC INFO [admin1] State change event: Mon Jul 15 12:59:06 CDT 2019, State: MASTER, Type: PRIMARY, Master: 1
+2019-07-15 17:59:06.929 UTC INFO [admin1] AdminStateTracker queue added:MASTER
+2019-07-15 17:59:06.934 UTC INFO [admin1] Initialize stores at schema version 5, readOnly=false
+2019-07-15 17:59:06.963 UTC INFO [admin1] Open: AdminCriticalEventsDatabase
+2019-07-15 17:59:06.965 UTC INFO [admin1] Open: AdminParametersDatabase
+2019-07-15 17:59:06.966 UTC INFO [admin1] Open: AdminMemoDatabase
+2019-07-15 17:59:06.968 UTC INFO [admin1] Open: AdminPlanDatabase
+2019-07-15 17:59:06.969 UTC INFO [admin1] Open: AdminSecurityDatabase
+2019-07-15 17:59:06.971 UTC INFO [admin1] Open: AdminTableDatabase
+2019-07-15 17:59:06.973 UTC INFO [admin1] Open: AdminTopologyHistoryDatabase
+2019-07-15 17:59:06.974 UTC INFO [admin1] Open: AdminTopologyCandidateDatabase
+2019-07-15 17:59:06.974 UTC INFO [admin1] Shutting down monitor collector
+2019-07-15 17:59:07.010 UTC INFO [admin1] Using existing Admin database
+2019-07-15 17:59:07.016 UTC INFO [admin1] Monitor collector: adding sn1 to monitoring
+2019-07-15 17:59:07.018 UTC INFO [admin1] Monitor collector: adding rg1-rn1 to monitoring
+2019-07-15 17:59:07.035 UTC INFO [admin1] [sn1] Service status: RUNNING 2019-07-15 17:59:04 UTC
+2019-07-15 17:59:07.043 UTC INFO [admin1] [rg1-rn1] Service status: STARTING 2019-07-15 17:59:07 UTC
+2019-07-15 17:59:07.094 UTC INFO [admin1] Replicated environment handle established. Cache size: 4559103590, State: MASTER
+2019-07-15 17:59:07.094 UTC INFO [admin1] Starting commandService on rmi://mbartnit-t480:5000/commandService
+2019-07-15 17:59:07.137 UTC INFO [admin1] Successfully created a secure proxy for commandService
+2019-07-15 17:59:07.180 UTC INFO [admin1] Starting admin:CLIENT_ADMIN on rmi://mbartnit-t480:5000/admin:CLIENT_ADMIN
+2019-07-15 17:59:07.181 UTC INFO [admin1] Successfully created a secure proxy for admin:CLIENT_ADMIN
+2019-07-15 17:59:07.186 UTC INFO [admin1] Started AdminService
+2019-07-15 17:59:27.042 UTC INFO [admin1] [rg1-rn1] Service status: RUNNING 2019-07-15 17:59:07 UTC
+2019-07-15 19:02:12.043 UTC INFO [admin1] JVM java.net.InetAddress properties: cache.ttl=-1 cache.negative.ttl=-1
+2019-07-15 19:02:12.049 UTC INFO [admin1] Starting AdminService
+2019-07-15 19:02:12.136 UTC INFO [admin1] Initializing PRIMARY Admin for store: kvstore
+2019-07-15 19:02:12.141 UTC INFO [admin1] JVM Runtime maxMemory (bytes): 7598505984
+2019-07-15 19:02:12.142 UTC INFO [admin1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=32, je.rep.envUnknownStateTimeout=10 s, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=10 s, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.bindInaddrAny=true, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.checkpointer.bytesInterval=500000000, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2019-07-15 19:02:12.158 UTC INFO [admin1] DataChannelFactory: basic
+2019-07-15 19:02:12.160 UTC INFO [admin1] AdminStateTracker thread start: admin1
+2019-07-15 19:02:12.377 UTC INFO [admin1] JE recovery: FIND_END_OF_LOG
+2019-07-15 19:02:12.414 UTC INFO [admin1] JE recovery: FIND_LAST_CKPT
+2019-07-15 19:02:12.418 UTC INFO [admin1] JE recovery: READ_DBMAP_INFO
+2019-07-15 19:02:12.429 UTC INFO [admin1] JE recovery: REDO_DBMAP_INFO
+2019-07-15 19:02:12.431 UTC INFO [admin1] JE recovery: UNDO_DBMAP_RECORDS
+2019-07-15 19:02:12.434 UTC INFO [admin1] JE recovery: REDO_DBMAP_RECORDS
+2019-07-15 19:02:12.440 UTC INFO [admin1] JE recovery: READ_DATA_INFO
+2019-07-15 19:02:12.449 UTC INFO [admin1] JE recovery: REDO_DATA_INFO
+2019-07-15 19:02:12.452 UTC INFO [admin1] JE recovery: UNDO_DATA_RECORDS
+2019-07-15 19:02:12.454 UTC INFO [admin1] JE recovery: REDO_DATA_RECORDS
+2019-07-15 19:02:12.459 UTC INFO [admin1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2019-07-15 19:02:12.464 UTC INFO [admin1] JE recovery: POPULATE_EXPIRATION_PROFILE
+2019-07-15 19:02:12.492 UTC INFO [admin1] JE recovery: REMOVE_TEMP_DBS
+2019-07-15 19:02:12.514 UTC INFO [admin1] JE recovery: CKPT
+2019-07-15 19:02:12.528 UTC INFO [admin1] JE recovery: RECOVERY_FINISHED
+2019-07-15 19:02:12.557 UTC INFO [admin1] JE: Started ServiceDispatcher. HostPort=mbartnit-t480:5005
+2019-07-15 19:02:12.557 UTC INFO [admin1] JE: Started ServiceDispatcher. HostPort=mbartnit-t480:5005
+2019-07-15 19:02:12.558 UTC INFO [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-15 19:02:12.558 UTC INFO [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-15 19:02:12.586 UTC INFO [admin1] JE: DTVLSN at start:221
+2019-07-15 19:02:12.586 UTC INFO [admin1] JE: DTVLSN at start:221
+2019-07-15 19:02:12.587 UTC INFO [admin1] JE: node:NullNode(-1) state change from DETACHED to UNKNOWN
+2019-07-15 19:02:12.598 UTC INFO [admin1] JE: Current group size: 1
+2019-07-15 19:02:12.598 UTC INFO [admin1] JE: Current group size: 1
+2019-07-15 19:02:12.598 UTC INFO [admin1] JE: Existing node 1 querying for a current master.
+2019-07-15 19:02:12.599 UTC INFO [admin1] JE: Existing node 1 querying for a current master.
+2019-07-15 19:02:12.609 UTC INFO [admin1] JE recovery: BECOME_CONSISTENT
+2019-07-15 19:02:12.609 UTC INFO [admin1] JE: Node 1 started
+2019-07-15 19:02:12.610 UTC INFO [admin1] JE: Node 1 started
+2019-07-15 19:02:12.610 UTC INFO [admin1] JE: Election initiated; election #1
+2019-07-15 19:02:12.610 UTC INFO [admin1] JE: Election initiated; election #1
+2019-07-15 19:02:12.612 UTC INFO [admin1] JE: Started election thread Mon Jul 15 14:02:12 CDT 2019
+2019-07-15 19:02:12.612 UTC INFO [admin1] JE: Started election thread Mon Jul 15 14:02:12 CDT 2019
+2019-07-15 19:02:14.624 UTC INFO [admin1] JE: Winning proposal: Proposal(0000016bf7039156:a0a786f44a3d219691816132e5d029e7:00000002) Value: Value:mbartnit-t480$$$5005$$$1$$$1
+2019-07-15 19:02:14.624 UTC INFO [admin1] JE: Winning proposal: Proposal(0000016bf7039156:a0a786f44a3d219691816132e5d029e7:00000002) Value: Value:mbartnit-t480$$$5005$$$1$$$1
+2019-07-15 19:02:14.626 UTC INFO [admin1] JE: Master changed to 1
+2019-07-15 19:02:14.627 UTC INFO [admin1] JE: Master changed to 1
+2019-07-15 19:02:14.627 UTC INFO [admin1] JE: Election finished. Elapsed time: 2017ms
+2019-07-15 19:02:14.627 UTC INFO [admin1] JE: Election finished. Elapsed time: 2017ms
+2019-07-15 19:02:14.627 UTC INFO [admin1] JE: Election thread exited. Group master: 1(1)
+2019-07-15 19:02:14.627 UTC INFO [admin1] JE: Election thread exited. Group master: 1(1)
+2019-07-15 19:02:14.627 UTC INFO [admin1] JE: node:1(1) state change from UNKNOWN to MASTER
+2019-07-15 19:02:14.628 UTC INFO [admin1] JE: Feeder manager accepting requests.
+2019-07-15 19:02:14.628 UTC INFO [admin1] JE: Feeder manager accepting requests.
+2019-07-15 19:02:14.632 UTC INFO [admin1] JE: Joining group as master
+2019-07-15 19:02:14.632 UTC INFO [admin1] JE: Joining group as master
+2019-07-15 19:02:14.635 UTC INFO [admin1] State change event: Mon Jul 15 14:02:14 CDT 2019, State: MASTER, Type: PRIMARY, Master: 1
+2019-07-15 19:02:14.635 UTC INFO [admin1] AdminStateTracker queue added:MASTER
+2019-07-15 19:02:14.641 UTC INFO [admin1] Initialize stores at schema version 5, readOnly=false
+2019-07-15 19:02:14.645 UTC INFO [admin1] Open: AdminCriticalEventsDatabase
+2019-07-15 19:02:14.646 UTC INFO [admin1] Open: AdminParametersDatabase
+2019-07-15 19:02:14.646 UTC INFO [admin1] Open: AdminMemoDatabase
+2019-07-15 19:02:14.674 UTC INFO [admin1] Open: AdminPlanDatabase
+2019-07-15 19:02:14.676 UTC INFO [admin1] Open: AdminSecurityDatabase
+2019-07-15 19:02:14.677 UTC INFO [admin1] Open: AdminTableDatabase
+2019-07-15 19:02:14.678 UTC INFO [admin1] Open: AdminTopologyHistoryDatabase
+2019-07-15 19:02:14.679 UTC INFO [admin1] Open: AdminTopologyCandidateDatabase
+2019-07-15 19:02:14.679 UTC INFO [admin1] Shutting down monitor collector
+2019-07-15 19:02:14.710 UTC INFO [admin1] Using existing Admin database
+2019-07-15 19:02:14.718 UTC INFO [admin1] Monitor collector: adding sn1 to monitoring
+2019-07-15 19:02:14.719 UTC INFO [admin1] Monitor collector: adding rg1-rn1 to monitoring
+2019-07-15 19:02:14.734 UTC INFO [admin1] [sn1] Service status: RUNNING 2019-07-15 19:02:12 UTC
+2019-07-15 19:02:14.743 UTC INFO [admin1] [rg1-rn1] Service status: STARTING 2019-07-15 19:02:14 UTC
+2019-07-15 19:02:14.803 UTC INFO [admin1] Replicated environment handle established. Cache size: 4559103590, State: MASTER
+2019-07-15 19:02:14.803 UTC INFO [admin1] Starting commandService on rmi://mbartnit-t480:5000/commandService
+2019-07-15 19:02:14.847 UTC INFO [admin1] Successfully created a secure proxy for commandService
+2019-07-15 19:02:14.883 UTC INFO [admin1] Starting admin:CLIENT_ADMIN on rmi://mbartnit-t480:5000/admin:CLIENT_ADMIN
+2019-07-15 19:02:14.885 UTC INFO [admin1] Successfully created a secure proxy for admin:CLIENT_ADMIN
+2019-07-15 19:02:14.890 UTC INFO [admin1] Started AdminService
+2019-07-15 19:02:34.759 UTC INFO [admin1] [rg1-rn1] Service status: RUNNING 2019-07-15 19:02:14 UTC
+2019-07-15 20:27:20.192 UTC INFO [admin1] JVM java.net.InetAddress properties: cache.ttl=-1 cache.negative.ttl=-1
+2019-07-15 20:27:20.197 UTC INFO [admin1] Starting AdminService
+2019-07-15 20:27:20.271 UTC INFO [admin1] Initializing PRIMARY Admin for store: kvstore
+2019-07-15 20:27:20.272 UTC INFO [admin1] JVM Runtime maxMemory (bytes): 7598505984
+2019-07-15 20:27:20.273 UTC INFO [admin1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=32, je.rep.envUnknownStateTimeout=10 s, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=10 s, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.bindInaddrAny=true, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.checkpointer.bytesInterval=500000000, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2019-07-15 20:27:20.294 UTC INFO [admin1] DataChannelFactory: basic
+2019-07-15 20:27:20.295 UTC INFO [admin1] AdminStateTracker thread start: admin1
+2019-07-15 20:27:20.554 UTC INFO [admin1] JE recovery: FIND_END_OF_LOG
+2019-07-15 20:27:20.603 UTC INFO [admin1] JE recovery: FIND_LAST_CKPT
+2019-07-15 20:27:20.607 UTC INFO [admin1] JE recovery: READ_DBMAP_INFO
+2019-07-15 20:27:20.619 UTC INFO [admin1] JE recovery: REDO_DBMAP_INFO
+2019-07-15 20:27:20.621 UTC INFO [admin1] JE recovery: UNDO_DBMAP_RECORDS
+2019-07-15 20:27:20.623 UTC INFO [admin1] JE recovery: REDO_DBMAP_RECORDS
+2019-07-15 20:27:20.626 UTC INFO [admin1] JE recovery: READ_DATA_INFO
+2019-07-15 20:27:20.635 UTC INFO [admin1] JE recovery: REDO_DATA_INFO
+2019-07-15 20:27:20.638 UTC INFO [admin1] JE recovery: UNDO_DATA_RECORDS
+2019-07-15 20:27:20.641 UTC INFO [admin1] JE recovery: REDO_DATA_RECORDS
+2019-07-15 20:27:20.645 UTC INFO [admin1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2019-07-15 20:27:20.652 UTC INFO [admin1] JE recovery: POPULATE_EXPIRATION_PROFILE
+2019-07-15 20:27:20.682 UTC INFO [admin1] JE recovery: REMOVE_TEMP_DBS
+2019-07-15 20:27:20.694 UTC INFO [admin1] JE recovery: CKPT
+2019-07-15 20:27:20.706 UTC INFO [admin1] JE recovery: RECOVERY_FINISHED
+2019-07-15 20:27:20.734 UTC INFO [admin1] JE: Started ServiceDispatcher. HostPort=mbartnit-t480:5005
+2019-07-15 20:27:20.734 UTC INFO [admin1] JE: Started ServiceDispatcher. HostPort=mbartnit-t480:5005
+2019-07-15 20:27:20.735 UTC INFO [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-15 20:27:20.735 UTC INFO [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-15 20:27:20.762 UTC INFO [admin1] JE: DTVLSN at start:234
+2019-07-15 20:27:20.762 UTC INFO [admin1] JE: DTVLSN at start:234
+2019-07-15 20:27:20.763 UTC INFO [admin1] JE: node:NullNode(-1) state change from DETACHED to UNKNOWN
+2019-07-15 20:27:20.774 UTC INFO [admin1] JE: Current group size: 1
+2019-07-15 20:27:20.775 UTC INFO [admin1] JE: Current group size: 1
+2019-07-15 20:27:20.775 UTC INFO [admin1] JE: Existing node 1 querying for a current master.
+2019-07-15 20:27:20.775 UTC INFO [admin1] JE: Existing node 1 querying for a current master.
+2019-07-15 20:27:20.787 UTC INFO [admin1] JE recovery: BECOME_CONSISTENT
+2019-07-15 20:27:20.787 UTC INFO [admin1] JE: Node 1 started
+2019-07-15 20:27:20.787 UTC INFO [admin1] JE: Node 1 started
+2019-07-15 20:27:20.788 UTC INFO [admin1] JE: Election initiated; election #1
+2019-07-15 20:27:20.788 UTC INFO [admin1] JE: Election initiated; election #1
+2019-07-15 20:27:20.790 UTC INFO [admin1] JE: Started election thread Mon Jul 15 15:27:20 CDT 2019
+2019-07-15 20:27:20.790 UTC INFO [admin1] JE: Started election thread Mon Jul 15 15:27:20 CDT 2019
+2019-07-15 20:27:22.813 UTC INFO [admin1] JE: Winning proposal: Proposal(0000016bf7518327:4f9a3df37fd2cb1af0f0826de124b954:00000001) Value: Value:mbartnit-t480$$$5005$$$1$$$1
+2019-07-15 20:27:22.814 UTC INFO [admin1] JE: Winning proposal: Proposal(0000016bf7518327:4f9a3df37fd2cb1af0f0826de124b954:00000001) Value: Value:mbartnit-t480$$$5005$$$1$$$1
+2019-07-15 20:27:22.818 UTC INFO [admin1] JE: Master changed to 1
+2019-07-15 20:27:22.818 UTC INFO [admin1] JE: Master changed to 1
+2019-07-15 20:27:22.819 UTC INFO [admin1] JE: Election finished. Elapsed time: 2031ms
+2019-07-15 20:27:22.819 UTC INFO [admin1] JE: Election thread exited. Group master: 1(1)
+2019-07-15 20:27:22.819 UTC INFO [admin1] JE: Election finished. Elapsed time: 2031ms
+2019-07-15 20:27:22.819 UTC INFO [admin1] JE: Election thread exited. Group master: 1(1)
+2019-07-15 20:27:22.819 UTC INFO [admin1] JE: node:1(1) state change from UNKNOWN to MASTER
+2019-07-15 20:27:22.820 UTC INFO [admin1] JE: Feeder manager accepting requests.
+2019-07-15 20:27:22.820 UTC INFO [admin1] JE: Feeder manager accepting requests.
+2019-07-15 20:27:22.825 UTC INFO [admin1] JE: Joining group as master
+2019-07-15 20:27:22.826 UTC INFO [admin1] JE: Joining group as master
+2019-07-15 20:27:22.830 UTC INFO [admin1] State change event: Mon Jul 15 15:27:22 CDT 2019, State: MASTER, Type: PRIMARY, Master: 1
+2019-07-15 20:27:22.830 UTC INFO [admin1] AdminStateTracker queue added:MASTER
+2019-07-15 20:27:22.834 UTC INFO [admin1] Initialize stores at schema version 5, readOnly=false
+2019-07-15 20:27:22.838 UTC INFO [admin1] Open: AdminCriticalEventsDatabase
+2019-07-15 20:27:22.840 UTC INFO [admin1] Open: AdminParametersDatabase
+2019-07-15 20:27:22.840 UTC INFO [admin1] Open: AdminMemoDatabase
+2019-07-15 20:27:22.842 UTC INFO [admin1] Open: AdminPlanDatabase
+2019-07-15 20:27:22.851 UTC INFO [admin1] Open: AdminSecurityDatabase
+2019-07-15 20:27:22.852 UTC INFO [admin1] Open: AdminTableDatabase
+2019-07-15 20:27:22.854 UTC INFO [admin1] Open: AdminTopologyHistoryDatabase
+2019-07-15 20:27:22.855 UTC INFO [admin1] Open: AdminTopologyCandidateDatabase
+2019-07-15 20:27:22.855 UTC INFO [admin1] Shutting down monitor collector
+2019-07-15 20:27:22.916 UTC INFO [admin1] Using existing Admin database
+2019-07-15 20:27:22.922 UTC INFO [admin1] Monitor collector: adding sn1 to monitoring
+2019-07-15 20:27:22.924 UTC INFO [admin1] Monitor collector: adding rg1-rn1 to monitoring
+2019-07-15 20:27:22.942 UTC INFO [admin1] [sn1] Service status: RUNNING 2019-07-15 20:27:20 UTC
+2019-07-15 20:27:22.951 UTC INFO [admin1] [rg1-rn1] Service status: STARTING 2019-07-15 20:27:22 UTC
+2019-07-15 20:27:23.007 UTC INFO [admin1] Replicated environment handle established. Cache size: 4559103590, State: MASTER
+2019-07-15 20:27:23.008 UTC INFO [admin1] Starting commandService on rmi://mbartnit-t480:5000/commandService
+2019-07-15 20:27:23.048 UTC INFO [admin1] Successfully created a secure proxy for commandService
+2019-07-15 20:27:23.075 UTC INFO [admin1] Starting admin:CLIENT_ADMIN on rmi://mbartnit-t480:5000/admin:CLIENT_ADMIN
+2019-07-15 20:27:23.076 UTC INFO [admin1] Successfully created a secure proxy for admin:CLIENT_ADMIN
+2019-07-15 20:27:23.082 UTC INFO [admin1] Started AdminService
+2019-07-15 20:27:42.954 UTC INFO [admin1] [rg1-rn1] Service status: RUNNING 2019-07-15 20:27:23 UTC
+2019-07-15 20:45:14.645 UTC INFO [admin1] JVM java.net.InetAddress properties: cache.ttl=-1 cache.negative.ttl=-1
+2019-07-15 20:45:14.658 UTC INFO [admin1] Starting AdminService
+2019-07-15 20:45:14.737 UTC INFO [admin1] Initializing PRIMARY Admin for store: kvstore
+2019-07-15 20:45:14.738 UTC INFO [admin1] JVM Runtime maxMemory (bytes): 7598505984
+2019-07-15 20:45:14.739 UTC INFO [admin1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=32, je.rep.envUnknownStateTimeout=10 s, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=10 s, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.bindInaddrAny=true, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.checkpointer.bytesInterval=500000000, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2019-07-15 20:45:14.751 UTC INFO [admin1] DataChannelFactory: basic
+2019-07-15 20:45:14.756 UTC INFO [admin1] AdminStateTracker thread start: admin1
+2019-07-15 20:45:15.037 UTC INFO [admin1] JE recovery: FIND_END_OF_LOG
+2019-07-15 20:45:15.081 UTC INFO [admin1] JE recovery: FIND_LAST_CKPT
+2019-07-15 20:45:15.087 UTC INFO [admin1] JE recovery: READ_DBMAP_INFO
+2019-07-15 20:45:15.106 UTC INFO [admin1] JE recovery: REDO_DBMAP_INFO
+2019-07-15 20:45:15.108 UTC INFO [admin1] JE recovery: UNDO_DBMAP_RECORDS
+2019-07-15 20:45:15.112 UTC INFO [admin1] JE recovery: REDO_DBMAP_RECORDS
+2019-07-15 20:45:15.121 UTC INFO [admin1] JE recovery: READ_DATA_INFO
+2019-07-15 20:45:15.164 UTC INFO [admin1] JE recovery: REDO_DATA_INFO
+2019-07-15 20:45:15.171 UTC INFO [admin1] JE recovery: UNDO_DATA_RECORDS
+2019-07-15 20:45:15.179 UTC INFO [admin1] JE recovery: REDO_DATA_RECORDS
+2019-07-15 20:45:15.187 UTC INFO [admin1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2019-07-15 20:45:15.198 UTC INFO [admin1] JE recovery: POPULATE_EXPIRATION_PROFILE
+2019-07-15 20:45:15.245 UTC INFO [admin1] JE recovery: REMOVE_TEMP_DBS
+2019-07-15 20:45:15.273 UTC INFO [admin1] JE recovery: CKPT
+2019-07-15 20:45:15.290 UTC INFO [admin1] JE recovery: RECOVERY_FINISHED
+2019-07-15 20:45:15.322 UTC INFO [admin1] JE: Started ServiceDispatcher. HostPort=mbartnit-t480:5005
+2019-07-15 20:45:15.322 UTC INFO [admin1] JE: Started ServiceDispatcher. HostPort=mbartnit-t480:5005
+2019-07-15 20:45:15.323 UTC INFO [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-15 20:45:15.323 UTC INFO [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-15 20:45:15.355 UTC INFO [admin1] JE: DTVLSN at start:247
+2019-07-15 20:45:15.355 UTC INFO [admin1] JE: DTVLSN at start:247
+2019-07-15 20:45:15.356 UTC INFO [admin1] JE: node:NullNode(-1) state change from DETACHED to UNKNOWN
+2019-07-15 20:45:15.369 UTC INFO [admin1] JE: Current group size: 1
+2019-07-15 20:45:15.369 UTC INFO [admin1] JE: Current group size: 1
+2019-07-15 20:45:15.370 UTC INFO [admin1] JE: Existing node 1 querying for a current master.
+2019-07-15 20:45:15.370 UTC INFO [admin1] JE: Existing node 1 querying for a current master.
+2019-07-15 20:45:15.384 UTC INFO [admin1] JE recovery: BECOME_CONSISTENT
+2019-07-15 20:45:15.384 UTC INFO [admin1] JE: Node 1 started
+2019-07-15 20:45:15.385 UTC INFO [admin1] JE: Node 1 started
+2019-07-15 20:45:15.385 UTC INFO [admin1] JE: Election initiated; election #1
+2019-07-15 20:45:15.385 UTC INFO [admin1] JE: Election initiated; election #1
+2019-07-15 20:45:15.387 UTC INFO [admin1] JE: Started election thread Mon Jul 15 15:45:15 CDT 2019
+2019-07-15 20:45:15.387 UTC INFO [admin1] JE: Started election thread Mon Jul 15 15:45:15 CDT 2019
+2019-07-15 20:45:17.403 UTC INFO [admin1] JE: Winning proposal: Proposal(0000016bf761e8cd:2f33b0b952efb03df076b6a123a4aba8:00000001) Value: Value:mbartnit-t480$$$5005$$$1$$$1
+2019-07-15 20:45:17.403 UTC INFO [admin1] JE: Winning proposal: Proposal(0000016bf761e8cd:2f33b0b952efb03df076b6a123a4aba8:00000001) Value: Value:mbartnit-t480$$$5005$$$1$$$1
+2019-07-15 20:45:17.407 UTC INFO [admin1] JE: Master changed to 1
+2019-07-15 20:45:17.407 UTC INFO [admin1] JE: Master changed to 1
+2019-07-15 20:45:17.407 UTC INFO [admin1] JE: Election finished. Elapsed time: 2022ms
+2019-07-15 20:45:17.408 UTC INFO [admin1] JE: Election thread exited. Group master: 1(1)
+2019-07-15 20:45:17.408 UTC INFO [admin1] JE: Election finished. Elapsed time: 2022ms
+2019-07-15 20:45:17.408 UTC INFO [admin1] JE: Election thread exited. Group master: 1(1)
+2019-07-15 20:45:17.408 UTC INFO [admin1] JE: node:1(1) state change from UNKNOWN to MASTER
+2019-07-15 20:45:17.409 UTC INFO [admin1] JE: Feeder manager accepting requests.
+2019-07-15 20:45:17.409 UTC INFO [admin1] JE: Feeder manager accepting requests.
+2019-07-15 20:45:17.415 UTC INFO [admin1] JE: Joining group as master
+2019-07-15 20:45:17.416 UTC INFO [admin1] JE: Joining group as master
+2019-07-15 20:45:17.422 UTC INFO [admin1] State change event: Mon Jul 15 15:45:17 CDT 2019, State: MASTER, Type: PRIMARY, Master: 1
+2019-07-15 20:45:17.422 UTC INFO [admin1] AdminStateTracker queue added:MASTER
+2019-07-15 20:45:17.431 UTC INFO [admin1] Initialize stores at schema version 5, readOnly=false
+2019-07-15 20:45:17.437 UTC INFO [admin1] Open: AdminCriticalEventsDatabase
+2019-07-15 20:45:17.440 UTC INFO [admin1] Open: AdminParametersDatabase
+2019-07-15 20:45:17.440 UTC INFO [admin1] Open: AdminMemoDatabase
+2019-07-15 20:45:17.494 UTC INFO [admin1] Open: AdminPlanDatabase
+2019-07-15 20:45:17.496 UTC INFO [admin1] Open: AdminSecurityDatabase
+2019-07-15 20:45:17.498 UTC INFO [admin1] Open: AdminTableDatabase
+2019-07-15 20:45:17.502 UTC INFO [admin1] Open: AdminTopologyHistoryDatabase
+2019-07-15 20:45:17.502 UTC INFO [admin1] Open: AdminTopologyCandidateDatabase
+2019-07-15 20:45:17.504 UTC INFO [admin1] Shutting down monitor collector
+2019-07-15 20:45:17.554 UTC INFO [admin1] Using existing Admin database
+2019-07-15 20:45:17.564 UTC INFO [admin1] Monitor collector: adding sn1 to monitoring
+2019-07-15 20:45:17.565 UTC INFO [admin1] Monitor collector: adding rg1-rn1 to monitoring
+2019-07-15 20:45:17.587 UTC INFO [admin1] [sn1] Service status: RUNNING 2019-07-15 20:45:14 UTC
+2019-07-15 20:45:17.606 UTC INFO [admin1] [rg1-rn1] Service status: STARTING 2019-07-15 20:45:17 UTC
+2019-07-15 20:45:17.747 UTC INFO [admin1] Replicated environment handle established. Cache size: 4559103590, State: MASTER
+2019-07-15 20:45:17.748 UTC INFO [admin1] Starting commandService on rmi://mbartnit-t480:5000/commandService
+2019-07-15 20:45:17.837 UTC INFO [admin1] Successfully created a secure proxy for commandService
+2019-07-15 20:45:18.004 UTC INFO [admin1] Starting admin:CLIENT_ADMIN on rmi://mbartnit-t480:5000/admin:CLIENT_ADMIN
+2019-07-15 20:45:18.007 UTC INFO [admin1] Successfully created a secure proxy for admin:CLIENT_ADMIN
+2019-07-15 20:45:18.162 UTC INFO [admin1] Started AdminService
+2019-07-15 20:45:37.597 UTC INFO [admin1] [rg1-rn1] Service status: RUNNING 2019-07-15 20:45:18 UTC
+2019-07-15 21:16:58.312 UTC INFO [admin1] JVM java.net.InetAddress properties: cache.ttl=-1 cache.negative.ttl=-1
+2019-07-15 21:16:58.318 UTC INFO [admin1] Starting AdminService
+2019-07-15 21:16:58.402 UTC INFO [admin1] Initializing PRIMARY Admin for store: kvstore
+2019-07-15 21:16:58.403 UTC INFO [admin1] JVM Runtime maxMemory (bytes): 7598505984
+2019-07-15 21:16:58.404 UTC INFO [admin1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=32, je.rep.envUnknownStateTimeout=10 s, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=10 s, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.bindInaddrAny=true, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.checkpointer.bytesInterval=500000000, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2019-07-15 21:16:58.420 UTC INFO [admin1] DataChannelFactory: basic
+2019-07-15 21:16:58.422 UTC INFO [admin1] AdminStateTracker thread start: admin1
+2019-07-15 21:16:58.650 UTC INFO [admin1] JE recovery: FIND_END_OF_LOG
+2019-07-15 21:16:58.697 UTC INFO [admin1] JE recovery: FIND_LAST_CKPT
+2019-07-15 21:16:58.700 UTC INFO [admin1] JE recovery: READ_DBMAP_INFO
+2019-07-15 21:16:58.714 UTC INFO [admin1] JE recovery: REDO_DBMAP_INFO
+2019-07-15 21:16:58.716 UTC INFO [admin1] JE recovery: UNDO_DBMAP_RECORDS
+2019-07-15 21:16:58.719 UTC INFO [admin1] JE recovery: REDO_DBMAP_RECORDS
+2019-07-15 21:16:58.724 UTC INFO [admin1] JE recovery: READ_DATA_INFO
+2019-07-15 21:16:58.733 UTC INFO [admin1] JE recovery: REDO_DATA_INFO
+2019-07-15 21:16:58.735 UTC INFO [admin1] JE recovery: UNDO_DATA_RECORDS
+2019-07-15 21:16:58.738 UTC INFO [admin1] JE recovery: REDO_DATA_RECORDS
+2019-07-15 21:16:58.743 UTC INFO [admin1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2019-07-15 21:16:58.749 UTC INFO [admin1] JE recovery: POPULATE_EXPIRATION_PROFILE
+2019-07-15 21:16:58.779 UTC INFO [admin1] JE recovery: REMOVE_TEMP_DBS
+2019-07-15 21:16:58.801 UTC INFO [admin1] JE recovery: CKPT
+2019-07-15 21:16:58.818 UTC INFO [admin1] JE recovery: RECOVERY_FINISHED
+2019-07-15 21:16:58.846 UTC INFO [admin1] JE: Started ServiceDispatcher. HostPort=mbartnit-t480:5005
+2019-07-15 21:16:58.846 UTC INFO [admin1] JE: Started ServiceDispatcher. HostPort=mbartnit-t480:5005
+2019-07-15 21:16:58.847 UTC INFO [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-15 21:16:58.847 UTC INFO [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-15 21:16:58.875 UTC INFO [admin1] JE: DTVLSN at start:260
+2019-07-15 21:16:58.875 UTC INFO [admin1] JE: DTVLSN at start:260
+2019-07-15 21:16:58.875 UTC INFO [admin1] JE: node:NullNode(-1) state change from DETACHED to UNKNOWN
+2019-07-15 21:16:58.887 UTC INFO [admin1] JE: Current group size: 1
+2019-07-15 21:16:58.887 UTC INFO [admin1] JE: Current group size: 1
+2019-07-15 21:16:58.887 UTC INFO [admin1] JE: Existing node 1 querying for a current master.
+2019-07-15 21:16:58.887 UTC INFO [admin1] JE: Existing node 1 querying for a current master.
+2019-07-15 21:16:58.899 UTC INFO [admin1] JE recovery: BECOME_CONSISTENT
+2019-07-15 21:16:58.899 UTC INFO [admin1] JE: Node 1 started
+2019-07-15 21:16:58.900 UTC INFO [admin1] JE: Node 1 started
+2019-07-15 21:16:58.900 UTC INFO [admin1] JE: Election initiated; election #1
+2019-07-15 21:16:58.900 UTC INFO [admin1] JE: Election initiated; election #1
+2019-07-15 21:16:58.902 UTC INFO [admin1] JE: Started election thread Mon Jul 15 16:16:58 CDT 2019
+2019-07-15 21:16:58.902 UTC INFO [admin1] JE: Started election thread Mon Jul 15 16:16:58 CDT 2019
+2019-07-15 21:17:00.913 UTC INFO [admin1] JE: Winning proposal: Proposal(0000016bf77ef468:366bffc6c1b49e7c77970bb16735a363:00000002) Value: Value:mbartnit-t480$$$5005$$$1$$$1
+2019-07-15 21:17:00.913 UTC INFO [admin1] JE: Winning proposal: Proposal(0000016bf77ef468:366bffc6c1b49e7c77970bb16735a363:00000002) Value: Value:mbartnit-t480$$$5005$$$1$$$1
+2019-07-15 21:17:00.917 UTC INFO [admin1] JE: Master changed to 1
+2019-07-15 21:17:00.917 UTC INFO [admin1] JE: Master changed to 1
+2019-07-15 21:17:00.917 UTC INFO [admin1] JE: Election finished. Elapsed time: 2017ms
+2019-07-15 21:17:00.917 UTC INFO [admin1] JE: Election thread exited. Group master: 1(1)
+2019-07-15 21:17:00.917 UTC INFO [admin1] JE: Election finished. Elapsed time: 2017ms
+2019-07-15 21:17:00.918 UTC INFO [admin1] JE: Election thread exited. Group master: 1(1)
+2019-07-15 21:17:00.918 UTC INFO [admin1] JE: node:1(1) state change from UNKNOWN to MASTER
+2019-07-15 21:17:00.919 UTC INFO [admin1] JE: Feeder manager accepting requests.
+2019-07-15 21:17:00.919 UTC INFO [admin1] JE: Feeder manager accepting requests.
+2019-07-15 21:17:00.923 UTC INFO [admin1] JE: Joining group as master
+2019-07-15 21:17:00.923 UTC INFO [admin1] JE: Joining group as master
+2019-07-15 21:17:00.926 UTC INFO [admin1] State change event: Mon Jul 15 16:17:00 CDT 2019, State: MASTER, Type: PRIMARY, Master: 1
+2019-07-15 21:17:00.926 UTC INFO [admin1] AdminStateTracker queue added:MASTER
+2019-07-15 21:17:00.932 UTC INFO [admin1] Initialize stores at schema version 5, readOnly=false
+2019-07-15 21:17:00.965 UTC INFO [admin1] Open: AdminCriticalEventsDatabase
+2019-07-15 21:17:00.966 UTC INFO [admin1] Open: AdminParametersDatabase
+2019-07-15 21:17:00.967 UTC INFO [admin1] Open: AdminMemoDatabase
+2019-07-15 21:17:00.969 UTC INFO [admin1] Open: AdminPlanDatabase
+2019-07-15 21:17:00.971 UTC INFO [admin1] Open: AdminSecurityDatabase
+2019-07-15 21:17:00.971 UTC INFO [admin1] Open: AdminTableDatabase
+2019-07-15 21:17:00.973 UTC INFO [admin1] Open: AdminTopologyHistoryDatabase
+2019-07-15 21:17:00.974 UTC INFO [admin1] Open: AdminTopologyCandidateDatabase
+2019-07-15 21:17:00.974 UTC INFO [admin1] Shutting down monitor collector
+2019-07-15 21:17:01.009 UTC INFO [admin1] Using existing Admin database
+2019-07-15 21:17:01.017 UTC INFO [admin1] Monitor collector: adding sn1 to monitoring
+2019-07-15 21:17:01.019 UTC INFO [admin1] Monitor collector: adding rg1-rn1 to monitoring
+2019-07-15 21:17:01.038 UTC INFO [admin1] [sn1] Service status: RUNNING 2019-07-15 21:16:58 UTC
+2019-07-15 21:17:01.055 UTC INFO [admin1] [rg1-rn1] Service status: STARTING 2019-07-15 21:17:01 UTC
+2019-07-15 21:17:01.113 UTC INFO [admin1] Replicated environment handle established. Cache size: 4559103590, State: MASTER
+2019-07-15 21:17:01.113 UTC INFO [admin1] Starting commandService on rmi://mbartnit-t480:5000/commandService
+2019-07-15 21:17:01.165 UTC INFO [admin1] Successfully created a secure proxy for commandService
+2019-07-15 21:17:01.198 UTC INFO [admin1] Starting admin:CLIENT_ADMIN on rmi://mbartnit-t480:5000/admin:CLIENT_ADMIN
+2019-07-15 21:17:01.200 UTC INFO [admin1] Successfully created a secure proxy for admin:CLIENT_ADMIN
+2019-07-15 21:17:01.205 UTC INFO [admin1] Started AdminService
+2019-07-15 21:17:21.050 UTC INFO [admin1] [rg1-rn1] Service status: RUNNING 2019-07-15 21:17:01 UTC
+2019-07-15 21:37:00.556 UTC INFO [admin1] Plan 13[DropTable:players] approved
+2019-07-15 21:37:00.562 UTC INFO [admin1] Plan 13[DropTable:players]: started, 3 tasks
+2019-07-15 21:37:00.565 UTC INFO [admin1] Plan 13[DropTable:players]: task 1 [RemoveTableV2:players] started
+2019-07-15 21:37:00.570 UTC INFO [admin1] About to broadcast TableMetadata[6, 5, 6]
+2019-07-15 21:37:00.571 UTC INFO [admin1] Broadcasting TableMetadata[6, 5, 6] for RemoveTableV2:players
+2019-07-15 21:37:00.589 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 6, for RemoveTableV2:players, attempts=1
+2019-07-15 21:37:00.591 UTC INFO [admin1] Plan 13[DropTable:players]: task 1 [RemoveTableV2:players] ended, state=SUCCEEDED
+2019-07-15 21:37:00.591 UTC INFO [admin1] Plan 13[DropTable:players]: task 2 [WaitForRemoveTableData:players on rg1] started
+2019-07-15 21:37:00.601 UTC INFO [admin1] Wait for remove table players data for rg1
+2019-07-15 21:37:00.609 UTC INFO [admin1] Remove table players on rg1 done=false
+2019-07-15 21:37:10.619 UTC INFO [admin1] Remove table players on rg1 done=true
+2019-07-15 21:37:10.634 UTC INFO [admin1] Plan 13[DropTable:players]: task 2 [WaitForRemoveTableData:players on rg1] ended, state=SUCCEEDED
+2019-07-15 21:37:10.635 UTC INFO [admin1] Plan 13[DropTable:players]: task 3 [RemoveTableV2:players] started
+2019-07-15 21:37:10.639 UTC INFO [admin1] About to broadcast TableMetadata[7, 4, 7]
+2019-07-15 21:37:10.640 UTC INFO [admin1] Broadcasting TableMetadata[7, 4, 7] for RemoveTableV2:players
+2019-07-15 21:37:10.648 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 7, for RemoveTableV2:players, attempts=1
+2019-07-15 21:37:10.650 UTC INFO [admin1] Plan 13[DropTable:players]: task 3 [RemoveTableV2:players] ended, state=SUCCEEDED
+2019-07-15 21:37:10.654 UTC INFO [admin1] Plan 13[DropTable:players]: ended, state=SUCCEEDED
+2019-07-15 21:37:12.645 UTC INFO [admin1] Plan 14[CreateTable:players] approved
+2019-07-15 21:37:12.647 UTC INFO [admin1] Plan 14[CreateTable:players]: started, 1 tasks
+2019-07-15 21:37:12.650 UTC INFO [admin1] Plan 14[CreateTable:players]: task 1 [AddTable:players] started
+2019-07-15 21:37:12.654 UTC INFO [admin1] About to broadcast TableMetadata[8, 5, 8]
+2019-07-15 21:37:12.656 UTC INFO [admin1] Broadcasting TableMetadata[8, 5, 8] for AddTable:players
+2019-07-15 21:37:12.665 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 8, for AddTable:players, attempts=1
+2019-07-15 21:37:12.667 UTC INFO [admin1] Plan 14[CreateTable:players]: task 1 [AddTable:players] ended, state=SUCCEEDED
+2019-07-15 21:37:12.668 UTC INFO [admin1] Plan 14[CreateTable:players]: ended, state=SUCCEEDED
+2019-07-15 21:38:52.101 UTC INFO [admin1] Plan 15[DropTable:players] approved
+2019-07-15 21:38:52.103 UTC INFO [admin1] Plan 15[DropTable:players]: started, 3 tasks
+2019-07-15 21:38:52.105 UTC INFO [admin1] Plan 15[DropTable:players]: task 1 [RemoveTableV2:players] started
+2019-07-15 21:38:52.109 UTC INFO [admin1] About to broadcast TableMetadata[9, 5, 9]
+2019-07-15 21:38:52.110 UTC INFO [admin1] Broadcasting TableMetadata[9, 5, 9] for RemoveTableV2:players
+2019-07-15 21:38:52.122 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 9, for RemoveTableV2:players, attempts=1
+2019-07-15 21:38:52.124 UTC INFO [admin1] Plan 15[DropTable:players]: task 1 [RemoveTableV2:players] ended, state=SUCCEEDED
+2019-07-15 21:38:52.124 UTC INFO [admin1] Plan 15[DropTable:players]: task 2 [WaitForRemoveTableData:players on rg1] started
+2019-07-15 21:38:52.133 UTC INFO [admin1] Wait for remove table players data for rg1
+2019-07-15 21:38:52.139 UTC INFO [admin1] Remove table players on rg1 done=false
+2019-07-15 21:39:02.146 UTC INFO [admin1] Remove table players on rg1 done=true
+2019-07-15 21:39:02.150 UTC INFO [admin1] Plan 15[DropTable:players]: task 2 [WaitForRemoveTableData:players on rg1] ended, state=SUCCEEDED
+2019-07-15 21:39:02.150 UTC INFO [admin1] Plan 15[DropTable:players]: task 3 [RemoveTableV2:players] started
+2019-07-15 21:39:02.154 UTC INFO [admin1] About to broadcast TableMetadata[10, 4, 10]
+2019-07-15 21:39:02.154 UTC INFO [admin1] Broadcasting TableMetadata[10, 4, 10] for RemoveTableV2:players
+2019-07-15 21:39:02.160 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 10, for RemoveTableV2:players, attempts=1
+2019-07-15 21:39:02.162 UTC INFO [admin1] Plan 15[DropTable:players]: task 3 [RemoveTableV2:players] ended, state=SUCCEEDED
+2019-07-15 21:39:02.163 UTC INFO [admin1] Plan 15[DropTable:players]: ended, state=SUCCEEDED
+2019-07-15 21:39:04.160 UTC INFO [admin1] Plan 16[CreateTable:players] approved
+2019-07-15 21:39:04.162 UTC INFO [admin1] Plan 16[CreateTable:players]: started, 1 tasks
+2019-07-15 21:39:04.164 UTC INFO [admin1] Plan 16[CreateTable:players]: task 1 [AddTable:players] started
+2019-07-15 21:39:04.168 UTC INFO [admin1] About to broadcast TableMetadata[11, 5, 11]
+2019-07-15 21:39:04.169 UTC INFO [admin1] Broadcasting TableMetadata[11, 5, 11] for AddTable:players
+2019-07-15 21:39:04.175 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 11, for AddTable:players, attempts=1
+2019-07-15 21:39:04.177 UTC INFO [admin1] Plan 16[CreateTable:players]: task 1 [AddTable:players] ended, state=SUCCEEDED
+2019-07-15 21:39:04.178 UTC INFO [admin1] Plan 16[CreateTable:players]: ended, state=SUCCEEDED
+2019-07-15 21:46:17.814 UTC INFO [admin1] Plan 17[DropTable:players] approved
+2019-07-15 21:46:17.816 UTC INFO [admin1] Plan 17[DropTable:players]: started, 3 tasks
+2019-07-15 21:46:17.818 UTC INFO [admin1] Plan 17[DropTable:players]: task 1 [RemoveTableV2:players] started
+2019-07-15 21:46:17.826 UTC INFO [admin1] About to broadcast TableMetadata[12, 5, 12]
+2019-07-15 21:46:17.827 UTC INFO [admin1] Broadcasting TableMetadata[12, 5, 12] for RemoveTableV2:players
+2019-07-15 21:46:17.839 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 12, for RemoveTableV2:players, attempts=1
+2019-07-15 21:46:17.841 UTC INFO [admin1] Plan 17[DropTable:players]: task 1 [RemoveTableV2:players] ended, state=SUCCEEDED
+2019-07-15 21:46:17.842 UTC INFO [admin1] Plan 17[DropTable:players]: task 2 [WaitForRemoveTableData:players on rg1] started
+2019-07-15 21:46:17.849 UTC INFO [admin1] Wait for remove table players data for rg1
+2019-07-15 21:46:17.854 UTC INFO [admin1] Remove table players on rg1 done=false
+2019-07-15 21:46:27.862 UTC INFO [admin1] Remove table players on rg1 done=true
+2019-07-15 21:46:27.864 UTC INFO [admin1] Plan 17[DropTable:players]: task 2 [WaitForRemoveTableData:players on rg1] ended, state=SUCCEEDED
+2019-07-15 21:46:27.864 UTC INFO [admin1] Plan 17[DropTable:players]: task 3 [RemoveTableV2:players] started
+2019-07-15 21:46:27.867 UTC INFO [admin1] About to broadcast TableMetadata[13, 4, 13]
+2019-07-15 21:46:27.867 UTC INFO [admin1] Broadcasting TableMetadata[13, 4, 13] for RemoveTableV2:players
+2019-07-15 21:46:27.875 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 13, for RemoveTableV2:players, attempts=1
+2019-07-15 21:46:27.877 UTC INFO [admin1] Plan 17[DropTable:players]: task 3 [RemoveTableV2:players] ended, state=SUCCEEDED
+2019-07-15 21:46:27.878 UTC INFO [admin1] Plan 17[DropTable:players]: ended, state=SUCCEEDED
+2019-07-15 21:46:29.868 UTC INFO [admin1] Plan 18[CreateTable:players] approved
+2019-07-15 21:46:29.870 UTC INFO [admin1] Plan 18[CreateTable:players]: started, 1 tasks
+2019-07-15 21:46:29.873 UTC INFO [admin1] Plan 18[CreateTable:players]: task 1 [AddTable:players] started
+2019-07-15 21:46:29.878 UTC INFO [admin1] About to broadcast TableMetadata[14, 5, 14]
+2019-07-15 21:46:29.878 UTC INFO [admin1] Broadcasting TableMetadata[14, 5, 14] for AddTable:players
+2019-07-15 21:46:29.884 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 14, for AddTable:players, attempts=1
+2019-07-15 21:46:29.886 UTC INFO [admin1] Plan 18[CreateTable:players]: task 1 [AddTable:players] ended, state=SUCCEEDED
+2019-07-15 21:46:29.888 UTC INFO [admin1] Plan 18[CreateTable:players]: ended, state=SUCCEEDED
+2019-07-15 22:04:35.453 UTC INFO [admin1] Plan 19[DropTable:players] approved
+2019-07-15 22:04:35.456 UTC INFO [admin1] Plan 19[DropTable:players]: started, 3 tasks
+2019-07-15 22:04:35.457 UTC INFO [admin1] Plan 19[DropTable:players]: task 1 [RemoveTableV2:players] started
+2019-07-15 22:04:35.463 UTC INFO [admin1] About to broadcast TableMetadata[15, 5, 15]
+2019-07-15 22:04:35.464 UTC INFO [admin1] Broadcasting TableMetadata[15, 5, 15] for RemoveTableV2:players
+2019-07-15 22:04:35.472 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 15, for RemoveTableV2:players, attempts=1
+2019-07-15 22:04:35.474 UTC INFO [admin1] Plan 19[DropTable:players]: task 1 [RemoveTableV2:players] ended, state=SUCCEEDED
+2019-07-15 22:04:35.474 UTC INFO [admin1] Plan 19[DropTable:players]: task 2 [WaitForRemoveTableData:players on rg1] started
+2019-07-15 22:04:35.480 UTC INFO [admin1] Wait for remove table players data for rg1
+2019-07-15 22:04:35.485 UTC INFO [admin1] Remove table players on rg1 done=true
+2019-07-15 22:04:35.487 UTC INFO [admin1] Plan 19[DropTable:players]: task 2 [WaitForRemoveTableData:players on rg1] ended, state=SUCCEEDED
+2019-07-15 22:04:35.487 UTC INFO [admin1] Plan 19[DropTable:players]: task 3 [RemoveTableV2:players] started
+2019-07-15 22:04:35.490 UTC INFO [admin1] About to broadcast TableMetadata[16, 4, 16]
+2019-07-15 22:04:35.491 UTC INFO [admin1] Broadcasting TableMetadata[16, 4, 16] for RemoveTableV2:players
+2019-07-15 22:04:35.496 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 16, for RemoveTableV2:players, attempts=1
+2019-07-15 22:04:35.498 UTC INFO [admin1] Plan 19[DropTable:players]: task 3 [RemoveTableV2:players] ended, state=SUCCEEDED
+2019-07-15 22:04:35.499 UTC INFO [admin1] Plan 19[DropTable:players]: ended, state=SUCCEEDED
+2019-07-15 22:04:37.510 UTC INFO [admin1] Plan 20[CreateTable:players] approved
+2019-07-15 22:04:37.512 UTC INFO [admin1] Plan 20[CreateTable:players]: started, 1 tasks
+2019-07-15 22:04:37.514 UTC INFO [admin1] Plan 20[CreateTable:players]: task 1 [AddTable:players] started
+2019-07-15 22:04:37.518 UTC INFO [admin1] About to broadcast TableMetadata[17, 5, 17]
+2019-07-15 22:04:37.518 UTC INFO [admin1] Broadcasting TableMetadata[17, 5, 17] for AddTable:players
+2019-07-15 22:04:37.524 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 17, for AddTable:players, attempts=1
+2019-07-15 22:04:37.525 UTC INFO [admin1] Plan 20[CreateTable:players]: task 1 [AddTable:players] ended, state=SUCCEEDED
+2019-07-15 22:04:37.527 UTC INFO [admin1] Plan 20[CreateTable:players]: ended, state=SUCCEEDED
+2019-07-15 22:05:37.890 UTC INFO [admin1] Plan 21[DropTable:players] approved
+2019-07-15 22:05:37.893 UTC INFO [admin1] Plan 21[DropTable:players]: started, 3 tasks
+2019-07-15 22:05:37.895 UTC INFO [admin1] Plan 21[DropTable:players]: task 1 [RemoveTableV2:players] started
+2019-07-15 22:05:37.899 UTC INFO [admin1] About to broadcast TableMetadata[18, 5, 18]
+2019-07-15 22:05:37.900 UTC INFO [admin1] Broadcasting TableMetadata[18, 5, 18] for RemoveTableV2:players
+2019-07-15 22:05:37.906 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 18, for RemoveTableV2:players, attempts=1
+2019-07-15 22:05:37.908 UTC INFO [admin1] Plan 21[DropTable:players]: task 1 [RemoveTableV2:players] ended, state=SUCCEEDED
+2019-07-15 22:05:37.908 UTC INFO [admin1] Plan 21[DropTable:players]: task 2 [WaitForRemoveTableData:players on rg1] started
+2019-07-15 22:05:37.914 UTC INFO [admin1] Wait for remove table players data for rg1
+2019-07-15 22:05:37.918 UTC INFO [admin1] Remove table players on rg1 done=true
+2019-07-15 22:05:37.920 UTC INFO [admin1] Plan 21[DropTable:players]: task 2 [WaitForRemoveTableData:players on rg1] ended, state=SUCCEEDED
+2019-07-15 22:05:37.920 UTC INFO [admin1] Plan 21[DropTable:players]: task 3 [RemoveTableV2:players] started
+2019-07-15 22:05:37.924 UTC INFO [admin1] About to broadcast TableMetadata[19, 4, 19]
+2019-07-15 22:05:37.925 UTC INFO [admin1] Broadcasting TableMetadata[19, 4, 19] for RemoveTableV2:players
+2019-07-15 22:05:37.930 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 19, for RemoveTableV2:players, attempts=1
+2019-07-15 22:05:37.932 UTC INFO [admin1] Plan 21[DropTable:players]: task 3 [RemoveTableV2:players] ended, state=SUCCEEDED
+2019-07-15 22:05:37.933 UTC INFO [admin1] Plan 21[DropTable:players]: ended, state=SUCCEEDED
+2019-07-15 22:05:39.946 UTC INFO [admin1] Plan 22[CreateTable:players] approved
+2019-07-15 22:05:39.947 UTC INFO [admin1] Plan 22[CreateTable:players]: started, 1 tasks
+2019-07-15 22:05:39.949 UTC INFO [admin1] Plan 22[CreateTable:players]: task 1 [AddTable:players] started
+2019-07-15 22:05:39.952 UTC INFO [admin1] About to broadcast TableMetadata[20, 5, 20]
+2019-07-15 22:05:39.953 UTC INFO [admin1] Broadcasting TableMetadata[20, 5, 20] for AddTable:players
+2019-07-15 22:05:39.961 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 20, for AddTable:players, attempts=1
+2019-07-15 22:05:39.962 UTC INFO [admin1] Plan 22[CreateTable:players]: task 1 [AddTable:players] ended, state=SUCCEEDED
+2019-07-15 22:05:39.963 UTC INFO [admin1] Plan 22[CreateTable:players]: ended, state=SUCCEEDED
+2019-07-15 22:09:35.369 UTC INFO [admin1] Plan 23[DropTable:players] approved
+2019-07-15 22:09:35.372 UTC INFO [admin1] Plan 23[DropTable:players]: started, 3 tasks
+2019-07-15 22:09:35.373 UTC INFO [admin1] Plan 23[DropTable:players]: task 1 [RemoveTableV2:players] started
+2019-07-15 22:09:35.378 UTC INFO [admin1] About to broadcast TableMetadata[21, 5, 21]
+2019-07-15 22:09:35.379 UTC INFO [admin1] Broadcasting TableMetadata[21, 5, 21] for RemoveTableV2:players
+2019-07-15 22:09:35.389 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 21, for RemoveTableV2:players, attempts=1
+2019-07-15 22:09:35.390 UTC INFO [admin1] Plan 23[DropTable:players]: task 1 [RemoveTableV2:players] ended, state=SUCCEEDED
+2019-07-15 22:09:35.391 UTC INFO [admin1] Plan 23[DropTable:players]: task 2 [WaitForRemoveTableData:players on rg1] started
+2019-07-15 22:09:35.397 UTC INFO [admin1] Wait for remove table players data for rg1
+2019-07-15 22:09:35.403 UTC INFO [admin1] Remove table players on rg1 done=true
+2019-07-15 22:09:35.405 UTC INFO [admin1] Plan 23[DropTable:players]: task 2 [WaitForRemoveTableData:players on rg1] ended, state=SUCCEEDED
+2019-07-15 22:09:35.405 UTC INFO [admin1] Plan 23[DropTable:players]: task 3 [RemoveTableV2:players] started
+2019-07-15 22:09:35.408 UTC INFO [admin1] About to broadcast TableMetadata[22, 4, 22]
+2019-07-15 22:09:35.409 UTC INFO [admin1] Broadcasting TableMetadata[22, 4, 22] for RemoveTableV2:players
+2019-07-15 22:09:35.414 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 22, for RemoveTableV2:players, attempts=1
+2019-07-15 22:09:35.416 UTC INFO [admin1] Plan 23[DropTable:players]: task 3 [RemoveTableV2:players] ended, state=SUCCEEDED
+2019-07-15 22:09:35.418 UTC INFO [admin1] Plan 23[DropTable:players]: ended, state=SUCCEEDED
+2019-07-15 22:09:37.427 UTC INFO [admin1] Plan 24[CreateTable:players] approved
+2019-07-15 22:09:37.428 UTC INFO [admin1] Plan 24[CreateTable:players]: started, 1 tasks
+2019-07-15 22:09:37.430 UTC INFO [admin1] Plan 24[CreateTable:players]: task 1 [AddTable:players] started
+2019-07-15 22:09:37.434 UTC INFO [admin1] About to broadcast TableMetadata[23, 5, 23]
+2019-07-15 22:09:37.435 UTC INFO [admin1] Broadcasting TableMetadata[23, 5, 23] for AddTable:players
+2019-07-15 22:09:37.441 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 23, for AddTable:players, attempts=1
+2019-07-15 22:09:37.442 UTC INFO [admin1] Plan 24[CreateTable:players]: task 1 [AddTable:players] ended, state=SUCCEEDED
+2019-07-15 22:09:37.444 UTC INFO [admin1] Plan 24[CreateTable:players]: ended, state=SUCCEEDED
+2019-07-15 22:56:23.536 UTC INFO [admin1] Plan 25[DropTable:players] approved
+2019-07-15 22:56:23.540 UTC INFO [admin1] Plan 25[DropTable:players]: started, 3 tasks
+2019-07-15 22:56:23.541 UTC INFO [admin1] Plan 25[DropTable:players]: task 1 [RemoveTableV2:players] started
+2019-07-15 22:56:23.546 UTC INFO [admin1] About to broadcast TableMetadata[24, 5, 24]
+2019-07-15 22:56:23.546 UTC INFO [admin1] Broadcasting TableMetadata[24, 5, 24] for RemoveTableV2:players
+2019-07-15 22:56:23.555 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 24, for RemoveTableV2:players, attempts=1
+2019-07-15 22:56:23.557 UTC INFO [admin1] Plan 25[DropTable:players]: task 1 [RemoveTableV2:players] ended, state=SUCCEEDED
+2019-07-15 22:56:23.557 UTC INFO [admin1] Plan 25[DropTable:players]: task 2 [WaitForRemoveTableData:players on rg1] started
+2019-07-15 22:56:23.562 UTC INFO [admin1] Wait for remove table players data for rg1
+2019-07-15 22:56:23.566 UTC INFO [admin1] Remove table players on rg1 done=true
+2019-07-15 22:56:23.568 UTC INFO [admin1] Plan 25[DropTable:players]: task 2 [WaitForRemoveTableData:players on rg1] ended, state=SUCCEEDED
+2019-07-15 22:56:23.569 UTC INFO [admin1] Plan 25[DropTable:players]: task 3 [RemoveTableV2:players] started
+2019-07-15 22:56:23.572 UTC INFO [admin1] About to broadcast TableMetadata[25, 4, 25]
+2019-07-15 22:56:23.573 UTC INFO [admin1] Broadcasting TableMetadata[25, 4, 25] for RemoveTableV2:players
+2019-07-15 22:56:23.578 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 25, for RemoveTableV2:players, attempts=1
+2019-07-15 22:56:23.579 UTC INFO [admin1] Plan 25[DropTable:players]: task 3 [RemoveTableV2:players] ended, state=SUCCEEDED
+2019-07-15 22:56:23.580 UTC INFO [admin1] Plan 25[DropTable:players]: ended, state=SUCCEEDED
+2019-07-15 23:54:01.688 UTC INFO [admin1] JE: ServiceDispatcher IP changed, from 10.0.75.1 to 10.43.26.47
+2019-07-15 23:54:01.689 UTC INFO [admin1] JE: ServiceDispatcher IP changed, from 10.0.75.1 to 10.43.26.47
+2019-07-16 02:54:00.048 UTC INFO [admin1] JE: ServiceDispatcher HostPort=mbartnit-t480:5005 bind failed despite waiting for 0ms
+2019-07-16 02:54:00.048 UTC INFO [admin1] JE: ServiceDispatcher HostPort=mbartnit-t480:5005 bind failed despite waiting for 0ms
+2019-07-16 02:54:00.446 UTC SEVERE [admin1] JE: Server socket exception: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.bindSocket(ServiceDispatcher.java:232)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.rebindSocket(ServiceDispatcher.java:848)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.run(ServiceDispatcher.java:757)
+
+2019-07-16 02:54:00.446 UTC SEVERE [admin1] JE: Server socket exception: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.bindSocket(ServiceDispatcher.java:232)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.rebindSocket(ServiceDispatcher.java:848)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.run(ServiceDispatcher.java:757)
+
+2019-07-16 02:54:00.448 UTC SEVERE [admin1] JE: 1(1):.\kvroot\kvstore\sn1\admin1\env:ServiceDispatcher-mbartnit-t480:5005 exited unexpectedly with exception com.sleepycat.je.EnvironmentFailureException: (JE 7.3.6) java.net.BindException: Address already in use: bind UNEXPECTED_EXCEPTION: Unexpected internal Exception, may have side effects.com.sleepycat.je.EnvironmentFailureException: (JE 7.3.6) java.net.BindException: Address already in use: bind UNEXPECTED_EXCEPTION: Unexpected internal Exception, may have side effects.
+	at com.sleepycat.je.EnvironmentFailureException.unexpectedException(EnvironmentFailureException.java:338)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.run(ServiceDispatcher.java:771)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.bindSocket(ServiceDispatcher.java:232)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.rebindSocket(ServiceDispatcher.java:848)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.run(ServiceDispatcher.java:757)
+
+2019-07-16 02:54:00.449 UTC SEVERE [admin1] JE: 1(1):.\kvroot\kvstore\sn1\admin1\env:ServiceDispatcher-mbartnit-t480:5005 exited unexpectedly with exception com.sleepycat.je.EnvironmentFailureException: (JE 7.3.6) java.net.BindException: Address already in use: bind UNEXPECTED_EXCEPTION: Unexpected internal Exception, may have side effects.com.sleepycat.je.EnvironmentFailureException: (JE 7.3.6) java.net.BindException: Address already in use: bind UNEXPECTED_EXCEPTION: Unexpected internal Exception, may have side effects.
+	at com.sleepycat.je.EnvironmentFailureException.unexpectedException(EnvironmentFailureException.java:338)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.run(ServiceDispatcher.java:771)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.bindSocket(ServiceDispatcher.java:232)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.rebindSocket(ServiceDispatcher.java:848)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.run(ServiceDispatcher.java:757)
+
+2019-07-16 02:54:00.452 UTC INFO [admin1] JE: Releasing commit block latch
+2019-07-16 02:54:01.049 UTC INFO [admin1] JE: Feeder manager forced shutdown.
+2019-07-16 02:54:01.049 UTC INFO [admin1] JE: Feeder manager forced shutdown.
+2019-07-16 02:54:01.098 UTC INFO [admin1] JE: Feeder manager exited. CurrentTxnEnd VLSN: 559
+2019-07-16 02:54:01.098 UTC INFO [admin1] JE: Feeder manager exited. CurrentTxnEnd VLSN: 559
+2019-07-16 02:54:01.098 UTC INFO [admin1] JE: node:NullNode(-1) state change from MASTER to UNKNOWN
+2019-07-16 02:54:01.098 UTC INFO [admin1] State change event: Mon Jul 15 21:54:01 CDT 2019, State: UNKNOWN, Type: PRIMARY, Master: none
+2019-07-16 02:54:01.098 UTC INFO [admin1] AdminStateTracker queue added:UNKNOWN
+2019-07-16 02:54:01.099 UTC INFO [admin1] RuntimeException while entering replica mode, (JE 7.3.6) Environment must be closed, caused by: com.sleepycat.je.EnvironmentFailureException: Environment invalid because of previous exception: (JE 7.3.6) 1(1):.\kvroot\kvstore\sn1\admin1\env com.sleepycat.je.EnvironmentFailureException: (JE 7.3.6) java.net.BindException: Address already in use: bind UNEXPECTED_EXCEPTION: Unexpected internal Exception, may have side effects. UNCAUGHT_EXCEPTION: Uncaught Exception in internal thread, unable to continue. Environment is invalid and must be closed.
+2019-07-16 02:54:01.122 UTC INFO [admin1] JE: RepNode main thread shutting down.
+2019-07-16 02:54:01.123 UTC INFO [admin1] JE: RepNode main thread shutting down.
+2019-07-16 02:54:01.134 UTC INFO [admin1] JE: RepNode shutdown exception:
+Environment invalid because of previous exception: (JE 7.3.6) 1(1):.\kvroot\kvstore\sn1\admin1\env com.sleepycat.je.EnvironmentFailureException: (JE 7.3.6) java.net.BindException: Address already in use: bind UNEXPECTED_EXCEPTION: Unexpected internal Exception, may have side effects. UNCAUGHT_EXCEPTION: Uncaught Exception in internal thread, unable to continue. Environment is invalid and must be closed.1(1)[UNKNOWN] 
+No feeders.
+GlobalCBVLSN=260
+Group info [kvstoreAdmin] 6dfe56ad-8b44-41d2-ab05-7a5a48681afe
+ Format version: 3
+ Change version: 1
+ Max persist rep node ID: 1
+ Min JE version: 6.0.1
+ Node:1 mbartnit-t480:5005 (is member) changeVersion:1 LocalCBVLSN:260 at:Mon Jul 15 16:17:00 CDT 2019 jeVersion:7.3.6
+vlsnRange=first=1 last=559 sync=559 txnEnd=559
+lastReplayedTxn=null lastReplayedVLSN=260 numActiveReplayTxns=0
+
+2019-07-16 02:54:01.134 UTC INFO [admin1] JE: RepNode shutdown exception:
+Environment invalid because of previous exception: (JE 7.3.6) 1(1):.\kvroot\kvstore\sn1\admin1\env com.sleepycat.je.EnvironmentFailureException: (JE 7.3.6) java.net.BindException: Address already in use: bind UNEXPECTED_EXCEPTION: Unexpected internal Exception, may have side effects. UNCAUGHT_EXCEPTION: Uncaught Exception in internal thread, unable to continue. Environment is invalid and must be closed.1(1)[UNKNOWN] 
+No feeders.
+GlobalCBVLSN=260
+Group info [kvstoreAdmin] 6dfe56ad-8b44-41d2-ab05-7a5a48681afe
+ Format version: 3
+ Change version: 1
+ Max persist rep node ID: 1
+ Min JE version: 6.0.1
+ Node:1 mbartnit-t480:5005 (is member) changeVersion:1 LocalCBVLSN:260 at:Mon Jul 15 16:17:00 CDT 2019 jeVersion:7.3.6
+vlsnRange=first=1 last=559 sync=559 txnEnd=559
+lastReplayedTxn=null lastReplayedVLSN=260 numActiveReplayTxns=0
+
+2019-07-16 02:54:01.135 UTC INFO [admin1] JE: Shutting down node 1(1) DTVLSN:559
+2019-07-16 02:54:01.135 UTC INFO [admin1] JE: Shutting down node 1(1) DTVLSN:559
+2019-07-16 02:54:01.135 UTC INFO [admin1] JE: Elections shutdown initiated
+2019-07-16 02:54:01.135 UTC INFO [admin1] JE: Elections shutdown initiated
+2019-07-16 02:54:01.136 UTC INFO [admin1] JE: Acceptor Thread 1 soft shutdown initiated.
+2019-07-16 02:54:01.136 UTC INFO [admin1] JE: Acceptor Thread 1 soft shutdown initiated.
+2019-07-16 02:54:01.136 UTC INFO [admin1] JE: Learner Thread 1 soft shutdown initiated.
+2019-07-16 02:54:01.136 UTC INFO [admin1] JE: Learner Thread 1 soft shutdown initiated.
+2019-07-16 02:54:01.137 UTC INFO [admin1] JE: ElectionThread_1(1):.\kvroot\kvstore\sn1\admin1\env soft shutdown initiated.
+2019-07-16 02:54:01.137 UTC INFO [admin1] JE: ElectionThread_1(1):.\kvroot\kvstore\sn1\admin1\env soft shutdown initiated.
+2019-07-16 02:54:01.137 UTC INFO [admin1] JE: Elections shutdown completed
+2019-07-16 02:54:01.137 UTC INFO [admin1] JE: Elections shutdown completed
+2019-07-16 02:54:01.137 UTC INFO [admin1] JE: RepNode main thread: UNKNOWN 1(1) exited.
+2019-07-16 02:54:01.137 UTC INFO [admin1] JE: RepNode main thread: UNKNOWN 1(1) exited.
+2019-07-16 02:54:01.137 UTC INFO [admin1] JE: Feeder Manager node: 1 soft shutdown initiated.
+2019-07-16 02:54:01.138 UTC INFO [admin1] JE: Feeder Manager node: 1 soft shutdown initiated.
+2019-07-16 02:54:01.138 UTC INFO [admin1] JE: ServiceDispatcher shutdown starting. HostPort=mbartnit-t480:5005 Registered services: []
+2019-07-16 02:54:01.138 UTC INFO [admin1] JE: ServiceDispatcher shutdown starting. HostPort=mbartnit-t480:5005 Registered services: []
+2019-07-16 02:54:01.138 UTC INFO [admin1] JE: ServiceDispatcher-mbartnit-t480:5005 soft shutdown initiated.
+2019-07-16 02:54:01.138 UTC INFO [admin1] JE: ServiceDispatcher-mbartnit-t480:5005 soft shutdown initiated.
+2019-07-16 02:54:01.139 UTC INFO [admin1] JE: ServiceDispatcher shutdown completed. HostPort=mbartnit-t480:5005
+2019-07-16 02:54:01.139 UTC INFO [admin1] JE: ServiceDispatcher shutdown completed. HostPort=mbartnit-t480:5005
+2019-07-16 02:54:01.140 UTC INFO [admin1] JE: 1(1) shutdown completed.
+2019-07-16 02:54:01.140 UTC INFO [admin1] JE: 1(1) shutdown completed.
+2019-07-16 02:54:01.140 UTC INFO [admin1] JE: node:NullNode(-1) state change from UNKNOWN to DETACHED
+2019-07-16 02:54:01.140 UTC INFO [admin1] State change event: Mon Jul 15 21:54:01 CDT 2019, State: DETACHED, Type: PRIMARY, Master: none
+2019-07-16 02:54:01.140 UTC INFO [admin1] AdminStateTracker queue added:DETACHED
+2019-07-16 02:54:01.140 UTC INFO [admin1] AdminStateTracker thread exited: admin1
+2019-07-16 02:54:01.140 UTC SEVERE [admin1] Admin shutting down for fault in thread AdminStateTracker
+com.sleepycat.je.EnvironmentFailureException: Environment invalid because of previous exception: (JE 7.3.6) 1(1):.\kvroot\kvstore\sn1\admin1\env com.sleepycat.je.EnvironmentFailureException: (JE 7.3.6) java.net.BindException: Address already in use: bind UNEXPECTED_EXCEPTION: Unexpected internal Exception, may have side effects. UNCAUGHT_EXCEPTION: Uncaught Exception in internal thread, unable to continue. Environment is invalid and must be closed. Originally thrown by HA thread: UNKNOWN 1(1)
+	at com.sleepycat.je.utilint.StoppableThread.handleUncaughtException(StoppableThread.java:205)
+	at com.sleepycat.je.utilint.StoppableThread$UncaughtHandler.uncaughtException(StoppableThread.java:236)
+	at java.lang.Thread.dispatchUncaughtException(Unknown Source)
+Caused by: com.sleepycat.je.EnvironmentFailureException: (JE 7.3.6) java.net.BindException: Address already in use: bind UNEXPECTED_EXCEPTION: Unexpected internal Exception, may have side effects.
+	at com.sleepycat.je.EnvironmentFailureException.unexpectedException(EnvironmentFailureException.java:338)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.run(ServiceDispatcher.java:771)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.bindSocket(ServiceDispatcher.java:232)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.rebindSocket(ServiceDispatcher.java:848)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.run(ServiceDispatcher.java:757)
+2019-07-16 02:54:01.144 UTC SEVERE [admin1] Admin shutting down for fault in thread EventRecorder
+com.sleepycat.je.EnvironmentFailureException: (JE 7.3.6) Environment must be closed, caused by: com.sleepycat.je.EnvironmentFailureException: Environment invalid because of previous exception: (JE 7.3.6) 1(1):.\kvroot\kvstore\sn1\admin1\env com.sleepycat.je.EnvironmentFailureException: (JE 7.3.6) java.net.BindException: Address already in use: bind UNEXPECTED_EXCEPTION: Unexpected internal Exception, may have side effects. UNCAUGHT_EXCEPTION: Uncaught Exception in internal thread, unable to continue. Environment is invalid and must be closed. Originally thrown by HA thread: UNKNOWN 1(1)
+	at com.sleepycat.je.EnvironmentFailureException.wrapSelf(EnvironmentFailureException.java:228)
+	at com.sleepycat.je.dbi.EnvironmentImpl.checkIfInvalid(EnvironmentImpl.java:1766)
+	at com.sleepycat.je.dbi.EnvironmentImpl.checkOpen(EnvironmentImpl.java:1775)
+	at com.sleepycat.je.Environment.checkOpen(Environment.java:2473)
+	at com.sleepycat.je.Environment.beginTransactionInternal(Environment.java:1393)
+	at com.sleepycat.je.Environment.beginTransaction(Environment.java:1367)
+	at oracle.kv.impl.admin.Admin$RunTransaction.run(Admin.java:2993)
+	at oracle.kv.impl.admin.Admin.storeEvents(Admin.java:1986)
+	at oracle.kv.impl.admin.criticalevent.EventRecorder.storeLogEvents(EventRecorder.java:280)
+	at oracle.kv.impl.admin.criticalevent.EventRecorder.eventRecorderWorker(EventRecorder.java:241)
+	at oracle.kv.impl.admin.criticalevent.EventRecorder.access$000(EventRecorder.java:43)
+	at oracle.kv.impl.admin.criticalevent.EventRecorder$1.run(EventRecorder.java:97)
+Caused by: com.sleepycat.je.EnvironmentFailureException: Environment invalid because of previous exception: (JE 7.3.6) 1(1):.\kvroot\kvstore\sn1\admin1\env com.sleepycat.je.EnvironmentFailureException: (JE 7.3.6) java.net.BindException: Address already in use: bind UNEXPECTED_EXCEPTION: Unexpected internal Exception, may have side effects. UNCAUGHT_EXCEPTION: Uncaught Exception in internal thread, unable to continue. Environment is invalid and must be closed. Originally thrown by HA thread: UNKNOWN 1(1)
+	at com.sleepycat.je.utilint.StoppableThread.handleUncaughtException(StoppableThread.java:205)
+	at com.sleepycat.je.utilint.StoppableThread$UncaughtHandler.uncaughtException(StoppableThread.java:236)
+	at java.lang.Thread.dispatchUncaughtException(Unknown Source)
+Caused by: com.sleepycat.je.EnvironmentFailureException: (JE 7.3.6) java.net.BindException: Address already in use: bind UNEXPECTED_EXCEPTION: Unexpected internal Exception, may have side effects.
+	at com.sleepycat.je.EnvironmentFailureException.unexpectedException(EnvironmentFailureException.java:338)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.run(ServiceDispatcher.java:771)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.bindSocket(ServiceDispatcher.java:232)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.rebindSocket(ServiceDispatcher.java:848)
+	at com.sleepycat.je.rep.utilint.ServiceDispatcher.run(ServiceDispatcher.java:757)
+2019-07-16 14:20:21.003 UTC INFO [admin1] [admin1] sn1: Service status: UNREACHABLE 2019-07-16 14:20:21 UTC
+2019-07-16 14:26:00.946 UTC INFO [admin1] JVM java.net.InetAddress properties: cache.ttl=-1 cache.negative.ttl=-1
+2019-07-16 14:26:00.951 UTC INFO [admin1] Starting AdminService
+2019-07-16 14:26:01.025 UTC INFO [admin1] Initializing PRIMARY Admin for store: kvstore
+2019-07-16 14:26:01.026 UTC INFO [admin1] JVM Runtime maxMemory (bytes): 7598505984
+2019-07-16 14:26:01.026 UTC INFO [admin1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=32, je.rep.envUnknownStateTimeout=10 s, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=10 s, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.bindInaddrAny=true, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.checkpointer.bytesInterval=500000000, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2019-07-16 14:26:01.058 UTC INFO [admin1] DataChannelFactory: basic
+2019-07-16 14:26:01.060 UTC INFO [admin1] AdminStateTracker thread start: admin1
+2019-07-16 14:26:01.280 UTC INFO [admin1] JE recovery: FIND_END_OF_LOG
+2019-07-16 14:26:01.320 UTC INFO [admin1] JE recovery: FIND_LAST_CKPT
+2019-07-16 14:26:01.324 UTC INFO [admin1] JE recovery: READ_DBMAP_INFO
+2019-07-16 14:26:01.342 UTC INFO [admin1] JE recovery: REDO_DBMAP_INFO
+2019-07-16 14:26:01.346 UTC INFO [admin1] JE recovery: UNDO_DBMAP_RECORDS
+2019-07-16 14:26:01.350 UTC INFO [admin1] JE recovery: REDO_DBMAP_RECORDS
+2019-07-16 14:26:01.356 UTC INFO [admin1] JE recovery: READ_DATA_INFO
+2019-07-16 14:26:01.366 UTC INFO [admin1] JE recovery: REDO_DATA_INFO
+2019-07-16 14:26:01.370 UTC INFO [admin1] JE recovery: UNDO_DATA_RECORDS
+2019-07-16 14:26:01.375 UTC INFO [admin1] JE recovery: REDO_DATA_RECORDS
+2019-07-16 14:26:01.411 UTC INFO [admin1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2019-07-16 14:26:01.419 UTC INFO [admin1] JE recovery: POPULATE_EXPIRATION_PROFILE
+2019-07-16 14:26:01.436 UTC INFO [admin1] JE recovery: REMOVE_TEMP_DBS
+2019-07-16 14:26:01.455 UTC INFO [admin1] JE recovery: CKPT
+2019-07-16 14:26:01.472 UTC INFO [admin1] JE recovery: RECOVERY_FINISHED
+2019-07-16 14:26:01.502 UTC INFO [admin1] JE: Started ServiceDispatcher. HostPort=mbartnit-t480:5005
+2019-07-16 14:26:01.503 UTC INFO [admin1] JE: Started ServiceDispatcher. HostPort=mbartnit-t480:5005
+2019-07-16 14:26:01.503 UTC INFO [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-16 14:26:01.503 UTC INFO [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-16 14:26:01.531 UTC INFO [admin1] JE: DTVLSN at start:547
+2019-07-16 14:26:01.531 UTC INFO [admin1] JE: DTVLSN at start:547
+2019-07-16 14:26:01.532 UTC INFO [admin1] JE: node:NullNode(-1) state change from DETACHED to UNKNOWN
+2019-07-16 14:26:01.544 UTC INFO [admin1] JE: Current group size: 1
+2019-07-16 14:26:01.544 UTC INFO [admin1] JE: Current group size: 1
+2019-07-16 14:26:01.544 UTC INFO [admin1] JE: Existing node 1 querying for a current master.
+2019-07-16 14:26:01.544 UTC INFO [admin1] JE: Existing node 1 querying for a current master.
+2019-07-16 14:26:01.554 UTC INFO [admin1] JE recovery: BECOME_CONSISTENT
+2019-07-16 14:26:01.554 UTC INFO [admin1] JE: Node 1 started
+2019-07-16 14:26:01.555 UTC INFO [admin1] JE: Node 1 started
+2019-07-16 14:26:01.555 UTC INFO [admin1] JE: Election initiated; election #1
+2019-07-16 14:26:01.555 UTC INFO [admin1] JE: Election initiated; election #1
+2019-07-16 14:26:01.557 UTC INFO [admin1] JE: Started election thread Tue Jul 16 09:26:01 CDT 2019
+2019-07-16 14:26:01.557 UTC INFO [admin1] JE: Started election thread Tue Jul 16 09:26:01 CDT 2019
+2019-07-16 14:26:03.569 UTC INFO [admin1] JE: Winning proposal: Proposal(0000016bfb2d12a6:b5e2cbe2acb0b68dae44a39455ae35ad:00000001) Value: Value:mbartnit-t480$$$5005$$$1$$$1
+2019-07-16 14:26:03.569 UTC INFO [admin1] JE: Winning proposal: Proposal(0000016bfb2d12a6:b5e2cbe2acb0b68dae44a39455ae35ad:00000001) Value: Value:mbartnit-t480$$$5005$$$1$$$1
+2019-07-16 14:26:03.573 UTC INFO [admin1] JE: Master changed to 1
+2019-07-16 14:26:03.573 UTC INFO [admin1] JE: Master changed to 1
+2019-07-16 14:26:03.573 UTC INFO [admin1] JE: Election finished. Elapsed time: 2018ms
+2019-07-16 14:26:03.574 UTC INFO [admin1] JE: Election finished. Elapsed time: 2018ms
+2019-07-16 14:26:03.574 UTC INFO [admin1] JE: Election thread exited. Group master: 1(1)
+2019-07-16 14:26:03.574 UTC INFO [admin1] JE: Election thread exited. Group master: 1(1)
+2019-07-16 14:26:03.574 UTC INFO [admin1] JE: node:1(1) state change from UNKNOWN to MASTER
+2019-07-16 14:26:03.574 UTC INFO [admin1] JE: Feeder manager accepting requests.
+2019-07-16 14:26:03.574 UTC INFO [admin1] JE: Feeder manager accepting requests.
+2019-07-16 14:26:03.579 UTC INFO [admin1] JE: Joining group as master
+2019-07-16 14:26:03.579 UTC INFO [admin1] JE: Joining group as master
+2019-07-16 14:26:03.581 UTC INFO [admin1] State change event: Tue Jul 16 09:26:03 CDT 2019, State: MASTER, Type: PRIMARY, Master: 1
+2019-07-16 14:26:03.582 UTC INFO [admin1] AdminStateTracker queue added:MASTER
+2019-07-16 14:26:03.613 UTC INFO [admin1] Initialize stores at schema version 5, readOnly=false
+2019-07-16 14:26:03.617 UTC INFO [admin1] Open: AdminCriticalEventsDatabase
+2019-07-16 14:26:03.619 UTC INFO [admin1] Open: AdminParametersDatabase
+2019-07-16 14:26:03.620 UTC INFO [admin1] Open: AdminMemoDatabase
+2019-07-16 14:26:03.623 UTC INFO [admin1] Open: AdminPlanDatabase
+2019-07-16 14:26:03.625 UTC INFO [admin1] Open: AdminSecurityDatabase
+2019-07-16 14:26:03.626 UTC INFO [admin1] Open: AdminTableDatabase
+2019-07-16 14:26:03.628 UTC INFO [admin1] Open: AdminTopologyHistoryDatabase
+2019-07-16 14:26:03.628 UTC INFO [admin1] Open: AdminTopologyCandidateDatabase
+2019-07-16 14:26:03.629 UTC INFO [admin1] Shutting down monitor collector
+2019-07-16 14:26:03.665 UTC INFO [admin1] Using existing Admin database
+2019-07-16 14:26:03.672 UTC INFO [admin1] Monitor collector: adding sn1 to monitoring
+2019-07-16 14:26:03.673 UTC INFO [admin1] Monitor collector: adding rg1-rn1 to monitoring
+2019-07-16 14:26:03.689 UTC INFO [admin1] [sn1] Service status: RUNNING 2019-07-16 14:26:01 UTC
+2019-07-16 14:26:03.699 UTC INFO [admin1] [rg1-rn1] Service status: STARTING 2019-07-16 14:26:03 UTC
+2019-07-16 14:26:03.790 UTC INFO [admin1] Replicated environment handle established. Cache size: 4559103590, State: MASTER
+2019-07-16 14:26:03.791 UTC INFO [admin1] Starting commandService on rmi://mbartnit-t480:5000/commandService
+2019-07-16 14:26:03.852 UTC INFO [admin1] Successfully created a secure proxy for commandService
+2019-07-16 14:26:03.889 UTC INFO [admin1] Starting admin:CLIENT_ADMIN on rmi://mbartnit-t480:5000/admin:CLIENT_ADMIN
+2019-07-16 14:26:03.892 UTC INFO [admin1] Successfully created a secure proxy for admin:CLIENT_ADMIN
+2019-07-16 14:26:03.900 UTC INFO [admin1] Started AdminService
+2019-07-16 14:26:23.699 UTC INFO [admin1] [rg1-rn1] Service status: RUNNING 2019-07-16 14:26:04 UTC
+2019-07-16 14:49:04.533 UTC INFO [admin1] Plan 28[CreateTable:players] approved
+2019-07-16 14:49:04.539 UTC INFO [admin1] Plan 28[CreateTable:players]: started, 1 tasks
+2019-07-16 14:49:04.542 UTC INFO [admin1] Plan 28[CreateTable:players]: task 1 [AddTable:players] started
+2019-07-16 14:49:04.550 UTC INFO [admin1] About to broadcast TableMetadata[26, 5, 26]
+2019-07-16 14:49:04.551 UTC INFO [admin1] Broadcasting TableMetadata[26, 5, 26] for AddTable:players
+2019-07-16 14:49:04.571 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 26, for AddTable:players, attempts=1
+2019-07-16 14:49:04.573 UTC INFO [admin1] Plan 28[CreateTable:players]: task 1 [AddTable:players] ended, state=SUCCEEDED
+2019-07-16 14:49:04.575 UTC INFO [admin1] Plan 28[CreateTable:players]: ended, state=SUCCEEDED
+2019-07-16 15:40:26.995 UTC INFO [admin1] JVM java.net.InetAddress properties: cache.ttl=-1 cache.negative.ttl=-1
+2019-07-16 15:40:27.000 UTC INFO [admin1] Starting AdminService
+2019-07-16 15:40:27.097 UTC INFO [admin1] Initializing PRIMARY Admin for store: kvstore
+2019-07-16 15:40:27.098 UTC INFO [admin1] JVM Runtime maxMemory (bytes): 7598505984
+2019-07-16 15:40:27.099 UTC INFO [admin1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=32, je.rep.envUnknownStateTimeout=10 s, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=10 s, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.bindInaddrAny=true, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.checkpointer.bytesInterval=500000000, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2019-07-16 15:40:27.109 UTC INFO [admin1] DataChannelFactory: basic
+2019-07-16 15:40:27.110 UTC INFO [admin1] AdminStateTracker thread start: admin1
+2019-07-16 15:40:27.335 UTC INFO [admin1] JE recovery: FIND_END_OF_LOG
+2019-07-16 15:40:27.374 UTC INFO [admin1] JE recovery: FIND_LAST_CKPT
+2019-07-16 15:40:27.379 UTC INFO [admin1] JE recovery: READ_DBMAP_INFO
+2019-07-16 15:40:27.395 UTC INFO [admin1] JE recovery: REDO_DBMAP_INFO
+2019-07-16 15:40:27.397 UTC INFO [admin1] JE recovery: UNDO_DBMAP_RECORDS
+2019-07-16 15:40:27.401 UTC INFO [admin1] JE recovery: REDO_DBMAP_RECORDS
+2019-07-16 15:40:27.406 UTC INFO [admin1] JE recovery: READ_DATA_INFO
+2019-07-16 15:40:27.414 UTC INFO [admin1] JE recovery: REDO_DATA_INFO
+2019-07-16 15:40:27.417 UTC INFO [admin1] JE recovery: UNDO_DATA_RECORDS
+2019-07-16 15:40:27.421 UTC INFO [admin1] JE recovery: REDO_DATA_RECORDS
+2019-07-16 15:40:27.442 UTC INFO [admin1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2019-07-16 15:40:27.449 UTC INFO [admin1] JE recovery: POPULATE_EXPIRATION_PROFILE
+2019-07-16 15:40:27.472 UTC INFO [admin1] JE recovery: REMOVE_TEMP_DBS
+2019-07-16 15:40:27.497 UTC INFO [admin1] JE recovery: CKPT
+2019-07-16 15:40:27.512 UTC INFO [admin1] JE recovery: RECOVERY_FINISHED
+2019-07-16 15:40:27.539 UTC INFO [admin1] JE: Started ServiceDispatcher. HostPort=mbartnit-t480:5005
+2019-07-16 15:40:27.539 UTC INFO [admin1] JE: Started ServiceDispatcher. HostPort=mbartnit-t480:5005
+2019-07-16 15:40:27.540 UTC INFO [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-16 15:40:27.540 UTC INFO [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-16 15:40:27.568 UTC INFO [admin1] JE: DTVLSN at start:585
+2019-07-16 15:40:27.569 UTC INFO [admin1] JE: DTVLSN at start:585
+2019-07-16 15:40:27.569 UTC INFO [admin1] JE: node:NullNode(-1) state change from DETACHED to UNKNOWN
+2019-07-16 15:40:27.581 UTC INFO [admin1] JE: Current group size: 1
+2019-07-16 15:40:27.581 UTC INFO [admin1] JE: Current group size: 1
+2019-07-16 15:40:27.581 UTC INFO [admin1] JE: Existing node 1 querying for a current master.
+2019-07-16 15:40:27.581 UTC INFO [admin1] JE: Existing node 1 querying for a current master.
+2019-07-16 15:40:27.593 UTC INFO [admin1] JE recovery: BECOME_CONSISTENT
+2019-07-16 15:40:27.593 UTC INFO [admin1] JE: Node 1 started
+2019-07-16 15:40:27.593 UTC INFO [admin1] JE: Node 1 started
+2019-07-16 15:40:27.593 UTC INFO [admin1] JE: Election initiated; election #1
+2019-07-16 15:40:27.593 UTC INFO [admin1] JE: Election initiated; election #1
+2019-07-16 15:40:27.595 UTC INFO [admin1] JE: Started election thread Tue Jul 16 10:40:27 CDT 2019
+2019-07-16 15:40:27.595 UTC INFO [admin1] JE: Started election thread Tue Jul 16 10:40:27 CDT 2019
+2019-07-16 15:40:29.609 UTC INFO [admin1] JE: Winning proposal: Proposal(0000016bfb71381c:9d606f5971755d4e23c2abad1aa921d1:00000001) Value: Value:mbartnit-t480$$$5005$$$1$$$1
+2019-07-16 15:40:29.609 UTC INFO [admin1] JE: Winning proposal: Proposal(0000016bfb71381c:9d606f5971755d4e23c2abad1aa921d1:00000001) Value: Value:mbartnit-t480$$$5005$$$1$$$1
+2019-07-16 15:40:29.613 UTC INFO [admin1] JE: Master changed to 1
+2019-07-16 15:40:29.614 UTC INFO [admin1] JE: Election finished. Elapsed time: 2021ms
+2019-07-16 15:40:29.614 UTC INFO [admin1] JE: Election thread exited. Group master: 1(1)
+2019-07-16 15:40:29.614 UTC INFO [admin1] JE: Election finished. Elapsed time: 2021ms
+2019-07-16 15:40:29.614 UTC INFO [admin1] JE: Election thread exited. Group master: 1(1)
+2019-07-16 15:40:29.615 UTC INFO [admin1] JE: node:1(1) state change from UNKNOWN to MASTER
+2019-07-16 15:40:29.615 UTC INFO [admin1] JE: Feeder manager accepting requests.
+2019-07-16 15:40:29.615 UTC INFO [admin1] JE: Feeder manager accepting requests.
+2019-07-16 15:40:29.620 UTC INFO [admin1] JE: Joining group as master
+2019-07-16 15:40:29.620 UTC INFO [admin1] JE: Joining group as master
+2019-07-16 15:40:29.623 UTC INFO [admin1] State change event: Tue Jul 16 10:40:29 CDT 2019, State: MASTER, Type: PRIMARY, Master: 1
+2019-07-16 15:40:29.623 UTC INFO [admin1] AdminStateTracker queue added:MASTER
+2019-07-16 15:40:29.630 UTC INFO [admin1] Initialize stores at schema version 5, readOnly=false
+2019-07-16 15:40:29.666 UTC INFO [admin1] Open: AdminCriticalEventsDatabase
+2019-07-16 15:40:29.667 UTC INFO [admin1] Open: AdminParametersDatabase
+2019-07-16 15:40:29.668 UTC INFO [admin1] Open: AdminMemoDatabase
+2019-07-16 15:40:29.670 UTC INFO [admin1] Open: AdminPlanDatabase
+2019-07-16 15:40:29.672 UTC INFO [admin1] Open: AdminSecurityDatabase
+2019-07-16 15:40:29.673 UTC INFO [admin1] Open: AdminTableDatabase
+2019-07-16 15:40:29.675 UTC INFO [admin1] Open: AdminTopologyHistoryDatabase
+2019-07-16 15:40:29.676 UTC INFO [admin1] Open: AdminTopologyCandidateDatabase
+2019-07-16 15:40:29.676 UTC INFO [admin1] Shutting down monitor collector
+2019-07-16 15:40:29.705 UTC INFO [admin1] Using existing Admin database
+2019-07-16 15:40:29.713 UTC INFO [admin1] Monitor collector: adding sn1 to monitoring
+2019-07-16 15:40:29.714 UTC INFO [admin1] Monitor collector: adding rg1-rn1 to monitoring
+2019-07-16 15:40:29.728 UTC INFO [admin1] [sn1] Service status: RUNNING 2019-07-16 15:40:27 UTC
+2019-07-16 15:40:29.737 UTC INFO [admin1] [rg1-rn1] Service status: STARTING 2019-07-16 15:40:29 UTC
+2019-07-16 15:40:29.810 UTC INFO [admin1] Replicated environment handle established. Cache size: 4559103590, State: MASTER
+2019-07-16 15:40:29.811 UTC INFO [admin1] Starting commandService on rmi://mbartnit-t480:5000/commandService
+2019-07-16 15:40:29.863 UTC INFO [admin1] Successfully created a secure proxy for commandService
+2019-07-16 15:40:29.899 UTC INFO [admin1] Starting admin:CLIENT_ADMIN on rmi://mbartnit-t480:5000/admin:CLIENT_ADMIN
+2019-07-16 15:40:29.902 UTC INFO [admin1] Successfully created a secure proxy for admin:CLIENT_ADMIN
+2019-07-16 15:40:29.910 UTC INFO [admin1] Started AdminService
+2019-07-16 15:40:49.738 UTC INFO [admin1] [rg1-rn1] Service status: RUNNING 2019-07-16 15:40:29 UTC
+2019-07-16 18:47:20.474 UTC INFO [admin1] JVM java.net.InetAddress properties: cache.ttl=-1 cache.negative.ttl=-1
+2019-07-16 18:47:20.481 UTC INFO [admin1] Starting AdminService
+2019-07-16 18:47:20.577 UTC INFO [admin1] Initializing PRIMARY Admin for store: kvstore
+2019-07-16 18:47:20.579 UTC INFO [admin1] JVM Runtime maxMemory (bytes): 7598505984
+2019-07-16 18:47:20.585 UTC INFO [admin1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=32, je.rep.envUnknownStateTimeout=10 s, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=10 s, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.bindInaddrAny=true, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.checkpointer.bytesInterval=500000000, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2019-07-16 18:47:20.599 UTC INFO [admin1] DataChannelFactory: basic
+2019-07-16 18:47:20.601 UTC INFO [admin1] AdminStateTracker thread start: admin1
+2019-07-16 18:47:20.867 UTC INFO [admin1] JE recovery: FIND_END_OF_LOG
+2019-07-16 18:47:20.913 UTC INFO [admin1] JE recovery: FIND_LAST_CKPT
+2019-07-16 18:47:20.918 UTC INFO [admin1] JE recovery: READ_DBMAP_INFO
+2019-07-16 18:47:20.932 UTC INFO [admin1] JE recovery: REDO_DBMAP_INFO
+2019-07-16 18:47:20.934 UTC INFO [admin1] JE recovery: UNDO_DBMAP_RECORDS
+2019-07-16 18:47:20.936 UTC INFO [admin1] JE recovery: REDO_DBMAP_RECORDS
+2019-07-16 18:47:20.942 UTC INFO [admin1] JE recovery: READ_DATA_INFO
+2019-07-16 18:47:20.955 UTC INFO [admin1] JE recovery: REDO_DATA_INFO
+2019-07-16 18:47:20.958 UTC INFO [admin1] JE recovery: UNDO_DATA_RECORDS
+2019-07-16 18:47:20.961 UTC INFO [admin1] JE recovery: REDO_DATA_RECORDS
+2019-07-16 18:47:20.968 UTC INFO [admin1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2019-07-16 18:47:20.991 UTC INFO [admin1] JE recovery: POPULATE_EXPIRATION_PROFILE
+2019-07-16 18:47:21.015 UTC INFO [admin1] JE recovery: REMOVE_TEMP_DBS
+2019-07-16 18:47:21.033 UTC INFO [admin1] JE recovery: CKPT
+2019-07-16 18:47:21.051 UTC INFO [admin1] JE recovery: RECOVERY_FINISHED
+2019-07-16 18:47:21.099 UTC INFO [admin1] JE: Started ServiceDispatcher. HostPort=mbartnit-t480:5005
+2019-07-16 18:47:21.100 UTC INFO [admin1] JE: Started ServiceDispatcher. HostPort=mbartnit-t480:5005
+2019-07-16 18:47:21.100 UTC INFO [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-16 18:47:21.100 UTC INFO [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-16 18:47:21.128 UTC INFO [admin1] JE: DTVLSN at start:598
+2019-07-16 18:47:21.128 UTC INFO [admin1] JE: DTVLSN at start:598
+2019-07-16 18:47:21.129 UTC INFO [admin1] JE: node:NullNode(-1) state change from DETACHED to UNKNOWN
+2019-07-16 18:47:21.143 UTC INFO [admin1] JE: Current group size: 1
+2019-07-16 18:47:21.144 UTC INFO [admin1] JE: Current group size: 1
+2019-07-16 18:47:21.144 UTC INFO [admin1] JE: Existing node 1 querying for a current master.
+2019-07-16 18:47:21.144 UTC INFO [admin1] JE: Existing node 1 querying for a current master.
+2019-07-16 18:47:21.155 UTC INFO [admin1] JE recovery: BECOME_CONSISTENT
+2019-07-16 18:47:21.155 UTC INFO [admin1] JE: Node 1 started
+2019-07-16 18:47:21.155 UTC INFO [admin1] JE: Node 1 started
+2019-07-16 18:47:21.156 UTC INFO [admin1] JE: Election initiated; election #1
+2019-07-16 18:47:21.156 UTC INFO [admin1] JE: Election initiated; election #1
+2019-07-16 18:47:21.158 UTC INFO [admin1] JE: Started election thread Tue Jul 16 13:47:21 CDT 2019
+2019-07-16 18:47:21.158 UTC INFO [admin1] JE: Started election thread Tue Jul 16 13:47:21 CDT 2019
+2019-07-16 18:47:23.170 UTC INFO [admin1] JE: Winning proposal: Proposal(0000016bfc1c5318:a3ba79c2cbb07d5ce569995f1ce90672:00000001) Value: Value:mbartnit-t480$$$5005$$$1$$$1
+2019-07-16 18:47:23.170 UTC INFO [admin1] JE: Winning proposal: Proposal(0000016bfc1c5318:a3ba79c2cbb07d5ce569995f1ce90672:00000001) Value: Value:mbartnit-t480$$$5005$$$1$$$1
+2019-07-16 18:47:23.174 UTC INFO [admin1] JE: Master changed to 1
+2019-07-16 18:47:23.174 UTC INFO [admin1] JE: Master changed to 1
+2019-07-16 18:47:23.174 UTC INFO [admin1] JE: Election finished. Elapsed time: 2018ms
+2019-07-16 18:47:23.174 UTC INFO [admin1] JE: Election finished. Elapsed time: 2018ms
+2019-07-16 18:47:23.174 UTC INFO [admin1] JE: Election thread exited. Group master: 1(1)
+2019-07-16 18:47:23.175 UTC INFO [admin1] JE: Election thread exited. Group master: 1(1)
+2019-07-16 18:47:23.175 UTC INFO [admin1] JE: node:1(1) state change from UNKNOWN to MASTER
+2019-07-16 18:47:23.175 UTC INFO [admin1] JE: Feeder manager accepting requests.
+2019-07-16 18:47:23.176 UTC INFO [admin1] JE: Feeder manager accepting requests.
+2019-07-16 18:47:23.180 UTC INFO [admin1] JE: Joining group as master
+2019-07-16 18:47:23.180 UTC INFO [admin1] JE: Joining group as master
+2019-07-16 18:47:23.217 UTC INFO [admin1] State change event: Tue Jul 16 13:47:23 CDT 2019, State: MASTER, Type: PRIMARY, Master: 1
+2019-07-16 18:47:23.217 UTC INFO [admin1] AdminStateTracker queue added:MASTER
+2019-07-16 18:47:23.223 UTC INFO [admin1] Initialize stores at schema version 5, readOnly=false
+2019-07-16 18:47:23.230 UTC INFO [admin1] Open: AdminCriticalEventsDatabase
+2019-07-16 18:47:23.232 UTC INFO [admin1] Open: AdminParametersDatabase
+2019-07-16 18:47:23.233 UTC INFO [admin1] Open: AdminMemoDatabase
+2019-07-16 18:47:23.235 UTC INFO [admin1] Open: AdminPlanDatabase
+2019-07-16 18:47:23.238 UTC INFO [admin1] Open: AdminSecurityDatabase
+2019-07-16 18:47:23.239 UTC INFO [admin1] Open: AdminTableDatabase
+2019-07-16 18:47:23.242 UTC INFO [admin1] Open: AdminTopologyHistoryDatabase
+2019-07-16 18:47:23.242 UTC INFO [admin1] Open: AdminTopologyCandidateDatabase
+2019-07-16 18:47:23.243 UTC INFO [admin1] Shutting down monitor collector
+2019-07-16 18:47:23.272 UTC INFO [admin1] Using existing Admin database
+2019-07-16 18:47:23.281 UTC INFO [admin1] Monitor collector: adding sn1 to monitoring
+2019-07-16 18:47:23.284 UTC INFO [admin1] Monitor collector: adding rg1-rn1 to monitoring
+2019-07-16 18:47:23.301 UTC INFO [admin1] [sn1] Service status: RUNNING 2019-07-16 18:47:20 UTC
+2019-07-16 18:47:23.309 UTC INFO [admin1] [rg1-rn1] Service status: STARTING 2019-07-16 18:47:23 UTC
+2019-07-16 18:47:23.410 UTC INFO [admin1] Replicated environment handle established. Cache size: 4559103590, State: MASTER
+2019-07-16 18:47:23.410 UTC INFO [admin1] Starting commandService on rmi://mbartnit-t480:5000/commandService
+2019-07-16 18:47:23.462 UTC INFO [admin1] Successfully created a secure proxy for commandService
+2019-07-16 18:47:23.499 UTC INFO [admin1] Starting admin:CLIENT_ADMIN on rmi://mbartnit-t480:5000/admin:CLIENT_ADMIN
+2019-07-16 18:47:23.501 UTC INFO [admin1] Successfully created a secure proxy for admin:CLIENT_ADMIN
+2019-07-16 18:47:23.508 UTC INFO [admin1] Started AdminService
+2019-07-16 18:47:43.312 UTC INFO [admin1] [rg1-rn1] Service status: RUNNING 2019-07-16 18:47:23 UTC
+2019-07-16 20:05:29.542 UTC INFO [admin1] JVM java.net.InetAddress properties: cache.ttl=-1 cache.negative.ttl=-1
+2019-07-16 20:05:29.548 UTC INFO [admin1] Starting AdminService
+2019-07-16 20:05:29.647 UTC INFO [admin1] Initializing PRIMARY Admin for store: kvstore
+2019-07-16 20:05:29.649 UTC INFO [admin1] JVM Runtime maxMemory (bytes): 7598505984
+2019-07-16 20:05:29.655 UTC INFO [admin1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=32, je.rep.envUnknownStateTimeout=10 s, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=10 s, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.bindInaddrAny=true, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.checkpointer.bytesInterval=500000000, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2019-07-16 20:05:29.666 UTC INFO [admin1] DataChannelFactory: basic
+2019-07-16 20:05:29.667 UTC INFO [admin1] AdminStateTracker thread start: admin1
+2019-07-16 20:05:29.900 UTC INFO [admin1] JE recovery: FIND_END_OF_LOG
+2019-07-16 20:05:29.945 UTC INFO [admin1] JE recovery: FIND_LAST_CKPT
+2019-07-16 20:05:29.949 UTC INFO [admin1] JE recovery: READ_DBMAP_INFO
+2019-07-16 20:05:29.962 UTC INFO [admin1] JE recovery: REDO_DBMAP_INFO
+2019-07-16 20:05:29.965 UTC INFO [admin1] JE recovery: UNDO_DBMAP_RECORDS
+2019-07-16 20:05:29.968 UTC INFO [admin1] JE recovery: REDO_DBMAP_RECORDS
+2019-07-16 20:05:29.973 UTC INFO [admin1] JE recovery: READ_DATA_INFO
+2019-07-16 20:05:29.983 UTC INFO [admin1] JE recovery: REDO_DATA_INFO
+2019-07-16 20:05:29.986 UTC INFO [admin1] JE recovery: UNDO_DATA_RECORDS
+2019-07-16 20:05:29.988 UTC INFO [admin1] JE recovery: REDO_DATA_RECORDS
+2019-07-16 20:05:29.993 UTC INFO [admin1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2019-07-16 20:05:30.014 UTC INFO [admin1] JE recovery: POPULATE_EXPIRATION_PROFILE
+2019-07-16 20:05:30.039 UTC INFO [admin1] JE recovery: REMOVE_TEMP_DBS
+2019-07-16 20:05:30.068 UTC INFO [admin1] JE recovery: CKPT
+2019-07-16 20:05:30.093 UTC INFO [admin1] JE recovery: RECOVERY_FINISHED
+2019-07-16 20:05:30.123 UTC INFO [admin1] JE: Started ServiceDispatcher. HostPort=mbartnit-t480:5005
+2019-07-16 20:05:30.124 UTC INFO [admin1] JE: Started ServiceDispatcher. HostPort=mbartnit-t480:5005
+2019-07-16 20:05:30.124 UTC INFO [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-16 20:05:30.124 UTC INFO [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-07-16 20:05:30.151 UTC INFO [admin1] JE: DTVLSN at start:611
+2019-07-16 20:05:30.151 UTC INFO [admin1] JE: DTVLSN at start:611
+2019-07-16 20:05:30.152 UTC INFO [admin1] JE: node:NullNode(-1) state change from DETACHED to UNKNOWN
+2019-07-16 20:05:30.163 UTC INFO [admin1] JE: Current group size: 1
+2019-07-16 20:05:30.163 UTC INFO [admin1] JE: Current group size: 1
+2019-07-16 20:05:30.163 UTC INFO [admin1] JE: Existing node 1 querying for a current master.
+2019-07-16 20:05:30.163 UTC INFO [admin1] JE: Existing node 1 querying for a current master.
+2019-07-16 20:05:30.173 UTC INFO [admin1] JE recovery: BECOME_CONSISTENT
+2019-07-16 20:05:30.173 UTC INFO [admin1] JE: Node 1 started
+2019-07-16 20:05:30.173 UTC INFO [admin1] JE: Node 1 started
+2019-07-16 20:05:30.174 UTC INFO [admin1] JE: Election initiated; election #1
+2019-07-16 20:05:30.174 UTC INFO [admin1] JE: Election initiated; election #1
+2019-07-16 20:05:30.176 UTC INFO [admin1] JE: Started election thread Tue Jul 16 15:05:30 CDT 2019
+2019-07-16 20:05:30.176 UTC INFO [admin1] JE: Started election thread Tue Jul 16 15:05:30 CDT 2019
+2019-07-16 20:05:32.194 UTC INFO [admin1] JE: Winning proposal: Proposal(0000016bfc63df92:d60e07ff66653f04c88b0c1ecdacb5c9:00000001) Value: Value:mbartnit-t480$$$5005$$$1$$$1
+2019-07-16 20:05:32.194 UTC INFO [admin1] JE: Winning proposal: Proposal(0000016bfc63df92:d60e07ff66653f04c88b0c1ecdacb5c9:00000001) Value: Value:mbartnit-t480$$$5005$$$1$$$1
+2019-07-16 20:05:32.197 UTC INFO [admin1] JE: Master changed to 1
+2019-07-16 20:05:32.197 UTC INFO [admin1] JE: Master changed to 1
+2019-07-16 20:05:32.197 UTC INFO [admin1] JE: Election finished. Elapsed time: 2024ms
+2019-07-16 20:05:32.197 UTC INFO [admin1] JE: Election finished. Elapsed time: 2024ms
+2019-07-16 20:05:32.197 UTC INFO [admin1] JE: Election thread exited. Group master: 1(1)
+2019-07-16 20:05:32.198 UTC INFO [admin1] JE: Election thread exited. Group master: 1(1)
+2019-07-16 20:05:32.198 UTC INFO [admin1] JE: node:1(1) state change from UNKNOWN to MASTER
+2019-07-16 20:05:32.198 UTC INFO [admin1] JE: Feeder manager accepting requests.
+2019-07-16 20:05:32.198 UTC INFO [admin1] JE: Feeder manager accepting requests.
+2019-07-16 20:05:32.200 UTC INFO [admin1] JE: Joining group as master
+2019-07-16 20:05:32.200 UTC INFO [admin1] JE: Joining group as master
+2019-07-16 20:05:32.203 UTC INFO [admin1] State change event: Tue Jul 16 15:05:32 CDT 2019, State: MASTER, Type: PRIMARY, Master: 1
+2019-07-16 20:05:32.203 UTC INFO [admin1] AdminStateTracker queue added:MASTER
+2019-07-16 20:05:32.209 UTC INFO [admin1] Initialize stores at schema version 5, readOnly=false
+2019-07-16 20:05:32.214 UTC INFO [admin1] Open: AdminCriticalEventsDatabase
+2019-07-16 20:05:32.243 UTC INFO [admin1] Open: AdminParametersDatabase
+2019-07-16 20:05:32.243 UTC INFO [admin1] Open: AdminMemoDatabase
+2019-07-16 20:05:32.246 UTC INFO [admin1] Open: AdminPlanDatabase
+2019-07-16 20:05:32.247 UTC INFO [admin1] Open: AdminSecurityDatabase
+2019-07-16 20:05:32.248 UTC INFO [admin1] Open: AdminTableDatabase
+2019-07-16 20:05:32.250 UTC INFO [admin1] Open: AdminTopologyHistoryDatabase
+2019-07-16 20:05:32.251 UTC INFO [admin1] Open: AdminTopologyCandidateDatabase
+2019-07-16 20:05:32.251 UTC INFO [admin1] Shutting down monitor collector
+2019-07-16 20:05:32.286 UTC INFO [admin1] Using existing Admin database
+2019-07-16 20:05:32.293 UTC INFO [admin1] Monitor collector: adding sn1 to monitoring
+2019-07-16 20:05:32.295 UTC INFO [admin1] Monitor collector: adding rg1-rn1 to monitoring
+2019-07-16 20:05:32.312 UTC INFO [admin1] [sn1] Service status: RUNNING 2019-07-16 20:05:29 UTC
+2019-07-16 20:05:32.321 UTC INFO [admin1] [rg1-rn1] Service status: STARTING 2019-07-16 20:05:32 UTC
+2019-07-16 20:05:32.398 UTC INFO [admin1] Replicated environment handle established. Cache size: 4559103590, State: MASTER
+2019-07-16 20:05:32.398 UTC INFO [admin1] Starting commandService on rmi://mbartnit-t480:5000/commandService
+2019-07-16 20:05:32.441 UTC INFO [admin1] Successfully created a secure proxy for commandService
+2019-07-16 20:05:32.477 UTC INFO [admin1] Starting admin:CLIENT_ADMIN on rmi://mbartnit-t480:5000/admin:CLIENT_ADMIN
+2019-07-16 20:05:32.479 UTC INFO [admin1] Successfully created a secure proxy for admin:CLIENT_ADMIN
+2019-07-16 20:05:32.486 UTC INFO [admin1] Started AdminService
+2019-07-16 20:05:52.325 UTC INFO [admin1] [rg1-rn1] Service status: RUNNING 2019-07-16 20:05:32 UTC
