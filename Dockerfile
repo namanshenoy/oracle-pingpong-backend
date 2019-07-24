@@ -22,13 +22,4 @@ EXPOSE 5000
 RUN chmod +x start.sh
 
 # Executable
-# WORKDIR /target
-# CMD ["nohup", "java", "-jar", "kvstore.jar", "kvlite", "-secure-config", "disable"]
-# CMD ["java", "-jar", "target/ping-pong.jar"]
-# CMD ["java", "-jar", "kvstore.jar", "ping", "-host", "container", "-port", "5000"]
-# "-host", "$(hostname)", "-port", "5000"]
-# RUN nohup java -jar kvstore.jar kvlite -secure-config disable  "ping",
-# & java -jar target/ping-pong.jar ping -host localhost -port 5000
-# CMD ["start.sh"]
-# RUN ./start.sh
 CMD ["./start.sh"]
