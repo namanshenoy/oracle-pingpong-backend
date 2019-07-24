@@ -279,7 +279,7 @@ public class PongService implements Service {
 
         List<JsonObject> players = new ArrayList<JsonObject>();
 
-        // table not returned in sorted order
+        // table sorted
         while (rowIter.hasNext()) {
             Row player = rowIter.next();
 
