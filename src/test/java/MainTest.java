@@ -29,32 +29,6 @@ public class MainTest {
     public static void startTheServer() throws Exception {
         webServer = Main.startServer();
 
-        // try {
-        //     /*
-        //     * Add a table to the database.
-        //     * Execute this statement asynchronously.
-        //     */
-        //         String statement =
-        //             "CREATE TABLE players (" +
-        //             "rank INTEGER," +
-        //             "winStreak INTEGER," +
-        //             "wins INTEGER," +
-        //             "losses INTEGER," +
-        //             "email STRING," +
-        //             "name STRING," +
-        //             "password STRING," +
-        //             "challenger BOOLEAN," +
-        //             "challenged BOOLEAN," +
-        //             "PRIMARY KEY (email, rank))"; // Required"
-    
-        //             kvstore.executeSync(statement);
-        //         } catch (IllegalArgumentException e) {
-        //             System.out.println("Invalid statement:\n" + e.getMessage());
-        //         } catch (FaultException e) {
-        //             System.out.println
-        //             ("Statement couldn't be executed, please retry: " + e);
-        //         }
-
         
         long timeout = 2000; // 2 seconds should be enough to start the server
         long now = System.currentTimeMillis();
@@ -420,6 +394,14 @@ public class MainTest {
         
 
         assertEquals(202, makePostRequestGetConn("email", "steve@oracle.com", "/inMatch").getResponseCode());
+
+        JsonReader reader = JSON.createReader(makePostRequestGetConn("email", "steve@oracle.com", "/inMatch").getInputStream());
+        String player = reader.readObject().asJsonObject().get("player").toString();
+        assertEquals("\"bob\"", player);
+
+        reader = JSON.createReader(makePostRequestGetConn("email", "bob@oracle.com", "/inMatch").getInputStream());
+        player = reader.readObject().asJsonObject().get("player").toString();
+        assertEquals("\"steve\"", player);
 
         conn = makePostRequestGetConn("email", "steve@oracle.com", "/concludeMatch");
         assertEquals(202, conn.getResponseCode());

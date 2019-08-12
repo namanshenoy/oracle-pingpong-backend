@@ -102,8 +102,6 @@ public class PongService implements Service {
             System.out.println(e.getMessage());
         }
         
-
-        // kconfig = new KVStoreConfig("kvstore", host + ":5000");
         kconfig = new KVStoreConfig("kvstore", host + ":5000");
         kvstore = KVStoreFactory.getStore(kconfig);
 
@@ -118,7 +116,7 @@ public class PongService implements Service {
     public void createTable() {
         try {
             String statement =
-                "CREATE TABLE [IF NOT EXISTS] players (" +
+                "CREATE TABLE players (" +
                 "email STRING," +
                 "rank INTEGER," +
                 "winStreak INTEGER," +
@@ -220,11 +218,11 @@ public class PongService implements Service {
             return;
         } else if (containsPlayer(jo.getString("email").toLowerCase()) != -1) {
             JsonObject jsonErrorObject = JSON.createObjectBuilder()
-                    .add("error", "Player Already Exists: " + jo.getString("player").toLowerCase()).build();
+                    .add("error", "Player Email Already Exists : " + jo.getString("email").toLowerCase()).build();
             response.status(Http.Status.BAD_REQUEST_400).send(jsonErrorObject);
             return;
         }
-        String name = jo.getString("player").toLowerCase();
+        String name = jo.getString("player").toString();
         String email = jo.getString("email").toLowerCase();
         String password = jo.getString("password").toString();
         
@@ -519,7 +517,7 @@ public class PongService implements Service {
     
         if (playerRank == -1) {
             JsonObject jsonErrorObject = JSON.createObjectBuilder()
-                    .add("error", "No player named " + jo.getString("player").toLowerCase()).build();
+                    .add("error", "No player named " + jo.getString("player")).build();
             response.status(Http.Status.BAD_REQUEST_400).send(jsonErrorObject);
             return;
         }
@@ -667,23 +665,27 @@ public class PongService implements Service {
         if (!player.isNull()) {
             boolean inMatch = false; 
             String playerName = "NULL";
+            String playerEmail = "NULL";
 
             if (player.get("challenger").asBoolean().get()) {
                 PrimaryKey challengedKey = players.createPrimaryKey();
                 challengedKey.put("email", findEmail(player.get("rank").asInteger().get() - 1));
-                Row challengedPlayer = playersAPI.get(key, null);
+                Row challengedPlayer = playersAPI.get(challengedKey, null);
+
                 playerName = challengedPlayer.get("name").asString().get();
+                playerEmail = challengedPlayer.get("email").asString().get();
                 inMatch = true;
             } else if (player.get("challenged").asBoolean().get()) {
                 PrimaryKey challengerKey = players.createPrimaryKey();
                 challengerKey.put("email", findEmail(player.get("rank").asInteger().get() + 1));
-                Row challengerPlayer = playersAPI.get(key, null);
+                Row challengerPlayer = playersAPI.get(challengerKey, null);
 
                 playerName = challengerPlayer.get("name").asString().get();
+                playerEmail = challengerPlayer.get("email").asString().get();
                 inMatch = true;
             }
 
-            JsonObject returnBool = Json.createObjectBuilder().add("inMatch", inMatch).add("player", playerName).build();
+            JsonObject returnBool = Json.createObjectBuilder().add("inMatch", inMatch).add("player", playerName).add("email", playerEmail).build();
             response.status(Http.Status.ACCEPTED_202).send(returnBool);
             return;
 

@@ -1,18 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: MainTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.863 sec <<< FAILURE! - in MainTest
-MainTest  Time elapsed: 3.862 sec  <<< ERROR!
-oracle.kv.FaultException: Could not contact any RepNode at: [172.17.0.2:5000] (18.3.10)
-	at MainTest.startTheServer(MainTest.java:30)
-Caused by: oracle.kv.KVStoreException: Could not contact any RepNode at: [172.17.0.2:5000]
-	at MainTest.startTheServer(MainTest.java:30)
-Caused by: java.rmi.ConnectIOException: 
-Problem connecting to the storage node agent, which may be caused by a security mismatch between the client and server, or by another network connectivity issue; nested exception is: 
-	java.rmi.ConnectIOException: Exception creating connection to: 172.17.0.2; nested exception is: 
-	java.net.SocketTimeoutException: connect timed out
-Caused by: java.rmi.ConnectIOException: 
-Exception creating connection to: 172.17.0.2; nested exception is: 
-	java.net.SocketTimeoutException: connect timed out
-Caused by: java.net.SocketTimeoutException: connect timed out
-
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.509 sec - in MainTest

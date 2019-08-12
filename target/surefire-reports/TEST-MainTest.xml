@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="MainTest" time="3.863" tests="1" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="MainTest" time="6.509" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_211\jre\bin"/>
@@ -28,7 +28,7 @@
     <property name="os.name" value="Windows 10"/>
     <property name="classworlds.conf" value="D:\My Data\Downloads\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_211\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Plantronics\Spokes3G\;D:\My Data\Downloads\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files\Git\cmd;D:\My Data\Downloads\terraform_0.12.2_windows_amd64;C:\Program Files\PuTTY\;C:\Program Files\MongoDB\Server\4.0\bin;C:\Program Files\nodejs\;C:\Users\mbartnit\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\mbartnit\AppData\Local\Programs\Python\Python37-32\;C:\Users\mbartnit\AppData\Local\Microsoft\WindowsApps;;C:\Users\mbartnit\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2019.1.3\bin;;C:\Users\mbartnit\AppData\Roaming\npm;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_211\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Plantronics\Spokes3G\;D:\My Data\Downloads\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files\Git\cmd;D:\My Data\Downloads\terraform_0.12.2_windows_amd64;C:\Program Files\PuTTY\;C:\Program Files\MongoDB\Server\4.0\bin;C:\Program Files\nodejs\;C:\MinGW\bin\;C:\Program Files\Kubernetes\Minikube;C:\Users\mbartnit\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\mbartnit\AppData\Local\Programs\Python\Python37-32\;C:\Users\mbartnit\AppData\Local\Microsoft\WindowsApps;C:\Users\mbartnit\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2019.1.3\bin;;C:\Users\mbartnit\AppData\Roaming\npm;C:\MinGW\bin;;."/>
     <property name="maven.conf" value="D:\My Data\Downloads\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin\../conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
@@ -64,19 +64,9 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="MainTest" classname="MainTest" time="3.862">
-    <error message="Could not contact any RepNode at: [172.17.0.2:5000] (18.3.10)" type="oracle.kv.FaultException">oracle.kv.FaultException: Could not contact any RepNode at: [172.17.0.2:5000] (18.3.10)
-	at MainTest.startTheServer(MainTest.java:30)
-Caused by: oracle.kv.KVStoreException: Could not contact any RepNode at: [172.17.0.2:5000]
-	at MainTest.startTheServer(MainTest.java:30)
-Caused by: java.rmi.ConnectIOException: 
-Problem connecting to the storage node agent, which may be caused by a security mismatch between the client and server, or by another network connectivity issue; nested exception is: 
-	java.rmi.ConnectIOException: Exception creating connection to: 172.17.0.2; nested exception is: 
-	java.net.SocketTimeoutException: connect timed out
-Caused by: java.rmi.ConnectIOException: 
-Exception creating connection to: 172.17.0.2; nested exception is: 
-	java.net.SocketTimeoutException: connect timed out
-Caused by: java.net.SocketTimeoutException: connect timed out
-</error>
-  </testcase>
+  <testcase name="testConcludeMatch" classname="MainTest" time="1.25"/>
+  <testcase name="testDeletePlayer" classname="MainTest" time="0.35"/>
+  <testcase name="testAddPlayer" classname="MainTest" time="0.104"/>
+  <testcase name="testInMatch" classname="MainTest" time="0.323"/>
+  <testcase name="testRatios" classname="MainTest" time="0.689"/>
 </testsuite>
