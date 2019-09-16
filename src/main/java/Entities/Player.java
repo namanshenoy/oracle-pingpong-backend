@@ -1,62 +1,38 @@
 package Entities;
 import java.util.HashMap;
 
-class GameStats {
-	int wins;
-	int loss;
-	int winstreak;
-	
-	GameStats(){
-		this.wins = 0;
-		this.loss = 0;
-		this.winstreak = 0;
-	}
-	
-	private void win_increment() {
-		this.wins++;
-		this.winstreak++;
-	}
-	
-	private void lose_increment() {
-		this.loss++;
-		this.winstreak = 0;
-	}
-}
-
 public class Player {
 
-	private String username;
+	public String username;
 	private HashMap<String, GameStats> playerGames;
-	
-	/*
-	 * 	"soccer": GameStats (1, 20, 1)
-	 * 
-	 * playerGames["soccer"].win_increment();
-	 * 
-	 * "soccer": GameStats (2, 20, 1)
-	 * "pingpong": GameStats (0, 0, 0)
-	 * 
-	 * */
 	
 	public Player(String username) {
 		this.username = username;
 		this.playerGames = new HashMap<String, GameStats>();
 	}
-	
-	/* When a player starts playing a sport they haven't played before,
-	 * this adds it to their "playerGames" hash table
-	 */
-	public void addGame(String sport) {
+
+	public void registerFor(String sport) {
 		if (!playerGames.containsKey(sport)) {
 			playerGames.put(sport, new GameStats());
 		}
 	}
 	
-	/* This function should be used solely in PlayerTest.java
-	 * (the corresponding test suite for this class)
-	 */ 
-	public HashMap<String, GameStats> getMap() {
-		return playerGames;
+	public GameStats getPlayerGamesFor(String sport) {
+		int wins, loss, winstreak;
+		if (playerGames.containsKey(sport)) {
+			wins = playerGames.get(sport).getWins();
+			loss = playerGames.get(sport).getLoss();
+			winstreak = playerGames.get(sport).getWinstreak();
+			return new GameStats(wins, loss, winstreak);
+		}
+		return null;
 	}
 
+	public void updateGameStatsAfter_WinIn(String sport) {
+		playerGames.get(sport).win_increment();
+	}
+
+	public void updateGameStatsAfter_LossIn(String sport) {
+		playerGames.get(sport).loss_increment();
+	}
 }
