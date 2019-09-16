@@ -95,14 +95,14 @@ public final class Main {
         MetricsSupport metrics = MetricsSupport.create();
         // GreetService greetService = new GreetService(config);
         // PlayerService playerService = new PlayerService(config);
-        PongService pongService = new PongService(config);
+        GameService gameservice = new GameService(config);
         HealthSupport health = HealthSupport.builder().add(HealthChecks.healthChecks()) // Adds a convenient set of
                                                                                         // checks
                 .build();
 
         return Routing.builder().register(JsonSupport.create()).register(health) // Health at "/health"
                 .register(metrics) // Metrics at "/metrics"
-                .register("/", pongService).build();
+                .register("/", gameservice).build();
     }
 
 }

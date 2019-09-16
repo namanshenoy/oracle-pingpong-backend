@@ -31,7 +31,7 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 
-public class PongService implements Service {
+public class GameService implements Service {
     private static final JsonBuilderFactory JSON = Json.createBuilderFactory(Collections.emptyMap());
 
     private KVStoreConfig kconfig;
@@ -91,7 +91,7 @@ public class PongService implements Service {
     }
 
     // Configure KVstore and table
-    PongService(Config config) {
+    GameService(Config config) {
         // if use random error becomes unknown
 
         // linux hostname
