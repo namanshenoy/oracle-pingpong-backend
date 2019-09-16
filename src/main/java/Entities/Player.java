@@ -42,5 +42,12 @@ public class Player {
 		this.username = username;
 		this.playerGames = new HashMap<String, GameStats>();
 	}
+	
+	// 
+	private void addGame(String sport) {
+		if (!playerGames.containsKey(sport)) {
+			playerGames.put(sport,  new GameStats());
+		}
+	}
 
 }
