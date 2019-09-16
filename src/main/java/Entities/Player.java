@@ -38,16 +38,25 @@ public class Player {
 	 * 
 	 * */
 	
-	Player(String username) {
+	public Player(String username) {
 		this.username = username;
 		this.playerGames = new HashMap<String, GameStats>();
 	}
 	
-	// 
-	private void addGame(String sport) {
+	/* When a player starts playing a sport they haven't played before,
+	 * this adds it to their "playerGames" hash table
+	 */
+	public void addGame(String sport) {
 		if (!playerGames.containsKey(sport)) {
-			playerGames.put(sport,  new GameStats());
+			playerGames.put(sport, new GameStats());
 		}
+	}
+	
+	/* This function should be used solely in PlayerTest.java
+	 * (the corresponding test suite for this class)
+	 */ 
+	public HashMap<String, GameStats> getMap() {
+		return playerGames;
 	}
 
 }
