@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 public class PlayerTest {
 
-	Player testPlayer = new Player("janedoe");
+	Player testPlayer = new Player("janedoe", "janedoe@oracle.com", "JaneDoe123");
 	final String sport = "table-tennis";
 
 	@Test

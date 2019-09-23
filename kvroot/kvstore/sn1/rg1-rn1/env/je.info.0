@@ -1,0 +1,45 @@
+2019-09-20 15:37:30.037 UTC INFO [rg1-rn1] Started ServiceDispatcher. HostPort=patmin-t480:5006
+2019-09-20 15:37:30.038 UTC INFO [rg1-rn1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-09-20 15:37:30.039 UTC INFO [rg1-rn1] DTVLSN at start:0
+2019-09-20 15:37:30.041 UTC INFO [rg1-rn1] node:NullNode(-1) state change from DETACHED to UNKNOWN
+2019-09-20 15:37:30.043 UTC INFO [rg1-rn1] Current group size: 0
+2019-09-20 15:37:30.043 UTC INFO [rg1-rn1] New node rg1-rn1(-1) unknown to rep group
+2019-09-20 15:37:30.043 UTC INFO [rg1-rn1] Master changed to rg1-rn1
+2019-09-20 15:37:30.044 UTC INFO [rg1-rn1] Nascent group. rg1-rn1 is master by virtue of being the first node.
+2019-09-20 15:37:30.044 UTC INFO [rg1-rn1] node:rg1-rn1(1) state change from UNKNOWN to MASTER
+2019-09-20 15:37:30.052 UTC INFO [rg1-rn1] Successfully added node:rg1-rn1(1) HostPort = patmin-t480: 5006 [ELECTABLE]
+2019-09-20 15:37:30.055 UTC INFO [rg1-rn1] Node rg1-rn1 started
+2019-09-20 15:37:30.055 UTC INFO [rg1-rn1] node:NullNode(-1) state change from MASTER to UNKNOWN
+2019-09-20 15:37:30.056 UTC INFO [rg1-rn1] node:rg1-rn1(1) state change from UNKNOWN to MASTER
+2019-09-20 15:37:30.057 UTC INFO [rg1-rn1] Feeder manager accepting requests.
+2019-09-20 15:37:30.058 UTC INFO [rg1-rn1] Joining group as master
+2019-09-20 15:43:46.840 UTC INFO [rg1-rn1] Started ServiceDispatcher. HostPort=patmin-t480:5006
+2019-09-20 15:43:46.840 UTC INFO [rg1-rn1] Started ServiceDispatcher. HostPort=patmin-t480:5006
+2019-09-20 15:43:46.842 UTC INFO [rg1-rn1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-09-20 15:43:46.842 UTC INFO [rg1-rn1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-09-20 15:43:46.913 UTC INFO [rg1-rn1] DTVLSN at start:83
+2019-09-20 15:43:46.913 UTC INFO [rg1-rn1] DTVLSN at start:83
+2019-09-20 15:43:46.914 UTC INFO [rg1-rn1] node:NullNode(-1) state change from DETACHED to UNKNOWN
+2019-09-20 15:43:46.929 UTC INFO [rg1-rn1] Current group size: 1
+2019-09-20 15:43:46.929 UTC INFO [rg1-rn1] Current group size: 1
+2019-09-20 15:43:46.930 UTC INFO [rg1-rn1] Existing node rg1-rn1 querying for a current master.
+2019-09-20 15:43:46.930 UTC INFO [rg1-rn1] Existing node rg1-rn1 querying for a current master.
+2019-09-20 15:43:46.946 UTC INFO [rg1-rn1] Node rg1-rn1 started
+2019-09-20 15:43:46.946 UTC INFO [rg1-rn1] Node rg1-rn1 started
+2019-09-20 15:43:46.946 UTC INFO [rg1-rn1] Election initiated; election #1
+2019-09-20 15:43:46.946 UTC INFO [rg1-rn1] Election initiated; election #1
+2019-09-20 15:43:46.948 UTC INFO [rg1-rn1] Started election thread Fri Sep 20 10:43:46 CDT 2019
+2019-09-20 15:43:46.948 UTC INFO [rg1-rn1] Started election thread Fri Sep 20 10:43:46 CDT 2019
+2019-09-20 15:43:49.022 UTC INFO [rg1-rn1] Winning proposal: Proposal(0000016d4f57fad5:affa1643798972cc1e255c1c7433ba28:00000002) Value: Value:patmin-t480$$$5006$$$rg1-rn1$$$1
+2019-09-20 15:43:49.022 UTC INFO [rg1-rn1] Winning proposal: Proposal(0000016d4f57fad5:affa1643798972cc1e255c1c7433ba28:00000002) Value: Value:patmin-t480$$$5006$$$rg1-rn1$$$1
+2019-09-20 15:43:49.027 UTC INFO [rg1-rn1] Master changed to rg1-rn1
+2019-09-20 15:43:49.027 UTC INFO [rg1-rn1] Master changed to rg1-rn1
+2019-09-20 15:43:49.027 UTC INFO [rg1-rn1] Election finished. Elapsed time: 2081ms
+2019-09-20 15:43:49.027 UTC INFO [rg1-rn1] Election finished. Elapsed time: 2081ms
+2019-09-20 15:43:49.027 UTC INFO [rg1-rn1] Election thread exited. Group master: rg1-rn1(1)
+2019-09-20 15:43:49.027 UTC INFO [rg1-rn1] Election thread exited. Group master: rg1-rn1(1)
+2019-09-20 15:43:49.028 UTC INFO [rg1-rn1] node:rg1-rn1(1) state change from UNKNOWN to MASTER
+2019-09-20 15:43:49.028 UTC INFO [rg1-rn1] Feeder manager accepting requests.
+2019-09-20 15:43:49.028 UTC INFO [rg1-rn1] Feeder manager accepting requests.
+2019-09-20 15:43:49.047 UTC INFO [rg1-rn1] Joining group as master
+2019-09-20 15:43:49.047 UTC INFO [rg1-rn1] Joining group as master

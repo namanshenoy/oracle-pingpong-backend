@@ -1,0 +1,226 @@
+2019-09-20 15:37:27.126 UTC INFO [admin1] Initializing PRIMARY Admin for store: kvstore
+2019-09-20 15:37:27.128 UTC INFO [admin1] Created new admin environment dir: .\kvroot\kvstore\sn1\admin1\env
+2019-09-20 15:37:27.129 UTC INFO [admin1] JVM Runtime maxMemory (bytes): 259522560
+2019-09-20 15:37:27.129 UTC INFO [admin1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=32, je.rep.envUnknownStateTimeout=10 s, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=10 s, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.bindInaddrAny=true, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.checkpointer.bytesInterval=500000000, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2019-09-20 15:37:27.151 UTC INFO [admin1] DataChannelFactory: basic
+2019-09-20 15:37:27.159 UTC INFO [admin1] AdminStateTracker thread start: admin1
+2019-09-20 15:37:27.769 UTC INFO [admin1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2019-09-20 15:37:27.793 UTC INFO [admin1] JE recovery: POPULATE_EXPIRATION_PROFILE
+2019-09-20 15:37:27.804 UTC INFO [admin1] JE recovery: REMOVE_TEMP_DBS
+2019-09-20 15:37:27.818 UTC INFO [admin1] JE recovery: CKPT
+2019-09-20 15:37:27.847 UTC INFO [admin1] JE recovery: RECOVERY_FINISHED
+2019-09-20 15:37:27.899 UTC INFO [admin1] JE: Started ServiceDispatcher. HostPort=patmin-t480:5005
+2019-09-20 15:37:27.899 UTC INFO [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-09-20 15:37:27.945 UTC INFO [admin1] JE: DTVLSN at start:0
+2019-09-20 15:37:27.945 UTC INFO [admin1] JE: node:NullNode(-1) state change from DETACHED to UNKNOWN
+2019-09-20 15:37:27.965 UTC INFO [admin1] JE: Current group size: 0
+2019-09-20 15:37:27.965 UTC INFO [admin1] JE: New node 1(-1) unknown to rep group
+2019-09-20 15:37:27.966 UTC INFO [admin1] JE: Master changed to 1
+2019-09-20 15:37:27.967 UTC INFO [admin1] JE: Nascent group. 1 is master by virtue of being the first node.
+2019-09-20 15:37:27.967 UTC INFO [admin1] JE: node:1(1) state change from UNKNOWN to MASTER
+2019-09-20 15:37:27.987 UTC INFO [admin1] JE: Successfully added node:1(1) HostPort = patmin-t480: 5005 [ELECTABLE]
+2019-09-20 15:37:27.996 UTC INFO [admin1] JE recovery: BECOME_CONSISTENT
+2019-09-20 15:37:27.996 UTC INFO [admin1] JE: Node 1 started
+2019-09-20 15:37:27.996 UTC INFO [admin1] JE: node:NullNode(-1) state change from MASTER to UNKNOWN
+2019-09-20 15:37:27.997 UTC INFO [admin1] JE: node:1(1) state change from UNKNOWN to MASTER
+2019-09-20 15:37:27.997 UTC INFO [admin1] JE: Feeder manager accepting requests.
+2019-09-20 15:37:27.999 UTC INFO [admin1] JE: Joining group as master
+2019-09-20 15:37:28.003 UTC INFO [admin1] State change event: Fri Sep 20 10:37:27 CDT 2019, State: MASTER, Type: PRIMARY, Master: 1
+2019-09-20 15:37:28.003 UTC INFO [admin1] AdminStateTracker queue added:MASTER
+2019-09-20 15:37:28.015 UTC INFO [admin1] Initializing Admin Schema to schema version 5/NoSQL DB 12cR1.4.3.11 2017-02-17 06:52:09 UTC  Build id: 0e3ebe7568a0
+2019-09-20 15:37:28.029 UTC INFO [admin1] Initialize stores at schema version 5, readOnly=false
+2019-09-20 15:37:28.034 UTC INFO [admin1] Open: AdminCriticalEventsDatabase
+2019-09-20 15:37:28.036 UTC INFO [admin1] Open: AdminParametersDatabase
+2019-09-20 15:37:28.037 UTC INFO [admin1] Open: AdminMemoDatabase
+2019-09-20 15:37:28.040 UTC INFO [admin1] Open: AdminPlanDatabase
+2019-09-20 15:37:28.042 UTC INFO [admin1] Open: AdminSecurityDatabase
+2019-09-20 15:37:28.045 UTC INFO [admin1] Open: AdminTableDatabase
+2019-09-20 15:37:28.048 UTC INFO [admin1] Open: AdminTopologyHistoryDatabase
+2019-09-20 15:37:28.050 UTC INFO [admin1] Open: AdminTopologyCandidateDatabase
+2019-09-20 15:37:28.051 UTC INFO [admin1] Shutting down monitor collector
+2019-09-20 15:37:28.057 UTC INFO [admin1] Initializing Admin database
+2019-09-20 15:37:28.099 UTC INFO [admin1] Admin database initialized
+2019-09-20 15:37:28.113 UTC INFO [admin1] Replicated environment handle established. Cache size: 155713536, State: MASTER
+2019-09-20 15:37:28.114 UTC INFO [admin1] Configured Admin for store: kvstore
+2019-09-20 15:37:28.171 UTC INFO [admin1] Plan 1[Deploy KVLite] approved
+2019-09-20 15:37:28.177 UTC INFO [admin1] Plan 1[Deploy KVLite]: started, 1 tasks
+2019-09-20 15:37:28.187 UTC INFO [admin1] Plan 1[Deploy KVLite]: task 1 [DeployDatacenter zone=KVLite] started
+2019-09-20 15:37:28.192 UTC INFO [admin1] Plan 1[Deploy KVLite]: task 1 [DeployDatacenter zone=KVLite] ended, state=SUCCEEDED
+2019-09-20 15:37:28.195 UTC INFO [admin1] Plan 1[Deploy KVLite]: ended, state=SUCCEEDED
+2019-09-20 15:37:28.196 UTC INFO [admin1] Waiting for Plan 1[Deploy KVLite] ended, state=SUCCEEDED
+2019-09-20 15:37:28.234 UTC INFO [admin1] Plan 2[Deploy Storage Node] approved
+2019-09-20 15:37:28.235 UTC INFO [admin1] Plan 2[Deploy Storage Node]: started, 1 tasks
+2019-09-20 15:37:28.238 UTC INFO [admin1] Plan 2[Deploy Storage Node]: task 1 [DeploySN sn1(patmin-t480:5000)] started
+2019-09-20 15:37:28.661 UTC INFO [admin1] Monitor collector: adding sn1 to monitoring
+2019-09-20 15:37:28.668 UTC INFO [admin1] Plan 2[Deploy Storage Node]: task 1 [DeploySN sn1(patmin-t480:5000)] ended, state=SUCCEEDED
+2019-09-20 15:37:28.671 UTC INFO [admin1] Plan 2[Deploy Storage Node]: ended, state=SUCCEEDED
+2019-09-20 15:37:28.671 UTC INFO [admin1] Waiting for Plan 2[Deploy Storage Node] ended, state=SUCCEEDED
+2019-09-20 15:37:28.674 UTC INFO [admin1] [sn1] Service status: RUNNING 2019-09-20 15:37:28 UTC
+2019-09-20 15:37:28.701 UTC INFO [admin1] Plan 3[Deploy Admin Service] approved
+2019-09-20 15:37:28.702 UTC INFO [admin1] Plan 3[Deploy Admin Service]: started, 2 tasks
+2019-09-20 15:37:28.711 UTC INFO [admin1] Plan 3[Deploy Admin Service]: task 1 [DeployAdmin AdminId[admin1] on SNId[sn1]] started
+2019-09-20 15:37:29.011 UTC INFO [admin1] newParameters called for Monitor
+2019-09-20 15:37:29.019 UTC INFO [admin1] Plan 3[Deploy Admin Service]: task 1 [DeployAdmin AdminId[admin1] on SNId[sn1]] ended, state=SUCCEEDED
+2019-09-20 15:37:29.020 UTC INFO [admin1] Plan 3[Deploy Admin Service]: task 2 [WaitForAdminState waits for Admin admin1 to reach RUNNING state] started
+2019-09-20 15:37:29.038 UTC INFO [admin1] Plan 3[Deploy Admin Service]: task 2 [WaitForAdminState waits for Admin admin1 to reach RUNNING state] ended, state=SUCCEEDED
+2019-09-20 15:37:29.046 UTC INFO [admin1] Plan 3[Deploy Admin Service]: ended, state=SUCCEEDED
+2019-09-20 15:37:29.047 UTC INFO [admin1] Waiting for Plan 3[Deploy Admin Service] ended, state=SUCCEEDED
+2019-09-20 15:37:29.062 UTC INFO [admin1] Created Storage Node Pool: KVLitePool
+2019-09-20 15:37:29.079 UTC INFO [admin1] Added Storage Node sn1 to pool: KVLitePool
+2019-09-20 15:37:29.114 UTC INFO [admin1] KVLite has nothing to rebalance
+2019-09-20 15:37:29.433 UTC INFO [admin1] Plan 4[Deploy KVStore] approved
+2019-09-20 15:37:29.436 UTC INFO [admin1] Plan 4[Deploy KVStore] deploying topology candidate KVLite.
+2019-09-20 15:37:29.438 UTC INFO [admin1] Current topology: store=kvstore  numPartitions=0 sequence=2
+  zn: id=zn1 name=KVLite repFactor=1 type=PRIMARY allowArbiters=false
+
+  sn=[sn1] zn:[id=zn1 name=KVLite] patmin-t480:5000
+
+
+2019-09-20 15:37:29.439 UTC INFO [admin1] Preview of changes to be executed by Plan 4[Deploy KVStore]:
+Topology transformation from current deployed topology to KVLite:
+Create 1 shard 
+Create 1 RN 
+Create 10 partitions 
+
+shard rg1
+  1 new RN : rg1-rn1 
+  10 new partitions 
+
+2019-09-20 15:37:29.439 UTC INFO [admin1] Target topology candidate: KVLite
+store=kvstore  numPartitions=10 sequence=14
+  zn: id=zn1 name=KVLite repFactor=1 type=PRIMARY allowArbiters=false
+
+  sn=[sn1] zn:[id=zn1 name=KVLite] patmin-t480:5000
+    [rg1-rn1]
+
+  shard=[rg1] num partitions=10
+    [rg1-rn1] sn=sn1
+
+2019-09-20 15:37:29.440 UTC INFO [admin1] Plan 4[Deploy KVStore]: started, 13 tasks
+2019-09-20 15:37:29.442 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 1 [UpdateDatacenterV2 zone=zn1] started
+2019-09-20 15:37:29.446 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 1 [UpdateDatacenterV2 zone=zn1] ended, state=SUCCEEDED
+2019-09-20 15:37:29.447 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 2 [DeployShard on [sn1] zn:[id=zn1 name=KVLite] patmin-t480:5000 ] started
+2019-09-20 15:37:29.454 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 2 [DeployShard rg1 on [sn1] zn:[id=zn1 name=KVLite] patmin-t480:5000 ] ended, state=SUCCEEDED
+2019-09-20 15:37:29.455 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 3 [DeployNewRN on sn1(patmin-t480:5000)] started
+2019-09-20 15:37:29.459 UTC INFO [admin1] Creating rg1-rn1 on sn1 haPort=patmin-t480:5,006 helpers=patmin-t480:5006 storage directory path=null directory size=0 heapMB=unspecified cachePercent=70 cacheSize=unspecified -XX:ParallelGCThreads=8
+2019-09-20 15:37:30.781 UTC INFO [admin1] Monitor collector: adding rg1-rn1 to monitoring
+2019-09-20 15:37:30.787 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 3 [DeployNewRN rg1-rn1 on sn1(patmin-t480:5000)] ended, state=SUCCEEDED
+2019-09-20 15:37:30.788 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 4 [UpdateNthRNHelperHost] started
+2019-09-20 15:37:30.792 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 4 [UpdateNthRNHelperHost] ended, state=SUCCEEDED
+2019-09-20 15:37:30.793 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 5 [NewNthRNParameters] started
+2019-09-20 15:37:30.795 UTC INFO [admin1] [rg1-rn1] Service status: RUNNING 2019-09-20 15:37:30 UTC
+2019-09-20 15:37:30.808 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 5 [NewNthRNParameters] ended, state=SUCCEEDED
+2019-09-20 15:37:30.808 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 6 [BroadcastTopo] started
+2019-09-20 15:37:30.810 UTC INFO [admin1] Broadcasting topology seq# 4, changes for BroadcastTopo
+2019-09-20 15:37:30.814 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 6 [BroadcastTopo] ended, state=SUCCEEDED
+2019-09-20 15:37:30.814 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 7 [BroadcastMetadata] started
+2019-09-20 15:37:30.818 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 7 [BroadcastMetadata] ended, state=SUCCEEDED
+2019-09-20 15:37:30.818 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 8 [AddPartitions totalPartitions = 10] started
+2019-09-20 15:37:30.822 UTC INFO [admin1] Broadcasting topology seq# 14, changes for Initializing new partitions
+2019-09-20 15:37:30.837 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 8 [AddPartitions totalPartitions = 10] ended, state=SUCCEEDED
+2019-09-20 15:37:30.838 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 9 [CreateSystemTableTask create table SYS$IndexStatsLease] started
+2019-09-20 15:37:31.091 UTC INFO [admin1] Broadcasting TableMetadata[1, 1, 1] for CreateSystemTableTask create table SYS$IndexStatsLease
+2019-09-20 15:37:31.101 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 1, for CreateSystemTableTask create table SYS$IndexStatsLease, attempts=1
+2019-09-20 15:37:31.104 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 9 [CreateSystemTableTask create table SYS$IndexStatsLease] ended, state=SUCCEEDED
+2019-09-20 15:37:31.104 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 10 [CreateSystemTableTask create table SYS$PartitionStatsLease] started
+2019-09-20 15:37:31.110 UTC INFO [admin1] Broadcasting TableMetadata[2, 2, 2] for CreateSystemTableTask create table SYS$PartitionStatsLease
+2019-09-20 15:37:31.121 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 2, for CreateSystemTableTask create table SYS$PartitionStatsLease, attempts=1
+2019-09-20 15:37:31.126 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 10 [CreateSystemTableTask create table SYS$PartitionStatsLease] ended, state=SUCCEEDED
+2019-09-20 15:37:31.126 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 11 [CreateSystemTableTask create table SYS$TableStatsPartition] started
+2019-09-20 15:37:31.135 UTC INFO [admin1] Broadcasting TableMetadata[3, 3, 3] for CreateSystemTableTask create table SYS$TableStatsPartition
+2019-09-20 15:37:31.146 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 3, for CreateSystemTableTask create table SYS$TableStatsPartition, attempts=1
+2019-09-20 15:37:31.150 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 11 [CreateSystemTableTask create table SYS$TableStatsPartition] ended, state=SUCCEEDED
+2019-09-20 15:37:31.150 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 12 [CreateSystemTableTask create table SYS$TableStatsIndex] started
+2019-09-20 15:37:31.163 UTC INFO [admin1] Broadcasting TableMetadata[4, 4, 4] for CreateSystemTableTask create table SYS$TableStatsIndex
+2019-09-20 15:37:31.178 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 4, for CreateSystemTableTask create table SYS$TableStatsIndex, attempts=1
+2019-09-20 15:37:31.181 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 12 [CreateSystemTableTask create table SYS$TableStatsIndex] ended, state=SUCCEEDED
+2019-09-20 15:37:31.182 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 13 [BroadcastTopo] started
+2019-09-20 15:37:31.183 UTC INFO [admin1] Broadcasting topology seq# 14, changes for BroadcastTopo
+2019-09-20 15:37:31.190 UTC INFO [admin1] Plan 4[Deploy KVStore]: task 13 [BroadcastTopo] ended, state=SUCCEEDED
+2019-09-20 15:37:31.192 UTC INFO [admin1] Plan 4[Deploy KVStore]: ended, state=SUCCEEDED
+2019-09-20 15:37:31.192 UTC INFO [admin1] Waiting for Plan 4[Deploy KVStore] ended, state=SUCCEEDED
+2019-09-20 15:37:55.143 UTC INFO [admin1] Plan 5[CreateTable:players] approved
+2019-09-20 15:37:55.147 UTC INFO [admin1] Plan 5[CreateTable:players]: started, 1 tasks
+2019-09-20 15:37:55.149 UTC INFO [admin1] Plan 5[CreateTable:players]: task 1 [AddTable:players] started
+2019-09-20 15:37:55.160 UTC INFO [admin1] About to broadcast TableMetadata[5, 5, 5]
+2019-09-20 15:37:55.161 UTC INFO [admin1] Broadcasting TableMetadata[5, 5, 5] for AddTable:players
+2019-09-20 15:37:55.180 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 5, for AddTable:players, attempts=1
+2019-09-20 15:37:55.184 UTC INFO [admin1] Plan 5[CreateTable:players]: task 1 [AddTable:players] ended, state=SUCCEEDED
+2019-09-20 15:37:55.187 UTC INFO [admin1] Plan 5[CreateTable:players]: ended, state=SUCCEEDED
+2019-09-20 15:43:45.740 UTC INFO [admin1] JVM java.net.InetAddress properties: cache.ttl=-1 cache.negative.ttl=-1
+2019-09-20 15:43:45.745 UTC INFO [admin1] Starting AdminService
+2019-09-20 15:43:45.840 UTC INFO [admin1] Initializing PRIMARY Admin for store: kvstore
+2019-09-20 15:43:45.841 UTC INFO [admin1] JVM Runtime maxMemory (bytes): 259522560
+2019-09-20 15:43:45.841 UTC INFO [admin1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=32, je.rep.envUnknownStateTimeout=10 s, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=10 s, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.bindInaddrAny=true, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.checkpointer.bytesInterval=500000000, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2019-09-20 15:43:45.852 UTC INFO [admin1] DataChannelFactory: basic
+2019-09-20 15:43:45.853 UTC INFO [admin1] AdminStateTracker thread start: admin1
+2019-09-20 15:43:46.277 UTC INFO [admin1] JE recovery: FIND_END_OF_LOG
+2019-09-20 15:43:46.414 UTC INFO [admin1] JE recovery: FIND_LAST_CKPT
+2019-09-20 15:43:46.424 UTC INFO [admin1] JE recovery: READ_DBMAP_INFO
+2019-09-20 15:43:46.500 UTC INFO [admin1] JE recovery: REDO_DBMAP_INFO
+2019-09-20 15:43:46.515 UTC INFO [admin1] JE recovery: UNDO_DBMAP_RECORDS
+2019-09-20 15:43:46.523 UTC INFO [admin1] JE recovery: REDO_DBMAP_RECORDS
+2019-09-20 15:43:46.534 UTC INFO [admin1] JE recovery: READ_DATA_INFO
+2019-09-20 15:43:46.577 UTC INFO [admin1] JE recovery: REDO_DATA_INFO
+2019-09-20 15:43:46.585 UTC INFO [admin1] JE recovery: UNDO_DATA_RECORDS
+2019-09-20 15:43:46.590 UTC INFO [admin1] JE recovery: REDO_DATA_RECORDS
+2019-09-20 15:43:46.628 UTC INFO [admin1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2019-09-20 15:43:46.630 UTC INFO [admin1] JE recovery: POPULATE_EXPIRATION_PROFILE
+2019-09-20 15:43:46.642 UTC INFO [admin1] JE recovery: REMOVE_TEMP_DBS
+2019-09-20 15:43:46.708 UTC INFO [admin1] JE recovery: CKPT
+2019-09-20 15:43:46.755 UTC INFO [admin1] JE recovery: RECOVERY_FINISHED
+2019-09-20 15:43:46.841 UTC INFO [admin1] JE: Started ServiceDispatcher. HostPort=patmin-t480:5005
+2019-09-20 15:43:46.842 UTC INFO [admin1] JE: Started ServiceDispatcher. HostPort=patmin-t480:5005
+2019-09-20 15:43:46.842 UTC INFO [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-09-20 15:43:46.843 UTC INFO [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-09-20 15:43:46.913 UTC INFO [admin1] JE: DTVLSN at start:178
+2019-09-20 15:43:46.914 UTC INFO [admin1] JE: DTVLSN at start:178
+2019-09-20 15:43:46.914 UTC INFO [admin1] JE: node:NullNode(-1) state change from DETACHED to UNKNOWN
+2019-09-20 15:43:46.929 UTC INFO [admin1] JE: Current group size: 1
+2019-09-20 15:43:46.930 UTC INFO [admin1] JE: Current group size: 1
+2019-09-20 15:43:46.930 UTC INFO [admin1] JE: Existing node 1 querying for a current master.
+2019-09-20 15:43:46.930 UTC INFO [admin1] JE: Existing node 1 querying for a current master.
+2019-09-20 15:43:46.946 UTC INFO [admin1] JE recovery: BECOME_CONSISTENT
+2019-09-20 15:43:46.946 UTC INFO [admin1] JE: Node 1 started
+2019-09-20 15:43:46.946 UTC INFO [admin1] JE: Node 1 started
+2019-09-20 15:43:46.946 UTC INFO [admin1] JE: Election initiated; election #1
+2019-09-20 15:43:46.946 UTC INFO [admin1] JE: Election initiated; election #1
+2019-09-20 15:43:46.948 UTC INFO [admin1] JE: Started election thread Fri Sep 20 10:43:46 CDT 2019
+2019-09-20 15:43:46.949 UTC INFO [admin1] JE: Started election thread Fri Sep 20 10:43:46 CDT 2019
+2019-09-20 15:43:49.023 UTC INFO [admin1] JE: Winning proposal: Proposal(0000016d4f57fad5:affa1643798972cc1e255c1c7433ba28:00000001) Value: Value:patmin-t480$$$5005$$$1$$$1
+2019-09-20 15:43:49.023 UTC INFO [admin1] JE: Winning proposal: Proposal(0000016d4f57fad5:affa1643798972cc1e255c1c7433ba28:00000001) Value: Value:patmin-t480$$$5005$$$1$$$1
+2019-09-20 15:43:49.027 UTC INFO [admin1] JE: Master changed to 1
+2019-09-20 15:43:49.027 UTC INFO [admin1] JE: Master changed to 1
+2019-09-20 15:43:49.027 UTC INFO [admin1] JE: Election finished. Elapsed time: 2081ms
+2019-09-20 15:43:49.028 UTC INFO [admin1] JE: Election thread exited. Group master: 1(1)
+2019-09-20 15:43:49.028 UTC INFO [admin1] JE: Election finished. Elapsed time: 2081ms
+2019-09-20 15:43:49.028 UTC INFO [admin1] JE: Election thread exited. Group master: 1(1)
+2019-09-20 15:43:49.028 UTC INFO [admin1] JE: node:1(1) state change from UNKNOWN to MASTER
+2019-09-20 15:43:49.028 UTC INFO [admin1] JE: Feeder manager accepting requests.
+2019-09-20 15:43:49.028 UTC INFO [admin1] JE: Feeder manager accepting requests.
+2019-09-20 15:43:49.047 UTC INFO [admin1] JE: Joining group as master
+2019-09-20 15:43:49.047 UTC INFO [admin1] JE: Joining group as master
+2019-09-20 15:43:49.050 UTC INFO [admin1] State change event: Fri Sep 20 10:43:49 CDT 2019, State: MASTER, Type: PRIMARY, Master: 1
+2019-09-20 15:43:49.051 UTC INFO [admin1] AdminStateTracker queue added:MASTER
+2019-09-20 15:43:49.055 UTC INFO [admin1] Initialize stores at schema version 5, readOnly=false
+2019-09-20 15:43:49.060 UTC INFO [admin1] Open: AdminCriticalEventsDatabase
+2019-09-20 15:43:49.062 UTC INFO [admin1] Open: AdminParametersDatabase
+2019-09-20 15:43:49.063 UTC INFO [admin1] Open: AdminMemoDatabase
+2019-09-20 15:43:49.066 UTC INFO [admin1] Open: AdminPlanDatabase
+2019-09-20 15:43:49.068 UTC INFO [admin1] Open: AdminSecurityDatabase
+2019-09-20 15:43:49.078 UTC INFO [admin1] Open: AdminTableDatabase
+2019-09-20 15:43:49.080 UTC INFO [admin1] Open: AdminTopologyHistoryDatabase
+2019-09-20 15:43:49.080 UTC INFO [admin1] Open: AdminTopologyCandidateDatabase
+2019-09-20 15:43:49.081 UTC INFO [admin1] Shutting down monitor collector
+2019-09-20 15:43:49.114 UTC INFO [admin1] Using existing Admin database
+2019-09-20 15:43:49.121 UTC INFO [admin1] Monitor collector: adding sn1 to monitoring
+2019-09-20 15:43:49.122 UTC INFO [admin1] Monitor collector: adding rg1-rn1 to monitoring
+2019-09-20 15:43:49.144 UTC INFO [admin1] [sn1] Service status: RUNNING 2019-09-20 15:43:45 UTC
+2019-09-20 15:43:49.153 UTC INFO [admin1] [rg1-rn1] Service status: STARTING 2019-09-20 15:43:49 UTC
+2019-09-20 15:43:49.203 UTC INFO [admin1] Replicated environment handle established. Cache size: 155713536, State: MASTER
+2019-09-20 15:43:49.204 UTC INFO [admin1] Starting commandService on rmi://patmin-t480:5000/commandService
+2019-09-20 15:43:49.286 UTC INFO [admin1] Successfully created a secure proxy for commandService
+2019-09-20 15:43:49.344 UTC INFO [admin1] Starting admin:CLIENT_ADMIN on rmi://patmin-t480:5000/admin:CLIENT_ADMIN
+2019-09-20 15:43:49.347 UTC INFO [admin1] Successfully created a secure proxy for admin:CLIENT_ADMIN
+2019-09-20 15:43:49.356 UTC INFO [admin1] Started AdminService
+2019-09-20 15:44:09.183 UTC INFO [admin1] [rg1-rn1] Service status: RUNNING 2019-09-20 15:43:49 UTC

@@ -1,0 +1,45 @@
+2019-09-20 15:37:28.575 UTC INFO [sn1] Starting StorageNodeAgent for kvstore
+2019-09-20 15:37:28.615 UTC INFO [sn1] Create collector service and register parameter listeners successfully.
+2019-09-20 15:37:28.629 UTC INFO [sn1] Started MasterRebalanceThread
+2019-09-20 15:37:28.636 UTC INFO [sn1] Starting MonitorAgent.  Server socket factory:<ClearServerSocketFactory backlog=1024 port range=0,0> Client socket factory:<ClientSocketFactory name=kvstore|sn|monitor id=61300082 connectMs=10000 readMs=5000>
+2019-09-20 15:37:28.647 UTC INFO [sn1] Successfully created secure proxy for the storage node agent
+2019-09-20 15:37:28.652 UTC INFO [sn1] Rebound to registry port 5000 using name sn1 with SSF:<ClearServerSocketFactory backlog=1024 port range=0,0>
+2019-09-20 15:37:28.652 UTC INFO [sn1] Service status changed from STARTING to RUNNING
+2019-09-20 15:37:28.652 UTC INFO [sn1] Started StorageNodeAgent for kvstore
+2019-09-20 15:37:28.722 UTC INFO [sn1] admin1: Creating AdminService
+2019-09-20 15:37:29.013 UTC INFO [sn1] admin1: Created AdminService
+2019-09-20 15:37:29.492 UTC INFO [sn1] rg1-rn1: Creating RepNode
+2019-09-20 15:37:29.713 UTC INFO [sn1] rg1-rn1: Starting RepNode
+2019-09-20 15:37:29.714 UTC INFO [sn1] rg1-rn1: Started RepNode
+2019-09-20 15:37:29.715 UTC INFO [sn1] rg1-rn1: Configuring RepNode
+2019-09-20 15:37:30.126 UTC INFO [sn1] Thread returning for service rg1-rn1
+2019-09-20 15:37:30.781 UTC INFO [sn1] rg1-rn1: Created RepNode
+2019-09-20 15:37:31.127 UTC INFO [sn1] noteState called
+2019-09-20 15:37:31.127 UTC INFO [sn1] added:State RN:rg1-rn1 state: MASTER top seq num: 14
+2019-09-20 15:37:31.128 UTC INFO [sn1] sn: sn1 state transition: State RN:rg1-rn1 state: MASTER top seq num: 14 active masters:[rg1-rn1] active replicas:0 replica leases:0
+2019-09-20 15:37:31.128 UTC INFO [sn1] Acquiring initial topology from RNs
+2019-09-20 15:37:31.134 UTC INFO [sn1] Topology acquired from RN: rg1-rn1 Topo seq#: 14
+2019-09-20 15:43:44.725 UTC INFO [sn1] Starting StorageNodeAgent for kvstore
+2019-09-20 15:43:44.727 UTC INFO [sn1] Creating a Registry on port patmin-t480:5000 server socket factory:<ClearServerSocketFactory backlog=1024 port range=0,0>
+2019-09-20 15:43:45.573 UTC INFO [sn1] Using mgmt class oracle.kv.impl.mgmt.NoOpAgent
+2019-09-20 15:43:45.598 UTC INFO [sn1] findManagedProcesses exception: Cannot run program "jps": CreateProcess error=2, The system cannot find the file specified
+2019-09-20 15:43:45.606 UTC INFO [sn1] findManagedProcesses exception: Cannot run program "jps": CreateProcess error=2, The system cannot find the file specified
+2019-09-20 15:43:45.622 UTC INFO [sn1] findManagedProcesses exception: Cannot run program "jps": CreateProcess error=2, The system cannot find the file specified
+2019-09-20 15:43:45.698 UTC INFO [sn1] Create collector service and register parameter listeners successfully.
+2019-09-20 15:43:45.706 UTC INFO [sn1] Started MasterRebalanceThread
+2019-09-20 15:43:45.709 UTC INFO [sn1] rg1-rn1: Starting RepNode
+2019-09-20 15:43:45.710 UTC INFO [sn1] rg1-rn1: Started RepNode
+2019-09-20 15:43:45.722 UTC INFO [sn1] admin1: Starting AdminService
+2019-09-20 15:43:45.723 UTC INFO [sn1] admin1: Started AdminService
+2019-09-20 15:43:45.776 UTC INFO [sn1] Starting MonitorAgent.  Server socket factory:<ClearServerSocketFactory backlog=1024 port range=0,0> Client socket factory:<ClientSocketFactory name=kvstore|sn|monitor id=743170629 connectMs=10000 readMs=5000>
+2019-09-20 15:43:45.852 UTC INFO [sn1] Successfully created secure proxy for the storage node agent
+2019-09-20 15:43:45.859 UTC INFO [sn1] Rebound to registry port 5000 using name sn1 with SSF:<ClearServerSocketFactory backlog=1024 port range=0,0>
+2019-09-20 15:43:45.859 UTC INFO [sn1] Service status changed from STARTING to RUNNING
+2019-09-20 15:43:45.859 UTC INFO [sn1] Started StorageNodeAgent for kvstore
+2019-09-20 15:43:49.356 UTC INFO [sn1] Thread returning for service admin1
+2019-09-20 15:43:49.585 UTC INFO [sn1] Thread returning for service rg1-rn1
+2019-09-20 15:43:49.599 UTC INFO [sn1] noteState called
+2019-09-20 15:43:49.600 UTC INFO [sn1] added:State RN:rg1-rn1 state: MASTER top seq num: 14
+2019-09-20 15:43:49.618 UTC INFO [sn1] sn: sn1 state transition: State RN:rg1-rn1 state: MASTER top seq num: 14 active masters:[rg1-rn1] active replicas:0 replica leases:0
+2019-09-20 15:43:49.618 UTC INFO [sn1] Acquiring initial topology from RNs
+2019-09-20 15:43:49.631 UTC INFO [sn1] Topology acquired from RN: rg1-rn1 Topo seq#: 14

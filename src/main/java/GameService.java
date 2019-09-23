@@ -158,8 +158,15 @@ public class GameService implements Service {
     public void update(Routing.Rules rules) {
         rules.get("/", this::handleGetPlayers).post("/addPlayer", this::handleAddPlayer).get("/getPlayers", this::handleGetPlayers)
                 .post("/challengePlayer", this::handleChallengePlayer) 
-                .post("/deletePlayer", this::handleDeletePlayer).post("/concludeMatch", this::handleConcludeMatch)
-                .post("/login", this::handleLogin).post("/inMatch", this::handlePlayerInMatch);
+                .post("/deletePlayer", this::handleDeletePlayer)
+                .post("/concludeMatch", this::handleConcludeMatch)
+                .post("/login", this::handleLogin)
+                .post("/inMatch", this::handlePlayerInMatch)
+                .post("/manageScores", this::manageScores);
+    }
+    
+    private void manageScores(ServerRequest request, ServerResponse response) {
+    	request.content().as(JsonObject.class).thenAccept(jo -> handleManageScores(jo, response));
     }
 
 
@@ -239,6 +246,37 @@ public class GameService implements Service {
         JsonObject jsonSuccessObject = JSON.createObjectBuilder().add("success", "Added player: " + name).build();
         response.status(Http.Status.ACCEPTED_202).send(jsonSuccessObject);
     }
+    
+    private void handleManageScores(JsonObject jo, ServerResponse response) {
+    	if (!jo.containsKey("email")) {
+            JsonObject jsonErrorObject = JSON.createObjectBuilder().add("error", "Please provide email").build();
+            response.status(Http.Status.BAD_REQUEST_400).send(jsonErrorObject);
+            return;
+        }
+    	
+    	int wins = jo.getInt("wins");
+    	int losses = jo.getInt("losses");
+    	String email = jo.getString("email").toLowerCase();
+    	
+    	updateRowWinLoss(wins, losses, email);
+    	displayTable(kvstore);
+    	JsonObject jsonSuccessObject = JSON.createObjectBuilder().add("success", "Player scores updated successfully").build();
+        response.status(Http.Status.ACCEPTED_202).send(jsonSuccessObject);
+    }
+    
+    
+    private void updateRowWinLoss(int updated_wins, int updated_losses, String email) {
+    	// find player's row
+        PrimaryKey player = players.createPrimaryKey();
+        player.put("email", email);
+        Row playerRow = playersAPI.get(player, null);
+        
+        playerRow.put("wins", updated_wins).put("losses", updated_losses);
+        
+    }
+    
+    
+    
 
     private int containsPlayer(String emailIn) {
         PrimaryKey key = players.createPrimaryKey();

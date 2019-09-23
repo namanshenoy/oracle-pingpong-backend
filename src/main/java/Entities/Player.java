@@ -3,10 +3,13 @@ import java.util.HashMap;
 
 public class Player {
 
-	public String username;
+	private String username;
+	private String email;
+	// **Still need to separate passwords for security**
+	private String password;
 	private HashMap<String, GameStats> playerGames;
 	
-	public Player(String username) {
+	public Player(String username, String email, String password) {
 		this.username = username;
 		this.playerGames = new HashMap<String, GameStats>();
 	}

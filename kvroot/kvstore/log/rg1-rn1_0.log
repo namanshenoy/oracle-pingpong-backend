@@ -1,0 +1,200 @@
+2019-09-20 15:37:29.727 UTC INFO [rg1-rn1] JVM java.net.InetAddress properties: cache.ttl=-1 cache.negative.ttl=-1
+2019-09-20 15:37:29.778 UTC INFO [rg1-rn1] Thread[KV_rg1-rn1_RepNodeStateUpdateThread,5,RMI Runtime] started
+2019-09-20 15:37:29.795 UTC INFO [rg1-rn1] NoSQL version:12cR1.4.3.11 2017-02-17 06:52:09 UTC  Build id: 0e3ebe7568a0 JE version:7.3.6 Java version:1.8.0_221
+2019-09-20 15:37:29.795 UTC INFO [rg1-rn1] JVM Runtime maxMemory:253,440 kB JE cache size:0 kB Max Offheap cache size:0 kB
+2019-09-20 15:37:29.795 UTC INFO [rg1-rn1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=128, je.rep.envUnknownStateTimeout=10 s, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=10 s, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.checkpointer.bytesInterval=500000000, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2019-09-20 15:37:29.796 UTC INFO [rg1-rn1] DataChannelFactory: basic
+2019-09-20 15:37:29.802 UTC INFO [rg1-rn1] Created new environment dir: .\kvroot\kvstore\sn1\rg1-rn1\env
+2019-09-20 15:37:29.813 UTC INFO [rg1-rn1] Table manager created
+2019-09-20 15:37:29.840 UTC INFO [rg1-rn1] Partition database cache mode: EVICT_LN
+2019-09-20 15:37:29.845 UTC INFO [rg1-rn1] Starting task: interval is 20 SECONDS, delay is 10155(ms)
+2019-09-20 15:37:29.869 UTC INFO [rg1-rn1] Thread[KV_rg1-rn1_MetadataUpdateThread,5,RMI Runtime] started
+2019-09-20 15:37:29.869 UTC INFO [rg1-rn1] Registering GC listener with Copy
+2019-09-20 15:37:29.870 UTC INFO [rg1-rn1] Registering GC listener with MarkSweepCompact
+2019-09-20 15:37:29.890 UTC INFO [rg1-rn1] Starting RepNodeService
+2019-09-20 15:37:29.890 UTC INFO [rg1-rn1] Starting RN MonitorAgent.  Server socket factory:<ClearServerSocketFactory backlog=1024 port range=0,0> Client socket connect factory: <ClientSocketFactory name=kvstore|rn|monitor id=571663769 connectMs=10000 readMs=10000>
+2019-09-20 15:37:29.899 UTC INFO [rg1-rn1] Starting MonitorAgent
+2019-09-20 15:37:29.911 UTC INFO [rg1-rn1] Successfully created secure proxy for the repnode admin
+2019-09-20 15:37:29.925 UTC INFO [rg1-rn1] RepNodeAdmin registered
+2019-09-20 15:37:30.015 UTC INFO [rg1-rn1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2019-09-20 15:37:30.016 UTC INFO [rg1-rn1] JE recovery: POPULATE_EXPIRATION_PROFILE
+2019-09-20 15:37:30.017 UTC INFO [rg1-rn1] JE recovery: REMOVE_TEMP_DBS
+2019-09-20 15:37:30.018 UTC INFO [rg1-rn1] JE recovery: CKPT
+2019-09-20 15:37:30.031 UTC INFO [rg1-rn1] JE recovery: RECOVERY_FINISHED
+2019-09-20 15:37:30.038 UTC INFO [rg1-rn1] JE: Started ServiceDispatcher. HostPort=patmin-t480:5006
+2019-09-20 15:37:30.038 UTC INFO [rg1-rn1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-09-20 15:37:30.041 UTC INFO [rg1-rn1] JE: DTVLSN at start:0
+2019-09-20 15:37:30.041 UTC INFO [rg1-rn1] JE: node:NullNode(-1) state change from DETACHED to UNKNOWN
+2019-09-20 15:37:30.043 UTC INFO [rg1-rn1] JE: Current group size: 0
+2019-09-20 15:37:30.043 UTC INFO [rg1-rn1] JE: New node rg1-rn1(-1) unknown to rep group
+2019-09-20 15:37:30.044 UTC INFO [rg1-rn1] JE: Master changed to rg1-rn1
+2019-09-20 15:37:30.044 UTC INFO [rg1-rn1] JE: Nascent group. rg1-rn1 is master by virtue of being the first node.
+2019-09-20 15:37:30.044 UTC INFO [rg1-rn1] JE: node:rg1-rn1(1) state change from UNKNOWN to MASTER
+2019-09-20 15:37:30.053 UTC INFO [rg1-rn1] JE: Successfully added node:rg1-rn1(1) HostPort = patmin-t480: 5006 [ELECTABLE]
+2019-09-20 15:37:30.054 UTC INFO [rg1-rn1] JE recovery: BECOME_CONSISTENT
+2019-09-20 15:37:30.055 UTC INFO [rg1-rn1] JE: Node rg1-rn1 started
+2019-09-20 15:37:30.056 UTC INFO [rg1-rn1] JE: node:NullNode(-1) state change from MASTER to UNKNOWN
+2019-09-20 15:37:30.057 UTC INFO [rg1-rn1] JE: node:rg1-rn1(1) state change from UNKNOWN to MASTER
+2019-09-20 15:37:30.057 UTC INFO [rg1-rn1] JE: Feeder manager accepting requests.
+2019-09-20 15:37:30.058 UTC INFO [rg1-rn1] JE: Joining group as master
+2019-09-20 15:37:30.059 UTC INFO [rg1-rn1] Opened JE environment: 7.3.6 JVM max heap: 259,522,560 JE properties:  nodeName=null allowCreate=true recoveryProgressListener=true classLoader=false customStats=false cacheSize=181665792 offHeapCacheSize=0 cacheMode=EVICT_LN txnNoSync=false txnWriteNoSync=false exceptionListener=false map={je.lock.timeout=10 s, je.cleaner.readSize=1048576, je.log.faultReadSize=4096, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.log.fileMax=1073741824, je.rep.feederTimeout=10 s, je.rep.nodeName=rg1-rn1, je.nodeMaxEntries=128, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.maxMemoryPercent=70, je.rep.electableGroupSizeOverride=0, je.env.runEvictor=true, je.log.iteratorReadSize=1048576, je.txn.durability=WRITE_NO_SYNC,WRITE_NO_SYNC,SIMPLE_MAJORITY, je.maxOffHeapMemory=0, je.checkpointer.bytesInterval=500000000, je.log.numBuffers=16, je.rep.nodeHostPort=patmin-t480:5006, je.rep.vlsn.distance=1000000, je.rep.txnRollbackLimit=10, je.rep.replayMaxOpenDbHandles=100, je.rep.ignoreSecondaryNodeId=true, je.maxMemory=0, je.cleaner.minUtilization=40, je.env.isTransactional=true, je.log.fileCacheSize=2000, je.rep.helperHosts=patmin-t480:5006, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.vlsn.logCacheSize=128, je.rep.replicaTimeout=10 s, je.lock.nLockTables=97, je.rep.nodeType=ELECTABLE, je.rep.envUnknownStateTimeout=10 s, je.rep.preserveRecordVersion=true, je.rep.groupName=rg1, je.rep.replicaAckTimeout=5 s, je.cleaner.threads=2}
+2019-09-20 15:37:30.104 UTC INFO [rg1-rn1] Local Environment version updated to: 12cR1.4.3.11 2017-02-17 06:52:09 UTC  Build id: 0e3ebe7568a0 Previous version:  none
+2019-09-20 15:37:30.105 UTC INFO [rg1-rn1] State change event: Fri Sep 20 10:37:30 CDT 2019, State: MASTER, Type: ELECTABLE, Master: rg1-rn1
+2019-09-20 15:37:30.106 UTC INFO [rg1-rn1] MigrationStateTracker queue added:MASTER
+2019-09-20 15:37:30.106 UTC INFO [rg1-rn1] TableManagerStateTracker queue added:MASTER
+2019-09-20 15:37:30.106 UTC INFO [rg1-rn1] MasterBalanceStateTracker queue added:MASTER
+2019-09-20 15:37:30.106 UTC INFO [rg1-rn1] TextIndexFeederStateTracker queue added:MASTER
+2019-09-20 15:37:30.106 UTC INFO [rg1-rn1] Replicated environment handle established. Cache size: 181665792, State: MASTER
+2019-09-20 15:37:30.107 UTC INFO [rg1-rn1] Store did not contain a topology
+2019-09-20 15:37:30.108 UTC INFO [rg1-rn1] Topology needs to be pushed to this node.
+2019-09-20 15:37:30.108 UTC INFO [rg1-rn1] MasterBalanceStateTracker thread start: rg1-rn1
+2019-09-20 15:37:30.109 UTC INFO [rg1-rn1] TextIndexFeederStateTracker thread start: rg1-rn1
+2019-09-20 15:37:30.109 UTC INFO [rg1-rn1] TableManagerStateTracker thread start: rg1-rn1
+2019-09-20 15:37:30.109 UTC INFO [rg1-rn1] MigrationStateTracker thread start: null
+2019-09-20 15:37:30.111 UTC INFO [rg1-rn1] Table manager change state to MASTER
+2019-09-20 15:37:30.111 UTC INFO [rg1-rn1] received state change MASTER
+2019-09-20 15:37:30.111 UTC INFO [rg1-rn1] Migration manager change state to MASTER.
+2019-09-20 15:37:30.111 UTC INFO [rg1-rn1] no text index found, skip starting TIF.
+2019-09-20 15:37:30.121 UTC INFO [rg1-rn1] Migration service accepting requests.
+2019-09-20 15:37:30.123 UTC INFO [rg1-rn1] No RN Login configured. 
+2019-09-20 15:37:30.123 UTC INFO [rg1-rn1] Service status changed from STARTING to RUNNING
+2019-09-20 15:37:30.126 UTC INFO [rg1-rn1] Start statistics gathering: Thread[Key Stats Gather Thread,5,RMI Runtime]
+2019-09-20 15:37:30.126 UTC INFO [rg1-rn1] Started RepNodeService
+2019-09-20 15:37:30.126 UTC INFO [rg1-rn1] Topology not immediately available - waiting
+2019-09-20 15:37:30.754 UTC INFO [rg1-rn1] Topology updated from seq#: 0 to 4
+2019-09-20 15:37:30.761 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for SecurityMetadata
+2019-09-20 15:37:30.761 UTC INFO [rg1-rn1] Open SecurityMetadata DB
+2019-09-20 15:37:30.764 UTC INFO [rg1-rn1] Established 0 partition database handles, topology seq#: 4
+2019-09-20 15:37:30.765 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for TableMetadata
+2019-09-20 15:37:30.765 UTC INFO [rg1-rn1] Open TableMetadata DB
+2019-09-20 15:37:30.773 UTC INFO [rg1-rn1] Found 0 indexes and 0 tables marked for deletion in TableMetadata[0, 0, 0]
+2019-09-20 15:37:30.774 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2019-09-20 15:37:30.776 UTC INFO [rg1-rn1] Topology stored seq#: 4
+2019-09-20 15:37:30.805 UTC INFO [rg1-rn1] newParameters are identical to old parameters
+2019-09-20 15:37:30.828 UTC INFO [rg1-rn1] Topology incrementally updated from seq#: 4 to 14
+2019-09-20 15:37:30.831 UTC INFO [rg1-rn1] Found 0 indexes and 0 tables marked for deletion in TableMetadata[0, 0, 0]
+2019-09-20 15:37:30.831 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2019-09-20 15:37:30.833 UTC INFO [rg1-rn1] Topology stored seq#: 14
+2019-09-20 15:37:30.841 UTC INFO [rg1-rn1] Established 10 partition database handles, topology seq#: 14
+2019-09-20 15:37:31.098 UTC INFO [rg1-rn1] Updating table metadata with TableMetadata[1, 1, 1]
+2019-09-20 15:37:31.100 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for TableMetadata
+2019-09-20 15:37:31.100 UTC INFO [rg1-rn1] Metadata stored type: TABLE, seq#: 1
+2019-09-20 15:37:31.102 UTC INFO [rg1-rn1] Found 0 indexes and 0 tables marked for deletion in TableMetadata[1, 1, 1]
+2019-09-20 15:37:31.102 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2019-09-20 15:37:31.117 UTC INFO [rg1-rn1] Updating table metadata with TableChangeList[2, 1]
+2019-09-20 15:37:31.120 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for TableMetadata
+2019-09-20 15:37:31.120 UTC INFO [rg1-rn1] Metadata stored type: TABLE, seq#: 2
+2019-09-20 15:37:31.122 UTC INFO [rg1-rn1] Found 0 indexes and 0 tables marked for deletion in TableMetadata[2, 2, 2]
+2019-09-20 15:37:31.122 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2019-09-20 15:37:31.143 UTC INFO [rg1-rn1] Updating table metadata with TableChangeList[3, 1]
+2019-09-20 15:37:31.145 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for TableMetadata
+2019-09-20 15:37:31.145 UTC INFO [rg1-rn1] Metadata stored type: TABLE, seq#: 3
+2019-09-20 15:37:31.147 UTC INFO [rg1-rn1] Found 0 indexes and 0 tables marked for deletion in TableMetadata[3, 3, 3]
+2019-09-20 15:37:31.147 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2019-09-20 15:37:31.151 UTC INFO [rg1-rn1] Establishing RMI connection for admin DDL
+2019-09-20 15:37:31.161 UTC INFO [rg1-rn1] Establishing RMI connection for admin DDL
+2019-09-20 15:37:31.163 UTC INFO [rg1-rn1] Establishing RMI connection for admin DDL
+2019-09-20 15:37:31.174 UTC INFO [rg1-rn1] Updating table metadata with TableChangeList[4, 1]
+2019-09-20 15:37:31.176 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for TableMetadata
+2019-09-20 15:37:31.177 UTC INFO [rg1-rn1] Metadata stored type: TABLE, seq#: 4
+2019-09-20 15:37:31.178 UTC INFO [rg1-rn1] Found 0 indexes and 0 tables marked for deletion in TableMetadata[4, 4, 4]
+2019-09-20 15:37:31.179 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2019-09-20 15:37:55.174 UTC INFO [rg1-rn1] Updating table metadata with TableChangeList[5, 1]
+2019-09-20 15:37:55.179 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for TableMetadata
+2019-09-20 15:37:55.180 UTC INFO [rg1-rn1] Metadata stored type: TABLE, seq#: 5
+2019-09-20 15:37:55.182 UTC INFO [rg1-rn1] Found 0 indexes and 0 tables marked for deletion in TableMetadata[5, 5, 5]
+2019-09-20 15:37:55.182 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2019-09-20 15:43:45.720 UTC INFO [rg1-rn1] JVM java.net.InetAddress properties: cache.ttl=-1 cache.negative.ttl=-1
+2019-09-20 15:43:45.815 UTC INFO [rg1-rn1] Thread[KV_rg1-rn1_RepNodeStateUpdateThread,5,main] started
+2019-09-20 15:43:45.851 UTC INFO [rg1-rn1] NoSQL version:12cR1.4.3.11 2017-02-17 06:52:09 UTC  Build id: 0e3ebe7568a0 JE version:7.3.6 Java version:1.8.0_221
+2019-09-20 15:43:45.853 UTC INFO [rg1-rn1] JVM Runtime maxMemory:253,440 kB JE cache size:0 kB Max Offheap cache size:0 kB
+2019-09-20 15:43:45.853 UTC INFO [rg1-rn1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=128, je.rep.envUnknownStateTimeout=10 s, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=10 s, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.checkpointer.bytesInterval=500000000, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2019-09-20 15:43:45.853 UTC INFO [rg1-rn1] DataChannelFactory: basic
+2019-09-20 15:43:45.861 UTC INFO [rg1-rn1] Table manager created
+2019-09-20 15:43:45.932 UTC INFO [rg1-rn1] Partition database cache mode: EVICT_LN
+2019-09-20 15:43:45.936 UTC INFO [rg1-rn1] Starting task: interval is 20 SECONDS, delay is 14064(ms)
+2019-09-20 15:43:45.964 UTC INFO [rg1-rn1] Thread[KV_rg1-rn1_MetadataUpdateThread,5,main] started
+2019-09-20 15:43:45.965 UTC INFO [rg1-rn1] Registering GC listener with Copy
+2019-09-20 15:43:45.966 UTC INFO [rg1-rn1] Registering GC listener with MarkSweepCompact
+2019-09-20 15:43:46.052 UTC INFO [rg1-rn1] Starting RepNodeService
+2019-09-20 15:43:46.053 UTC INFO [rg1-rn1] Starting RN MonitorAgent.  Server socket factory:<ClearServerSocketFactory backlog=1024 port range=0,0> Client socket connect factory: <ClientSocketFactory name=kvstore|rn|monitor id=1253534316 connectMs=10000 readMs=10000>
+2019-09-20 15:43:46.065 UTC INFO [rg1-rn1] Starting MonitorAgent
+2019-09-20 15:43:46.091 UTC INFO [rg1-rn1] Successfully created secure proxy for the repnode admin
+2019-09-20 15:43:46.126 UTC INFO [rg1-rn1] RepNodeAdmin registered
+2019-09-20 15:43:46.341 UTC INFO [rg1-rn1] JE recovery: FIND_END_OF_LOG
+2019-09-20 15:43:46.413 UTC INFO [rg1-rn1] JE recovery: FIND_LAST_CKPT
+2019-09-20 15:43:46.424 UTC INFO [rg1-rn1] JE recovery: READ_DBMAP_INFO
+2019-09-20 15:43:46.495 UTC INFO [rg1-rn1] JE recovery: REDO_DBMAP_INFO
+2019-09-20 15:43:46.499 UTC INFO [rg1-rn1] JE recovery: UNDO_DBMAP_RECORDS
+2019-09-20 15:43:46.516 UTC INFO [rg1-rn1] JE recovery: REDO_DBMAP_RECORDS
+2019-09-20 15:43:46.539 UTC INFO [rg1-rn1] JE recovery: READ_DATA_INFO
+2019-09-20 15:43:46.578 UTC INFO [rg1-rn1] JE recovery: REDO_DATA_INFO
+2019-09-20 15:43:46.585 UTC INFO [rg1-rn1] JE recovery: UNDO_DATA_RECORDS
+2019-09-20 15:43:46.589 UTC INFO [rg1-rn1] JE recovery: REDO_DATA_RECORDS
+2019-09-20 15:43:46.620 UTC INFO [rg1-rn1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2019-09-20 15:43:46.628 UTC INFO [rg1-rn1] JE recovery: POPULATE_EXPIRATION_PROFILE
+2019-09-20 15:43:46.642 UTC INFO [rg1-rn1] JE recovery: REMOVE_TEMP_DBS
+2019-09-20 15:43:46.708 UTC INFO [rg1-rn1] JE recovery: CKPT
+2019-09-20 15:43:46.755 UTC INFO [rg1-rn1] JE recovery: RECOVERY_FINISHED
+2019-09-20 15:43:46.841 UTC INFO [rg1-rn1] JE: Started ServiceDispatcher. HostPort=patmin-t480:5006
+2019-09-20 15:43:46.842 UTC INFO [rg1-rn1] JE: Started ServiceDispatcher. HostPort=patmin-t480:5006
+2019-09-20 15:43:46.842 UTC INFO [rg1-rn1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-09-20 15:43:46.843 UTC INFO [rg1-rn1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2019-09-20 15:43:46.913 UTC INFO [rg1-rn1] JE: DTVLSN at start:83
+2019-09-20 15:43:46.914 UTC INFO [rg1-rn1] JE: DTVLSN at start:83
+2019-09-20 15:43:46.914 UTC INFO [rg1-rn1] JE: node:NullNode(-1) state change from DETACHED to UNKNOWN
+2019-09-20 15:43:46.929 UTC INFO [rg1-rn1] JE: Current group size: 1
+2019-09-20 15:43:46.930 UTC INFO [rg1-rn1] JE: Current group size: 1
+2019-09-20 15:43:46.930 UTC INFO [rg1-rn1] JE: Existing node rg1-rn1 querying for a current master.
+2019-09-20 15:43:46.930 UTC INFO [rg1-rn1] JE: Existing node rg1-rn1 querying for a current master.
+2019-09-20 15:43:46.946 UTC INFO [rg1-rn1] JE recovery: BECOME_CONSISTENT
+2019-09-20 15:43:46.946 UTC INFO [rg1-rn1] JE: Node rg1-rn1 started
+2019-09-20 15:43:46.946 UTC INFO [rg1-rn1] JE: Node rg1-rn1 started
+2019-09-20 15:43:46.946 UTC INFO [rg1-rn1] JE: Election initiated; election #1
+2019-09-20 15:43:46.946 UTC INFO [rg1-rn1] JE: Election initiated; election #1
+2019-09-20 15:43:46.948 UTC INFO [rg1-rn1] JE: Started election thread Fri Sep 20 10:43:46 CDT 2019
+2019-09-20 15:43:46.948 UTC INFO [rg1-rn1] JE: Started election thread Fri Sep 20 10:43:46 CDT 2019
+2019-09-20 15:43:49.023 UTC INFO [rg1-rn1] JE: Winning proposal: Proposal(0000016d4f57fad5:affa1643798972cc1e255c1c7433ba28:00000002) Value: Value:patmin-t480$$$5006$$$rg1-rn1$$$1
+2019-09-20 15:43:49.023 UTC INFO [rg1-rn1] JE: Winning proposal: Proposal(0000016d4f57fad5:affa1643798972cc1e255c1c7433ba28:00000002) Value: Value:patmin-t480$$$5006$$$rg1-rn1$$$1
+2019-09-20 15:43:49.027 UTC INFO [rg1-rn1] JE: Master changed to rg1-rn1
+2019-09-20 15:43:49.027 UTC INFO [rg1-rn1] JE: Master changed to rg1-rn1
+2019-09-20 15:43:49.027 UTC INFO [rg1-rn1] JE: Election finished. Elapsed time: 2081ms
+2019-09-20 15:43:49.027 UTC INFO [rg1-rn1] JE: Election finished. Elapsed time: 2081ms
+2019-09-20 15:43:49.027 UTC INFO [rg1-rn1] JE: Election thread exited. Group master: rg1-rn1(1)
+2019-09-20 15:43:49.028 UTC INFO [rg1-rn1] JE: Election thread exited. Group master: rg1-rn1(1)
+2019-09-20 15:43:49.028 UTC INFO [rg1-rn1] JE: node:rg1-rn1(1) state change from UNKNOWN to MASTER
+2019-09-20 15:43:49.028 UTC INFO [rg1-rn1] JE: Feeder manager accepting requests.
+2019-09-20 15:43:49.028 UTC INFO [rg1-rn1] JE: Feeder manager accepting requests.
+2019-09-20 15:43:49.047 UTC INFO [rg1-rn1] JE: Joining group as master
+2019-09-20 15:43:49.047 UTC INFO [rg1-rn1] JE: Joining group as master
+2019-09-20 15:43:49.048 UTC INFO [rg1-rn1] Opened JE environment: 7.3.6 JVM max heap: 259,522,560 JE properties:  nodeName=null allowCreate=true recoveryProgressListener=true classLoader=false customStats=false cacheSize=181665792 offHeapCacheSize=0 cacheMode=EVICT_LN txnNoSync=false txnWriteNoSync=false exceptionListener=false map={je.lock.timeout=10 s, je.cleaner.readSize=1048576, je.log.faultReadSize=4096, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.log.fileMax=1073741824, je.rep.feederTimeout=10 s, je.rep.nodeName=rg1-rn1, je.nodeMaxEntries=128, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.maxMemoryPercent=70, je.rep.electableGroupSizeOverride=0, je.env.runEvictor=true, je.log.iteratorReadSize=1048576, je.txn.durability=WRITE_NO_SYNC,WRITE_NO_SYNC,SIMPLE_MAJORITY, je.maxOffHeapMemory=0, je.checkpointer.bytesInterval=500000000, je.log.numBuffers=16, je.rep.nodeHostPort=patmin-t480:5006, je.rep.vlsn.distance=1000000, je.rep.txnRollbackLimit=10, je.rep.replayMaxOpenDbHandles=100, je.rep.ignoreSecondaryNodeId=true, je.maxMemory=0, je.cleaner.minUtilization=40, je.env.isTransactional=true, je.log.fileCacheSize=2000, je.rep.helperHosts=patmin-t480:5006, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.vlsn.logCacheSize=128, je.rep.replicaTimeout=10 s, je.lock.nLockTables=97, je.rep.nodeType=ELECTABLE, je.rep.envUnknownStateTimeout=10 s, je.rep.preserveRecordVersion=true, je.rep.groupName=rg1, je.rep.replicaAckTimeout=5 s, je.cleaner.threads=2}
+2019-09-20 15:43:49.057 UTC INFO [rg1-rn1] State change event: Fri Sep 20 10:43:49 CDT 2019, State: MASTER, Type: ELECTABLE, Master: rg1-rn1
+2019-09-20 15:43:49.057 UTC INFO [rg1-rn1] MigrationStateTracker queue added:MASTER
+2019-09-20 15:43:49.057 UTC INFO [rg1-rn1] TableManagerStateTracker queue added:MASTER
+2019-09-20 15:43:49.057 UTC INFO [rg1-rn1] MasterBalanceStateTracker queue added:MASTER
+2019-09-20 15:43:49.057 UTC INFO [rg1-rn1] TextIndexFeederStateTracker queue added:MASTER
+2019-09-20 15:43:49.058 UTC INFO [rg1-rn1] Replicated environment handle established. Cache size: 181665792, State: MASTER
+2019-09-20 15:43:49.112 UTC INFO [rg1-rn1] Topology updated from seq#: 0 to 14
+2019-09-20 15:43:49.114 UTC INFO [rg1-rn1] Open SecurityMetadata DB
+2019-09-20 15:43:49.115 UTC INFO [rg1-rn1] Open TableMetadata DB
+2019-09-20 15:43:49.119 UTC INFO [rg1-rn1] Established 10 partition database handles, topology seq#: 14
+2019-09-20 15:43:49.464 UTC INFO [rg1-rn1] Found 0 indexes and 0 tables marked for deletion in TableMetadata[5, 5, 5]
+2019-09-20 15:43:49.465 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2019-09-20 15:43:49.514 UTC INFO [rg1-rn1] Topology stored seq#: 14
+2019-09-20 15:43:49.525 UTC INFO [rg1-rn1] Topology fetched sequence#: 14, updated topology seq# 14
+2019-09-20 15:43:49.528 UTC INFO [rg1-rn1] MasterBalanceStateTracker thread start: rg1-rn1
+2019-09-20 15:43:49.528 UTC INFO [rg1-rn1] MigrationStateTracker thread start: null
+2019-09-20 15:43:49.529 UTC INFO [rg1-rn1] TextIndexFeederStateTracker thread start: rg1-rn1
+2019-09-20 15:43:49.529 UTC INFO [rg1-rn1] TableManagerStateTracker thread start: rg1-rn1
+2019-09-20 15:43:49.530 UTC INFO [rg1-rn1] received state change MASTER
+2019-09-20 15:43:49.529 UTC INFO [rg1-rn1] Migration manager change state to MASTER.
+2019-09-20 15:43:49.530 UTC INFO [rg1-rn1] Table manager change state to MASTER
+2019-09-20 15:43:49.532 UTC INFO [rg1-rn1] no text index found, skip starting TIF.
+2019-09-20 15:43:49.561 UTC INFO [rg1-rn1] Migration service accepting requests.
+2019-09-20 15:43:49.564 UTC INFO [rg1-rn1] No RN Login configured. 
+2019-09-20 15:43:49.564 UTC INFO [rg1-rn1] Service status changed from STARTING to RUNNING
+2019-09-20 15:43:49.584 UTC INFO [rg1-rn1] Start statistics gathering: Thread[Key Stats Gather Thread,5,main]
+2019-09-20 15:43:49.585 UTC INFO [rg1-rn1] Started RepNodeService
+2019-09-20 15:43:49.650 UTC INFO [rg1-rn1] Establishing RMI connection for admin DDL
+2019-09-20 15:43:49.688 UTC INFO [rg1-rn1] Establishing RMI connection for admin DDL
+2019-09-20 15:43:49.692 UTC INFO [rg1-rn1] Establishing RMI connection for admin DDL
