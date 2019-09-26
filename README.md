@@ -30,4 +30,4 @@ Development:
 
 Solutions to common problems:
 1. Make sure you have localhost port 8080 available for use.
-2. You are not using VPN for mvn install.
+2. Make sure you're not on the network for mvn install.
